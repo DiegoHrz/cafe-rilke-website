@@ -31,14 +31,14 @@ export function Features() {
             Café Rilke es el sueño común de la periodista, filósofa y teóloga
             alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de la
             Jara. Crearon el Café Rilke según el lema del obíspo brasileño,
-            Hélder Câmara: 'Cuando sueñas solo, sólo es un sueño; cuando sueñas
-            con otros, es el comienzo de una nueva realidad'. Anke sueña con un
+            Hélder Câmara: &apos;Cuando sueñas solo, sólo es un sueño; cuando sueñas
+            con otros, es el comienzo de una nueva realidad&apos;. Anke sueña con un
             buen futuro para niños en condiciones dificiles a través de la
             educación. Fernando sueña con ilumbrar e l mundo a través del arte y
             de la belleza. Juntos invitan a todos los que cruzan el umbral a su
             hermoso local de volverse parte de este sueño. Porque engreyendose
             así mismos con las delicias para el paladar y disfrutando de este
-            extraordinario ambiente apoyan a la asociación Sembrando Semillas –
+            extraordinario ambiente apoyan a la asociación Sembrando Semillas -
             Educación para Todos. Gran parte de los beneficios del Café Rilke
             está destinada a que los los niños, adolescentes y jóvenes de este
             proyecto van al colegio, que reciben un buen almuerzo, que están
