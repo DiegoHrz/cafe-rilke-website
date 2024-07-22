@@ -7,13 +7,11 @@ import bluebutton from "../../public/assets/blue-button.svg";
 import greenButton from "../../public/assets/green-button.svg";
 import pinkButton from "../../public/assets/pink-button.svg";
 import homeCafe from "../../public/assets/home-cafe-2.jpg";
-import imageAbout from "../../public/assets/image-about.jpg"
+import imageAbout from "../../public/assets/image-about.jpg";
 
 export function Features() {
   return (
     <div className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
-
-
       <div className="flex flex-col gap-x-6 sm:flex-row">
         <Image
           src={imageAbout}
