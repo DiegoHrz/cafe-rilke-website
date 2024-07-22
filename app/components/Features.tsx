@@ -12,22 +12,22 @@ import imageAbout from "../../public/assets/image-about.jpg";
 export function Features() {
   return (
     <div className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
-      <div className="flex flex-col gap-x-6 sm:flex-row">
+      <h1 className="pt-[12px] text-4xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] text-center">
+        Acerca de Café Rilke
+      </h1>
+      <div className="flex flex-col gap-x-6 sm:flex-row ">
         <Image
           src={imageAbout}
           alt="Feature 1 image"
-          className="hidden w-1/2 sm:block"
+          className="hidden w-1/2 sm:block "
         />
-        <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px]">
-          <h1 className="pt-[12px] text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
-            Acerca de Café Rilke
-          </h1>
+        <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px] flex lg:block flex-col justify-center ">
           <Image
             src={imageAbout}
             alt="feature 1 image"
-            className="pt-[24px] sm:hidden"
+            className="pt-[24px] sm:hidden border-red-500 border w-full px-4 lg:px-0"
           />
-          <p className="py-[24px] text-[#36485C] lg:text-[18px]">
+          <p className="py-[24px] px-4 lg:px-0 text-[#666666] lg:text-[18px] italic">
             Café Rilke es el sueño común de la periodista, filósofa y teóloga
             alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de la
             Jara. Crearon el Café Rilke según el lema del obíspo brasileño,
