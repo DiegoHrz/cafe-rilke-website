@@ -31,27 +31,26 @@ export function Features() {
             Café Rilke es el sueño común de la periodista, filósofa y teóloga
             alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de la
             Jara. Crearon el Café Rilke según el lema del obíspo brasileño,
-            Hélder Câmara: &apos;Cuando sueñas solo, sólo es un sueño; cuando sueñas
-            con otros, es el comienzo de una nueva realidad&apos;. Anke sueña con un
-            buen futuro para niños en condiciones dificiles a través de la
-            educación. Fernando sueña con ilumbrar e l mundo a través del arte y
-            de la belleza. Juntos invitan a todos los que cruzan el umbral a su
-            hermoso local de volverse parte de este sueño. Porque engreyendose
-            así mismos con las delicias para el paladar y disfrutando de este
-            extraordinario ambiente apoyan a la asociación Sembrando Semillas -
-            Educación para Todos. Gran parte de los beneficios del Café Rilke
-            está destinada a que los los niños, adolescentes y jóvenes de este
-            proyecto van al colegio, que reciben un buen almuerzo, que están
-            acompañados con sus tareas y que pueden pasar su tiempo libre
-            jugando y divertiendose en un lugar sano y saludable.
+            Hélder Câmara: &apos;Cuando sueñas solo, sólo es un sueño; cuando
+            sueñas con otros, es el comienzo de una nueva realidad&apos;. Anke
+            sueña con un buen futuro para niños en condiciones dificiles a
+            través de la educación. Fernando sueña con ilumbrar e l mundo a
+            través del arte y de la belleza. Juntos invitan a todos los que
+            cruzan el umbral a su hermoso local de volverse parte de este sueño.
+            Porque engreyendose así mismos con las delicias para el paladar y
+            disfrutando de este extraordinario ambiente apoyan a la asociación
+            Sembrando Semillas - Educación para Todos. Gran parte de los
+            beneficios del Café Rilke está destinada a que los los niños,
+            adolescentes y jóvenes de este proyecto van al colegio, que reciben
+            un buen almuerzo, que están acompañados con sus tareas y que pueden
+            pasar su tiempo libre jugando y divertiendose en un lugar sano y
+            saludable.
           </p>
 
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#00A424] lg:text-[18px]">
-            Learn More{" "}
-            <span>
-              <Image src={greenButton} alt="Learn more" />
-            </span>
-          </p>
+          <div className="flex justify-center items-center gap-4 lg:gap-10 lg:pt-8">
+            <button className="border rounded-3xl px-6 py-3 lg:px-8 italic bg-rilke-red text-white">Descargar Menu</button>
+            <button className="border-2 border-rilke-red rounded-3xl px-6 py-3 lg:px-9 italic ">Ver Galería</button>
+          </div>
         </div>
       </div>
 

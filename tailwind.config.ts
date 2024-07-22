@@ -15,6 +15,9 @@ const config: Config = {
       },
       fontFamily:{
         'rilke-theme':'Aldus',
+      },
+      colors:{
+        'rilke-red':'#E92933'
       }
     },
   },
