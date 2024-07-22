@@ -6,8 +6,8 @@ import Feed from "../../public/assets/Feed.svg";
 
 export function Footer() {
   return (
-    <div className="pt-[80px] pb-[40px]">
-      <div className="flex items-center justify-center gap-x-[12px]">
+    <div className="pt-[80px] pb-[40px] bg-[#DBDBDB]">
+      {/* <div className="flex items-center justify-center gap-x-[12px]">
         <Image src={Logo} alt="Logo" />
         <p className="font-bold text-[#36485C] text-[17px]">Jan Marshal</p>
       </div>
@@ -17,9 +17,9 @@ export function Footer() {
         <li>Pricing</li>
         <li>Enterprise</li>
         <li>Careers</li>
-      </ul>
+      </ul> */}
 
-      <p className="pt-[56px] text-center text-[14px] font-medium text-[#5F7896] sm:pt-5">
+      <p className="pt-[56px] text-center text-[14px] font-medium text-[#666666] sm:pt-5">
         © 2024 Café Rilke. Todos los derechos reservados.
       </p>
 

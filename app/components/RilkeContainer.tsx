@@ -69,7 +69,7 @@ export function RilkeContainer() {
               backgroundSize: "cover",
             }}
           /> */}
-
+{/* 
           <div className="flex w-full flex-col items-center lg:container lg:flex-row lg:justify-between lg:px-20">
             <p className="text-[#FFFFFF] text-center lg:text-[18px]">
               Trusted by these companies
@@ -81,7 +81,7 @@ export function RilkeContainer() {
               <Image src={Cnn} alt="" />
               <Image src={Cluth} alt="" />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

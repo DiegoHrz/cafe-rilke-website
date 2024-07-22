@@ -6,109 +6,47 @@ import Check from "../../public/assets/check.svg";
 import bluebutton from "../../public/assets/blue-button.svg";
 import greenButton from "../../public/assets/green-button.svg";
 import pinkButton from "../../public/assets/pink-button.svg";
-import homeCafe from "../../public/assets/home-cafe-2.jpg"
+import homeCafe from "../../public/assets/home-cafe-2.jpg";
+import imageAbout from "../../public/assets/image-about.jpg"
 
 export function Features() {
   return (
     <div className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
-      <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
-        <Image
-          src={homeCafe}
-          alt="Feature 1 image"
-          className="hidden w-1/2 sm:block"
-        />
-        <div className="sm:w-1/2 lg:py-[56px] lg:pr-[56px]">
-          <h3 className="font-medium text-[#0085FF] lg:text-[18px] ">
-            Sales Monitoring
-          </h3>
-          <h1 className="pt-[12px] text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
-            Simplify your sales monitoring
-          </h1>
-          <Image
-            src={Feature1}
-            alt="feature 1 image"
-            className="pt-[24px] sm:hidden"
-          />
-          <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a birds eye view with our customizable
-            dashboard.
-          </p>
 
-          <ul className="flex flex-col gap-y-3 lg:text-[18px]">
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-          </ul>
-
-          <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#0085FF] lg:text-[18px]">
-            Learn More{" "}
-            <span>
-              <Image src={bluebutton} alt="Learn more" />
-            </span>
-          </p>
-        </div>
-      </div>
 
       <div className="flex flex-col gap-x-6 sm:flex-row">
         <Image
-          src={Feature2}
+          src={imageAbout}
           alt="Feature 1 image"
           className="hidden w-1/2 sm:block"
         />
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px]">
-          <h3 className="font-medium text-[#00A424] lg:text-[18px] ">
-            Customer Support
-          </h3>
           <h1 className="pt-[12px] text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
-            Get in touch with your customers
+            Acerca de Café Rilke
           </h1>
           <Image
-            src={Feature2}
+            src={imageAbout}
             alt="feature 1 image"
             className="pt-[24px] sm:hidden"
           />
           <p className="py-[24px] text-[#36485C] lg:text-[18px]">
-            Stay on top of things and revamp your work process with our
-            game-changing feature. Get a birds eye view with our customizable
-            dashboard.
+            Café Rilke es el sueño común de la periodista, filósofa y teóloga
+            alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de la
+            Jara. Crearon el Café Rilke según el lema del obíspo brasileño,
+            Hélder Câmara: 'Cuando sueñas solo, sólo es un sueño; cuando sueñas
+            con otros, es el comienzo de una nueva realidad'. Anke sueña con un
+            buen futuro para niños en condiciones dificiles a través de la
+            educación. Fernando sueña con ilumbrar e l mundo a través del arte y
+            de la belleza. Juntos invitan a todos los que cruzan el umbral a su
+            hermoso local de volverse parte de este sueño. Porque engreyendose
+            así mismos con las delicias para el paladar y disfrutando de este
+            extraordinario ambiente apoyan a la asociación Sembrando Semillas –
+            Educación para Todos. Gran parte de los beneficios del Café Rilke
+            está destinada a que los los niños, adolescentes y jóvenes de este
+            proyecto van al colegio, que reciben un buen almuerzo, que están
+            acompañados con sus tareas y que pueden pasar su tiempo libre
+            jugando y divertiendose en un lugar sano y saludable.
           </p>
-
-          <ul className="flex flex-col gap-y-3 lg:text-[18px]">
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-            <li className="flex items-center gap-x-2 text-[#36485C]">
-              <span>
-                <Image src={Check} alt="Checkmark" />
-              </span>
-              Lorem ipsum dolor sit amet
-            </li>
-          </ul>
 
           <p className="flex items-center gap-x-2 pt-[24px] font-medium text-[#00A424] lg:text-[18px]">
             Learn More{" "}
