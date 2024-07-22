@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Check from "../../public/assets/check.svg";
 
-export function Pricing() {
+export function Carta() {
   return (
     <div className="py-[48px] lg:py-[60px]">
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px]">
-        Flexible plans for you
+        Carta - Cafés y Panes
       </h1>
       <p className="pt-[16px] pb-[40px] text-center text-[#36485C] lg:text-[18px]">
         No hidden fees!
