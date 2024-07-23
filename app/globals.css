@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 *{
-    font-family: garamont;
+    font-family: Aldus;
 }
 
+html {
+    scroll-behavior: smooth;
+  }

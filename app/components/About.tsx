@@ -9,17 +9,18 @@ import pinkButton from "../../public/assets/pink-button.svg";
 import homeCafe from "../../public/assets/home-cafe-2.jpg";
 import imageAbout from "../../public/assets/image-about.jpg";
 
-export function Features() {
+export function About() {
   return (
-    <div className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px] ">
-      <h1 className="pt-[12px] text-4xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] text-center">
+    <div className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px]" id='#acerca' >
+      <h1 className="pt-[12px] text-4xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] text-center" >
         Acerca de Café Rilke
       </h1>
       <div className="flex flex-col gap-x-6 sm:flex-row ">
         <Image
           src={imageAbout}
           alt="Feature 1 image"
-          className="hidden w-1/2 sm:block "
+          className="w-[450px]  max-w-full  sm:block hidden"
+          style={{ boxSizing: 'border-box' }}
         />
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px] flex lg:block flex-col justify-center ">
           <Image
@@ -48,13 +49,17 @@ export function Features() {
           </p>
 
           <div className="flex justify-center items-center gap-4 lg:gap-10 lg:pt-8">
-            <button className="border rounded-3xl px-6 py-3 lg:px-8 italic bg-rilke-red text-white">Descargar Menu</button>
-            <button className="border-2 border-rilke-red rounded-3xl px-6 py-3 lg:px-9 italic ">Ver Galería</button>
+            <button className="border rounded-3xl px-6 py-3 lg:px-8 italic bg-rilke-red text-white">
+              Descargar Menu
+            </button>
+            <button className="border-2 border-rilke-red rounded-3xl px-6 py-3 lg:px-9 italic ">
+              Ver Galería
+            </button>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
+      {/* <div className="flex flex-col gap-x-6 sm:flex-row-reverse">
         <Image
           src={Feature3}
           alt="Feature 1 image"
@@ -96,7 +101,7 @@ export function Features() {
             </span>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Check from "../../public/assets/check.svg";
 
-export function Carta() {
+export function Menu() {
   return (
     <div className="py-[48px] lg:py-[60px]">
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px]">
         Carta - Cafés y Panes
       </h1>
-      <p className="pt-[16px] pb-[40px] text-center text-[#36485C] lg:text-[18px]">
+      {/* <p className="pt-[16px] pb-[40px] text-center text-[#36485C] lg:text-[18px]">
         No hidden fees!
-      </p>
+      </p> */}
 
-      <div className="flex flex-col gap-y-6 gap-x-[24px] lg:flex-row">
+      {/* <div className="flex flex-col gap-y-6 gap-x-[24px] lg:flex-row">
         <div className="w-full rounded-[8px] bg-[#F5F4FF] p-6 flex flex-col lg:justify-between">
           <div>
             <h3 className="font-medium text-[#4328EB] text-[18px] lg:text-xl">
@@ -127,7 +127,7 @@ export function Carta() {
             Contact Us
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

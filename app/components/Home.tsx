@@ -9,7 +9,7 @@ import Cnn from "../../public/assets/CNN.svg";
 import Cluth from "../../public/assets/Clutch.svg";
 import homeCafe from "../../public/assets/home-cafe-2.jpg";
 
-export function Hero() {
+export function Home() {
   return (
     <div className="pt-4 lg:pt-0">
       <div className="px-[20px] lg:px-[280px]">

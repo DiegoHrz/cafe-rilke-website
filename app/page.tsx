@@ -1,24 +1,24 @@
 import { ContactForm } from "./components/ContactForm";
-import { Faq } from "./components/Faq";
-import { Features } from "./components/Features";
+import { Gallery } from "./components/Gallery";
+import { About } from "./components/About";
 import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
+import { Home } from "./components/Home";
 import { Navbar } from "./components/Navbar";
-import { Carta } from "./components/Carta";
+import { Menu } from "./components/Menu";
 import { RilkeContainer } from "./components/RilkeContainer";
 
-export default function Home() {
+export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Home />
       <div className=" lg:container lg:px-20 mx-auto">
         {/* px-[20px] */}
-        <Features />
-        <Faq />
-        <Carta />
+        <About />
+        <Menu />
       </div>
       <RilkeContainer />
+      <Gallery />
       <ContactForm />
       <Footer />
     </>

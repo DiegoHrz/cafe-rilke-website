@@ -1,23 +1,24 @@
 "use client";
 import Image from "next/image";
 import logoCafe from "../../public/assets/logo-cafe.png";
-import logoBlack from "../../public/assets/logo-black-navbar.png";
+import logoBlack from "../../public/assets/logo-black.png";
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
 import { useEffect, useLayoutEffect, useState } from "react";
 
 const navLinks = [
-  { name: "Home" },
-  { name: "Acerca" },
-  { name: "Carta" },
-  { name: "Galeria" },
-  { name: "Testimonios" },
-  { name: "Evento" },
-  { name: "Contacto" },
+  { name: "Home", href:'#home' },
+  { name: "Acerca", href:'#acerca' },
+  { name: "Carta", href:'#carta' },
+  { name: "Galeria", href:'#galeria' },
+  { name: "Testimonios", href:'#testimonios' },
+  { name: "Evento", href:'#evento' },
+  { name: "Contacto", href:'#contacto' },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [enterMouse, setEnterMouse] = useState(false)
 
   useLayoutEffect(() => {
     // Set initial state based on current scroll position
@@ -36,30 +37,30 @@ export function Navbar() {
     };
   }, []);
 
-  const styles = {
-    // filter: 'brightness(111%) invert(1)',
-  };
+  const onEnterHandler = () =>{setEnterMouse(true)}
+  const onLeaveHandler = () =>{setEnterMouse(false)}
 
   return (
     <>
       <nav className="hidden lg:flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-0 lg:px-0 lg:py-0">
         <div
-          className={` lg:flex items-center justify-center fixed z-10 top-0 w-full lg:gap-48 ${
-            scrolled ? "bg-white text-black" : "text-white"
+          className={` lg:flex items-center justify-between fixed z-10 top-0 w-full px-20 lg:gap-48 ${ enterMouse && 'hover:bg-white '} ${
+            scrolled ? "bg-white text-black border-b" : "text-white hover:text-black"
           }`}
+          onMouseEnter={onEnterHandler}
+          onMouseLeave={onLeaveHandler}
         >
           <Image
-            src={scrolled ? logoBlack : logoCafe}
+            src={scrolled || enterMouse ? logoBlack : logoCafe}
             alt="Logo"
-            style={styles}
             className={"w-8 h-8 lg:w-40 lg:h-20"}
           />
 
           <div className="hidden lg:flex pl-[74px] gap-x-[40px] italic">
             {navLinks.map((item, index) => (
-              <p className=" -tracking-tighter font-extralight" key={index}>
+              <a className=" -tracking-tighter font-extralight" key={index} href={item.href}>
                 {item.name}
-              </p>
+              </a>
             ))}
           </div>
         </div>
@@ -97,9 +98,9 @@ export function Navbar() {
           <div className="">
             <div className="hidden lg:flex  gap-x-[56px]">
               {navLinks.map((item, index) => (
-                <p className=" font-medium" key={index}>
+                <a className=" font-medium" key={index} href={item.href}>
                   {item.name}
-                </p>
+                </a>
               ))}
             </div>
             <div className="flex gap-x-5 lg:hidden">
