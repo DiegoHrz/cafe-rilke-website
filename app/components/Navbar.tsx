@@ -4,7 +4,7 @@ import logoCafe from "../../public/assets/logo-cafe.png";
 import logoBlack from "../../public/assets/logo-black-navbar.png";
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const navLinks = [
   { name: "Home" },
@@ -19,15 +19,22 @@ const navLinks = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
+  useLayoutEffect(() => {
+    // Set initial state based on current scroll position
+    setScrolled(window.scrollY > 0);
 
-  addEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    // Add event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove event listener on cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const styles = {
     // filter: 'brightness(111%) invert(1)',
