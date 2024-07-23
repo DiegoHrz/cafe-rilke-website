@@ -25,7 +25,7 @@ export function Features() {
           <Image
             src={imageAbout}
             alt="feature 1 image"
-            className="pt-[24px] sm:hidden border-red-500 border w-full px-4 lg:px-0"
+            className="pt-[24px] sm:hidden w-full px-4 lg:px-0"
           />
           <p className="py-[24px] px-4 lg:px-0 text-[#666666] lg:text-[18px] italic">
             Café Rilke es el sueño común de la periodista, filósofa y teóloga
