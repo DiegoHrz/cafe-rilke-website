@@ -48,7 +48,7 @@ export function RilkeContainer() {
         </div>
       </div>
 
-      <div className="relative flex h-full w-full justify-center">
+      {/* <div className="relative flex h-full w-full justify-center">
         <Image
           src={homeCafe}
           alt="Gradient"
@@ -81,9 +81,9 @@ export function RilkeContainer() {
               <Image src={Cnn} alt="" />
               <Image src={Cluth} alt="" />
             </div>
-          </div> */}
+          </div> 
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
