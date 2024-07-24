@@ -1,11 +1,11 @@
-import { ContactForm } from "./components/ContactForm";
-import { Gallery } from "./components/Gallery";
-import { About } from "./components/About";
-import { Footer } from "./components/Footer";
-import { Home } from "./components/Home";
-import { Navbar } from "./components/Navbar";
-import { Menu } from "./components/Menu";
-import { RilkeContainer } from "./components/RilkeContainer";
+import { ContactForm } from "./banners/ContactForm";
+import { Gallery } from "./banners/Gallery";
+import { About } from "./banners/About";
+import { Footer } from "./banners/Footer";
+import { Home } from "./banners/Home";
+import { Navbar } from "./banners/Navbar";
+import { Menu } from "./banners/Menu";
+import { RilkeContainer } from "./banners/RilkeContainer";
 
 export default function App() {
   return (
