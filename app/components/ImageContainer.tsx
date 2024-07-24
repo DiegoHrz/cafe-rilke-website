@@ -18,18 +18,18 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ image }) => {
   return (
     <a href="" className="  overflow-hidden">
       <div
-        className="w-full h-full relative z-10"
+        className="aspect-square relative"
         onMouseEnter={handlerMouseEnter}
         onMouseLeave={handlerMouseLeave}
       >
         <img
           src={`/assets/gallery-instagram/${image}.jpg`}
           alt=""
-          className="object-cover object-center w-full h-full transition-all duration-500 hover:brightness-50  "
+          className="object-cover object-center w-full h-full transition-all duration-500 hover:brightness-50"
         />
         {mouseEnter && (
           <FaInstagram
-            className="z-50 rainbow absolute top-16 right-20"
+            className="rainbow absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
             size={25}
           />
         )}

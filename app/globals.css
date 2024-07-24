@@ -12,36 +12,36 @@ html {
 
 @keyframes rainbow {
   0% {
-    color: #ff0000;
-  }
-  12% {
-    color: #e9831d;
-  }
-  24% {
-    color: #ffff00;
-  }
-  36% {
-    color: #328a26;
-  }
-  48% {
-    color: #2c74c1;
-  }
-  60% {
-    color: #621b95;
-  }
-  72% {
-    color: #f715e0;
-  }
-  84% {
     color: #fff;
   }
+  15% {
+    color: #ff0000;
+  }
+  24% {
+    color: #e9831d;
+  }
+  36% {
+    color: #ffff00;
+  }
+  48% {
+    color: #328a26;
+  }
+  60% {
+    color: #2c74c1;
+  }
+  72% {
+    color: #621b95;
+  }
+  84% {
+    color: #f715e0;
+  }
   100%{
-    color: red;
+    color: #fff;
   }
 }
 
 .rainbow {
-  animation: rainbow 7s linear infinite;
+  animation: rainbow 8s linear infinite;
 }
 /* 
   .landing-container {
