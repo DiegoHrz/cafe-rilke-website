@@ -15,10 +15,13 @@ html {
     color: #fff;
   }
 
-  24% {
+  60% {
     color: #e9831d;
   }
-  36% {
+  80%{
+    color: #c0b6ab;
+  }
+  /* 36% {
     color: #ffff00;
   }
   48% {
@@ -32,14 +35,14 @@ html {
   }
   84% {
     color: #e1be9e;
-  }
+  } */
   100%{
     color: #fff;
   }
 }
 
 .rainbow {
-  animation: rainbow 8s linear infinite;
+  animation: rainbow 5s linear infinite;
 }
 /* 
   .landing-container {

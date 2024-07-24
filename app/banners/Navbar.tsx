@@ -7,18 +7,23 @@ import Menu from "../../public/assets/Menu.svg";
 import { useEffect, useLayoutEffect, useState } from "react";
 
 const navLinks = [
-  { name: "Home", href:'#home' },
-  { name: "Acerca", href:'#acerca' },
-  { name: "Carta", href:'#carta' },
-  { name: "Galeria", href:'#galeria' },
-  { name: "Testimonios", href:'#testimonios' },
-  { name: "Evento", href:'#evento' },
-  { name: "Contacto", href:'#contacto' },
+  { name: "Home", href: "#home" },
+  { name: "Acerca", href: "#acerca" },
+  { name: "Carta", href: "#carta" },
+  { name: "Galeria", href: "#galeria" },
+  { name: "Testimonios", href: "#testimonios" },
+  { name: "Evento", href: "#evento" },
+  { name: "Contacto", href: "#contacto" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [enterMouse, setEnterMouse] = useState(false)
+  const [enterMouse, setEnterMouse] = useState(false);
+  const [clickTab, setClickTab] = useState("Home");
+
+  const tabHandler = (tab: string) => {
+    setClickTab(tab);
+  };
 
   useLayoutEffect(() => {
     // Set initial state based on current scroll position
@@ -37,15 +42,23 @@ export function Navbar() {
     };
   }, []);
 
-  const onEnterHandler = () =>{setEnterMouse(true)}
-  const onLeaveHandler = () =>{setEnterMouse(false)}
+  const onEnterHandler = () => {
+    setEnterMouse(true);
+  };
+  const onLeaveHandler = () => {
+    setEnterMouse(false);
+  };
 
   return (
     <>
       <nav className="hidden lg:flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-0 lg:px-0 lg:py-0">
         <div
-          className={` lg:flex items-center justify-between fixed z-10 top-0 w-full px-20 lg:gap-48 ${ enterMouse && 'hover:bg-white '} ${
-            scrolled ? "bg-white text-black border-b" : "text-white hover:text-black"
+          className={` lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48 ${
+            enterMouse && "hover:bg-white "
+          } ${
+            scrolled
+              ? "bg-white text-black border-b"
+              : "text-white hover:text-black"
           }`}
           onMouseEnter={onEnterHandler}
           onMouseLeave={onLeaveHandler}
@@ -53,12 +66,20 @@ export function Navbar() {
           <Image
             src={scrolled || enterMouse ? logoBlack : logoCafe}
             alt="Logo"
-            className={"w-8 h-8 lg:w-40 lg:h-20"}
+            className={"w-8 h-8 lg:w-28 lg:h-16"}
           />
 
           <div className="hidden lg:flex pl-[74px] gap-x-[40px] italic">
             {navLinks.map((item, index) => (
-              <a className=" -tracking-tighter font-extralight" key={index} href={item.href}>
+              <a
+                className={` -tracking-tighter font-extralight hover:text-rilke-red ${
+                  item.name == clickTab &&
+                  "border-b-2 border-rilke-red text-rilke-red"
+                }`}
+                key={index}
+                href={item.href}
+                onClick={() => tabHandler(item.name)}
+              >
                 {item.name}
               </a>
             ))}
