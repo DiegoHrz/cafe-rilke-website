@@ -3,6 +3,8 @@ import Logo from "../../public/assets/Logo.svg";
 import Facebook from "../../public/assets/Facebook.svg";
 import Twitter from "../../public/assets/X.svg";
 import Feed from "../../public/assets/Feed.svg";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
 
 export function Footer() {
   return (
@@ -19,15 +21,15 @@ export function Footer() {
         <li>Careers</li>
       </ul> */}
 
+      <div className="flex items-center justify-center gap-x-[35px] pt-[40px]">
+        <FaFacebookF size={20} className="text-[#666666]" />
+        <IoMailOutline size={24} className="text-[#666666]" />
+        <FaWhatsapp size={24} className="text-[#666666]" />
+        <FaInstagram size={24} className="text-[#666666]" />
+      </div>
       <p className="pt-[56px] text-center text-[14px] font-medium text-[#666666] sm:pt-5">
         © 2024 Café Rilke. Todos los derechos reservados.
       </p>
-
-      <div className="flex items-center justify-center gap-x-[56px] pt-[40px]">
-        <Image src={Facebook} alt="Facebook" />
-        <Image src={Feed} alt="Feed" />
-        <Image src={Twitter} alt="Twitter" />
-      </div>
     </div>
   );
 }
