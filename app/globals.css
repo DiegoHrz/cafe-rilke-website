@@ -14,9 +14,7 @@ html {
   0% {
     color: #fff;
   }
-  15% {
-    color: #ff0000;
-  }
+
   24% {
     color: #e9831d;
   }
@@ -30,10 +28,10 @@ html {
     color: #2c74c1;
   }
   72% {
-    color: #621b95;
+    color: #b7ed8a;
   }
   84% {
-    color: #f715e0;
+    color: #e1be9e;
   }
   100%{
     color: #fff;

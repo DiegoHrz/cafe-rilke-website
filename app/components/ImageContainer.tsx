@@ -25,7 +25,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ image }) => {
         <img
           src={`/assets/gallery-instagram/${image}.jpg`}
           alt=""
-          className="object-cover object-center w-full h-full transition-all duration-500 hover:brightness-50"
+          className="object-cover object-center w-full h-full transition-all duration-500 hover:brightness-[1.13] hover:scale-105"
         />
         {mouseEnter && (
           <FaInstagram
