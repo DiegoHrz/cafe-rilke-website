@@ -16,7 +16,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ image }) => {
   };
 
   return (
-    <a href="" className="  overflow-hidden">
+    <a href="https://www.instagram.com/caferilkeperu/" target="_blank" className="  overflow-hidden">
       <div
         className="aspect-square relative"
         onMouseEnter={handlerMouseEnter}
