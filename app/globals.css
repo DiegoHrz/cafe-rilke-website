@@ -2,28 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: Aldus;
+* {
+  font-family: Aldus;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  @keyframes rainbow {
-    0% { color: #ff0000; }
-    14% { color: #e7af77; }
-    28% { color: #ffff00; }
-    42% { color: #0b2674; }
-    57% { color: #fff; }
-    71% { color: #4b0082; }
-    85% { color: #e4f715; }
-    100% { color: #ff0000; }
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
   }
-  
-  .rainbow {
-    animation: rainbow 5s linear infinite;
+  12% {
+    color: #e9831d;
   }
+  24% {
+    color: #ffff00;
+  }
+  36% {
+    color: #328a26;
+  }
+  48% {
+    color: #2c74c1;
+  }
+  60% {
+    color: #621b95;
+  }
+  72% {
+    color: #f715e0;
+  }
+  84% {
+    color: #fff;
+  }
+  100%{
+    color: red;
+  }
+}
+
+.rainbow {
+  animation: rainbow 7s linear infinite;
+}
 /* 
   .landing-container {
     background-color: black;
@@ -69,4 +88,3 @@ html {
     border-bottom-left-radius: 200px; /* Ajusta el radio según sea necesario 
     border-bottom-right-radius: 200px;
   } */
-  
