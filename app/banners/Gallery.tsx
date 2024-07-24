@@ -12,7 +12,9 @@ export function Gallery() {
         <h1 className="py-4 text-2xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px]">
           Galería
         </h1>
-       <GalleryContainer/>
+        <GalleryContainer />
+
+        
       </div>
     </div>
   );

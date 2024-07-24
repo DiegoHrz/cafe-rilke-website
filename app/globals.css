@@ -9,3 +9,64 @@
 html {
     scroll-behavior: smooth;
   }
+
+  @keyframes rainbow {
+    0% { color: #ff0000; }
+    14% { color: #e7af77; }
+    28% { color: #ffff00; }
+    42% { color: #0b2674; }
+    57% { color: #fff; }
+    71% { color: #4b0082; }
+    85% { color: #e4f715; }
+    100% { color: #ff0000; }
+  }
+  
+  .rainbow {
+    animation: rainbow 5s linear infinite;
+  }
+/* 
+  .landing-container {
+    background-color: black;
+    height: 110%;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(90deg, white, white,white, white,#000000, #000000,#000000, #000000, #000000, white, white,white,white);
+    /* background: linear-gradient(90deg, #000000, #000000,#000000, #fff8f1, #000000, #000000,#000000);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  }
+  
+  @keyframes color {
+    0% {
+      background-position: 0, 50%;
+    }
+    50% {
+      background-position: 100%, 50%;
+    }
+    100% {
+      background-position: 0, 50%;
+    }
+  }
+  
+  .landing-title {
+    color: red;
+    background-color: black;
+    text-shadow: 0 0 120px rgba(225, 34, 34, 0.7);
+    font-size: 300px;
+    letter-spacing: 10px;
+    margin: 0;
+    background: linear-gradient(
+      to right,
+      rgb(101, 12, 12),
+      rgb(110, 12, 4),
+      rgb(50, 13, 9)
+    ); Ajusta los colores según sea necesario 
+    -webkit-background-clip: text; /* Esto permite que el degradado se aplique solo al texto 
+    background-clip: none;
+    color: transparent; /* Hace que el texto sea transparente, revelando el degradado de fondo 
+    border-bottom-left-radius: 200px; /* Ajusta el radio según sea necesario 
+    border-bottom-right-radius: 200px;
+  } */
+  
