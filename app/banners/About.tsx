@@ -11,16 +11,19 @@ import imageAbout from "../../public/assets/image-about.jpg";
 
 export function About() {
   return (
-    <div className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px]" id='#acerca' >
-      <h1 className="pt-[12px] text-4xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] text-center" >
+    <div
+      className="flex flex-col gap-y-[56px] py-[56px] lg:py-[120px] lg:gap-y-[80px]"
+      id="#acerca"
+    >
+      <h1 className="pt-[12px] text-4xl font-medium text-[#172026] lg:text-[42px] lg:leading-[58px] text-center">
         Acerca de Café Rilke
       </h1>
       <div className="flex flex-col gap-x-6 sm:flex-row ">
         <img
-          src='/assets/image-about.jpg'
+          src="/assets/image-about.jpg"
           alt="Feature 1 image"
           className="w-[450px]  max-w-full  sm:block hidden h-full"
-          style={{ boxSizing: 'border-box' }}
+          style={{ boxSizing: "border-box" }}
         />
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px] flex lg:block flex-col justify-center ">
           <Image
