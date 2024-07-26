@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logoCafe from "../../public/assets/logo-cafe.png";
-import logoBlack from "../../public/assets/logo-black.png";
+import logoBlack from '@/public/assets/logo-black.png'
 import logoBlackCutE from "../../public/assets/logo/logo-black-cut-e.png";
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
