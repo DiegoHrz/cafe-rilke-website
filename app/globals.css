@@ -106,21 +106,21 @@ html {
   position: relative;
 }
 
-.book:hover .cover{
+.book:hover .cover {
   transform: rotateX(10deg) rotateY(-180deg);
 }
 
-.book:hover .page{
+.book:hover .page {
   transform: rotateX(10deg) rotateY(-180deg);
   z-index: 2;
 }
 
-.cover{
+.cover {
   z-index: 1;
   transition: all 3s;
 }
 
-.back-cover{
+.back-cover {
   z-index: -2;
 }
 
@@ -187,100 +187,93 @@ html {
   z-index: -1;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-
-.book{
-	display: flex;
+.book {
+  display: flex;
   justify-content: center;
 }
-#cover{
-	width: 370px;
-	height: 520px;
+#cover {
+  width: 370px;
+  height: 520px;
 }
-.flip-book{
-	width: 370px;
-	height: 520px;
-	position: relative;
-	perspective: 1500px;
+.flip-book {
+  width: 370px;
+  height: 520px;
+  position: relative;
+  perspective: 1500px;
 }
-.flip{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transform-origin: left;
-	transform-style: preserve-3d;
-	transform: rotateY(0deg);
-	transition: .5s;
-	color: #000;
+.flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: 0.5s;
+  color: #000;
 }
-p{
-	font-size: 14px;
-	line-height: 24px;
+p {
+  font-size: 14px;
+  line-height: 24px;
 }
-.front{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 
-	box-sizing: border-box;
+  box-sizing: border-box;
 
-	box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5) 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-.back{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 99;
-	transform: rotateY(180deg);
-	backface-visibility: hidden;
-
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
 }
-.next-btn{
-	position: absolute;
-	bottom: 13px;
-	right: 13px;
-	cursor: pointer;
-	color: #000;
+.next-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #000;
   border: 2px solid red;
 }
-.back-btn{
-	position: absolute;
-	bottom: 13px;
-	right: 13px;
-	cursor: pointer;
-	color: #fff;
+.back-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: #fff;
   border: 2px solid red;
 }
-#p1{
-	z-index: 3;
+#p1 {
+  z-index: 3;
 }
-#p2{
-	z-index: 2;
+#p2 {
+  z-index: 2;
 }
-#p3{
-	z-index: 1;
+#p3 {
+  z-index: 1;
 }
-#c1:checked ~ .flip-book #p1{
-	transform: rotateY(-180deg);
-	z-index: 1;
+#c1:checked ~ .flip-book #p1 {
+  transform: rotateY(-180deg);
+  z-index: 1;
 }
-#c2:checked ~ .flip-book #p2{
-	transform: rotateY(-180deg);
-	z-index: 2;
+#c2:checked ~ .flip-book #p2 {
+  transform: rotateY(-180deg);
+  z-index: 2;
 }
-#c3:checked ~ .flip-book #p3{
-	transform: rotateY(-180deg);
-	z-index: 3;
+#c3:checked ~ .flip-book #p3 {
+  transform: rotateY(-180deg);
+  z-index: 3;
 }
