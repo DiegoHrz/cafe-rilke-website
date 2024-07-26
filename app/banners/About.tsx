@@ -16,17 +16,17 @@ export function About() {
         Acerca de Café Rilke
       </h1>
       <div className="flex flex-col gap-x-6 sm:flex-row ">
-        <Image
-          src={imageAbout}
+        <img
+          src='/assets/image-about.jpg'
           alt="Feature 1 image"
-          className="w-[450px]  max-w-full  sm:block hidden"
+          className="w-[450px]  max-w-full  sm:block hidden h-full"
           style={{ boxSizing: 'border-box' }}
         />
         <div className="sm:w-1/2 lg:py-[56px] lg:pl-[56px] flex lg:block flex-col justify-center ">
           <Image
             src={imageAbout}
             alt="feature 1 image"
-            className="pt-[24px] sm:hidden w-full px-4 lg:px-0"
+            className="pt-[24px] sm:hidden w-full px-4 lg:px-0 "
           />
           <p className="py-[24px] px-4 lg:px-0 text-[#666666] lg:text-[18px] italic">
             Café Rilke es el sueño común de la periodista, filósofa y teóloga
