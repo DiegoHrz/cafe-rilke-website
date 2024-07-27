@@ -16,7 +16,7 @@ export function RilkeContainer() {
       style={{ padding: "100px 0" }}
     >
       <div
-        className=" "
+        className=" md:w-[768px] lg:w-[1024px] "
         style={{
           paddingRight: "15px",
           paddingLeft: "15px",
@@ -24,7 +24,7 @@ export function RilkeContainer() {
           marginLeft: "auto",
         }}
       >
-        <div className="text-center text-[32px] leading-[40px] font-semibold  lg:text-4xl lg:leading-[72px] italic relative">
+        <h1 className="text-center text-[32px] leading-[40px] font-semibold text-2xl  sm:text-4xl lg:leading-[72px] italic relative w-fit mx-auto">
           La Rosa de Rilke
           {/* Rosa Vertical */}
           {/* <img
@@ -41,14 +41,14 @@ export function RilkeContainer() {
           <img
             src="/assets/rose/media-rosa-superior.png"
             alt=""
-            className="absolute top-1/2 left-[90%] lg:left-[60.5%] h-12 brightness-[1.5]   transform -translate-x-1/2 -translate-y-1/2 rotate-90"
+            className="absolute top-1/2 left-[108%]  h-8 sm:h-12 brightness-[1.5]   transform -translate-x-1/2 -translate-y-1/2 rotate-90"
           />
           <img
             src="/assets/rose/media-rosa-inferior2.png"
             alt=""
-            className="absolute top-1/2 left-[9%] lg:left-[39%] h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2 rotate-90 "
+            className="absolute top-1/2 right-[104%]   h-8 sm:h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2 rotate-90  "
           />
-        </div>
+        </h1>
         <p className="text-center mt-20 lg:mt-[50px] mb-3 text-[15px]  lg:leading-7 italic font-light">
           Cuando el poeta Rainer Maria Rilke estudiaba en París, todos los días,
           él y una amiga tomaban el mismo camino a la universidad. Y todos los
