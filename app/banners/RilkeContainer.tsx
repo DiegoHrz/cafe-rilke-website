@@ -9,14 +9,39 @@ import Cnn from "../../public/assets/CNN.svg";
 import Cluth from "../../public/assets/Clutch.svg";
 import homeCafe from "../../public/assets/home-cafe-2.jpg";
 
+
 export function RilkeContainer() {
   return (
-    <div className="pt-4 lg:pt-10 bg-black text-white font-rilke-theme lg:py-10">
-      <div className="px-[20px] lg:px-[200px]">
+    <div
+      className="pt-4 lg:pt-10 bg-black text-white font-rilke-theme lg:py-10 relative"
+      style={{ padding: "100px 0" }}
+    >
+      <div
+        className=" md:w-[970px] lg:w-[1170px] "
+        style={{
+          paddingRight: "15px",
+          paddingLeft: "15px",
+          marginRight: "auto",
+          marginLeft: "auto",
+        }}
+      >
         <h1 className="text-center text-[32px] leading-[40px] font-semibold  lg:text-4xl lg:leading-[72px] italic">
           La Rosa de Rilke
+          <img
+            src="/assets/rose/media-rosa-superior.png"
+            alt=""
+            className="absolute top-[20px] left-[640px] h-32 brightness-[10]"
+          />
+          <img
+            src="/assets/rose/media-rosa-inferior.png"
+            alt=""
+            className="absolute top-[63px] left-[671px] h-24 brightness-[10]"
+          />
         </h1>
-        <p className="text-center pt-6 text-sm lg:text-sm lg:leading-7 italic font-light ">
+        <p
+          className="text-center mt-[30px] mb-3 text-[15px]  lg:leading-7 italic font-light"
+
+        >
           Cuando el poeta Rainer Maria Rilke estudiaba en París, todos los días,
           él y una amiga tomaban el mismo camino a la universidad. Y todos los
           días pasaron por una señora sentada en el suelo, pidiendo limosna. La
@@ -30,11 +55,15 @@ export function RilkeContainer() {
           pies, por primera vez levanta sus ojos. Levanta sus ojos, se para,
           toma la rosa, la coloca sobre su corazón y se va. Se va y desaparece
           por toda una semana.
-          <br />
-          <br /> Después de esta semana, vuelve nuevamente y sigue su vida de
-          antes, sentada en el suelo, pidiendo limosna. La amiga de Rilke,
-          asombrada, le pregunta a él: De qué habrá vivido esta mujer todos
-          estos días sin dinero? Y Rilke le contesta: De la rosa.
+        </p>
+        <p
+          className="text-center mt-8 mb-3 text-[15px] lg:text-sm lg:leading-7 italic font-light"
+          
+        >
+          Después de esta semana, vuelve nuevamente y sigue su vida de antes,
+          sentada en el suelo, pidiendo limosna. La amiga de Rilke, asombrada,
+          le pregunta a él: De qué habrá vivido esta mujer todos estos días sin
+          dinero? Y Rilke le contesta: De la rosa.
         </p>
       </div>
 
