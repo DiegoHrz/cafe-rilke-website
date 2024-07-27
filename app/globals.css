@@ -277,3 +277,17 @@ p {
   transform: rotateY(-180deg);
   z-index: 3;
 }
+
+@keyframes custom-pulse {
+  0%, 100% {
+
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.009);
+  }
+}
+
+.animate-custom-pulse {
+  animation: custom-pulse 10s infinite;
+}

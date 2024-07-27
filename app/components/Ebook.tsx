@@ -9,7 +9,7 @@ const Ebook = () => {
       {/* <div id="cover">
         <img src="/assets/menu/carta-01.jpeg" />
       </div> */}
-      <div className="flip-book">
+      <div className="flip-book animate-custom-pulse">
         <div className="flip" id="p1">
           {/* Pagina 2 */}
           <div className="back p-4 bg-[#DCDEDD] rounded-xl overflow-hidden shadow-lg">
@@ -73,7 +73,7 @@ const Ebook = () => {
         {/* Pagina 6 */}
 
         <div className="flip " id="p3">
-          <div className="back p-4 bg-[#DCDEDD] rounded-lg relative overflow-hidden">
+          <div className="back p-4 bg-[#DCDEDD] rounded-lg relative overflow-hidden shadow-2xl shadow-gray-600">
             <img
               src="/assets/menu/carta-05.jpeg"
               className="border-2 border-[#9A753B] h-full w-full"
