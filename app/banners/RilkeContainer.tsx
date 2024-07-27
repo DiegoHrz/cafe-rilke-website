@@ -13,11 +13,11 @@ import homeCafe from "../../public/assets/home-cafe-2.jpg";
 export function RilkeContainer() {
   return (
     <div
-      className="pt-4 lg:pt-10 bg-black text-white font-rilke-theme lg:py-10 relative"
+      className="pt-4 lg:pt-10 bg-black text-white font-rilke-theme lg:py-10 "
       style={{ padding: "100px 0" }}
     >
       <div
-        className=" md:w-[970px] lg:w-[1170px] "
+        className=" "
         style={{
           paddingRight: "15px",
           paddingLeft: "15px",
@@ -25,21 +25,21 @@ export function RilkeContainer() {
           marginLeft: "auto",
         }}
       >
-        <h1 className="text-center text-[32px] leading-[40px] font-semibold  lg:text-4xl lg:leading-[72px] italic">
+        <div className="text-center text-[32px] leading-[40px] font-semibold  lg:text-4xl lg:leading-[72px] italic relative">
           La Rosa de Rilke
           <img
             src="/assets/rose/media-rosa-superior.png"
             alt=""
-            className="absolute top-[20px] left-[640px] h-32 brightness-[10]"
+            className="absolute bottom-[39%] lg:bottom-[37%] left-1/2 h-12   transform -translate-x-1/2 -translate-y-1/2"
           />
           <img
-            src="/assets/rose/media-rosa-inferior.png"
+            src="/assets/rose/media-rosa-inferior2.png"
             alt=""
-            className="absolute top-[63px] left-[671px] h-24 brightness-[10]"
+            className="absolute top-[163%] lg:top-[120%] left-1/2 h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2"
           />
-        </h1>
+        </div>
         <p
-          className="text-center mt-[30px] mb-3 text-[15px]  lg:leading-7 italic font-light"
+          className="text-center mt-20 lg:mt-[50px] mb-3 text-[15px]  lg:leading-7 italic font-light"
 
         >
           Cuando el poeta Rainer Maria Rilke estudiaba en París, todos los días,
