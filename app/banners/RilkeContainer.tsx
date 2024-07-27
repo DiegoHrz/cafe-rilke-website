@@ -9,7 +9,6 @@ import Cnn from "../../public/assets/CNN.svg";
 import Cluth from "../../public/assets/Clutch.svg";
 import homeCafe from "../../public/assets/home-cafe-2.jpg";
 
-
 export function RilkeContainer() {
   return (
     <div
@@ -27,7 +26,8 @@ export function RilkeContainer() {
       >
         <div className="text-center text-[32px] leading-[40px] font-semibold  lg:text-4xl lg:leading-[72px] italic relative">
           La Rosa de Rilke
-          <img
+          {/* Rosa Vertical */}
+          {/* <img
             src="/assets/rose/media-rosa-superior.png"
             alt=""
             className="absolute bottom-[39%] lg:bottom-[37%] left-1/2 h-12   transform -translate-x-1/2 -translate-y-1/2"
@@ -36,12 +36,20 @@ export function RilkeContainer() {
             src="/assets/rose/media-rosa-inferior2.png"
             alt=""
             className="absolute top-[163%] lg:top-[120%] left-1/2 h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2"
+          /> */}
+          {/* Rosa Horizontal */}
+          <img
+            src="/assets/rose/media-rosa-superior.png"
+            alt=""
+            className="absolute top-1/2 left-[90%] lg:left-[60.5%] h-12 brightness-[1.5]   transform -translate-x-1/2 -translate-y-1/2 rotate-90"
+          />
+          <img
+            src="/assets/rose/media-rosa-inferior2.png"
+            alt=""
+            className="absolute top-1/2 left-[9%] lg:left-[39%] h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2 rotate-90 "
           />
         </div>
-        <p
-          className="text-center mt-20 lg:mt-[50px] mb-3 text-[15px]  lg:leading-7 italic font-light"
-
-        >
+        <p className="text-center mt-20 lg:mt-[50px] mb-3 text-[15px]  lg:leading-7 italic font-light">
           Cuando el poeta Rainer Maria Rilke estudiaba en París, todos los días,
           él y una amiga tomaban el mismo camino a la universidad. Y todos los
           días pasaron por una señora sentada en el suelo, pidiendo limosna. La
@@ -56,10 +64,7 @@ export function RilkeContainer() {
           toma la rosa, la coloca sobre su corazón y se va. Se va y desaparece
           por toda una semana.
         </p>
-        <p
-          className="text-center mt-8 mb-3 text-[15px] lg:text-sm lg:leading-7 italic font-light"
-          
-        >
+        <p className="text-center mt-8 mb-3 text-[15px] lg:text-sm lg:leading-7 italic font-light">
           Después de esta semana, vuelve nuevamente y sigue su vida de antes,
           sentada en el suelo, pidiendo limosna. La amiga de Rilke, asombrada,
           le pregunta a él: De qué habrá vivido esta mujer todos estos días sin
