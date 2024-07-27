@@ -22,16 +22,19 @@ export function Menu() {
 
   return (
     <div className="py-[48px] lg:py-[60px]">
-      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px]">
-        Carta - Cafés y Panes
+      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3">
+        Carta
+      </h1>
+      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3">
+        Cafés y Panes
       </h1>
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-16">
-        Carta - Comidas y Cocteles
+        Comidas y Cocteles
       </h1>
 
       {/* <Flipbook /> */}
       {/* <Book /> */}
-      <Ebook/>
+      <Ebook />
     </div>
   );
 }

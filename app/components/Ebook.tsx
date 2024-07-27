@@ -1,7 +1,12 @@
+import Link from "next/link";
 import React from "react";
 
 const Ebook = () => {
+
+ 
+
   return (
+    <a href='/Pdf' target="_blank" >
     <div className="book pt-8">
       <input type="checkbox" id="c1" style={{ display: "none" }} />
       <input type="checkbox" id="c2" style={{ display: "none" }} />
@@ -104,6 +109,7 @@ const Ebook = () => {
         </div>
       </div>
     </div>
+    </a>
   );
 };
 
