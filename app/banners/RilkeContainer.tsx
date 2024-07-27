@@ -29,23 +29,13 @@ export function RilkeContainer() {
           suelo, esperando las monedas que algunas personas le iba a tirar a sus
           pies, por primera vez levanta sus ojos. Levanta sus ojos, se para,
           toma la rosa, la coloca sobre su corazón y se va. Se va y desaparece
-          por toda una semana.<br/><br/> Después de esta semana, vuelve nuevamente y sigue
-          su vida de antes, sentada en el suelo, pidiendo limosna. La amiga de
-          Rilke, asombrada, le pregunta a él: De qué habrá vivido esta mujer
-          todos estos días sin dinero? Y Rilke le contesta: De la rosa.
+          por toda una semana.
+          <br />
+          <br /> Después de esta semana, vuelve nuevamente y sigue su vida de
+          antes, sentada en el suelo, pidiendo limosna. La amiga de Rilke,
+          asombrada, le pregunta a él: De qué habrá vivido esta mujer todos
+          estos días sin dinero? Y Rilke le contesta: De la rosa.
         </p>
-
-        <div className="flex w-full pt-8 justify-center gap-x-6 ">
-          <button className="bg-[#4328EB] w-1/2 py-4 px-8 text-white rounded-[4px] lg:w-fit">
-            Try for free
-          </button>
-          <button className="w-1/2 text-[#4328EB] flex items-center justify-center gap-x-2 lg:w-fit">
-            View Pricing
-            <span>
-              <Image src={BlurArrow} alt="Learn more" />
-            </span>
-          </button>
-        </div>
       </div>
 
       {/* <div className="relative flex h-full w-full justify-center">
@@ -69,7 +59,7 @@ export function RilkeContainer() {
               backgroundSize: "cover",
             }}
           /> */}
-{/* 
+      {/* 
           <div className="flex w-full flex-col items-center lg:container lg:flex-row lg:justify-between lg:px-20">
             <p className="text-[#FFFFFF] text-center lg:text-[18px]">
               Trusted by these companies
