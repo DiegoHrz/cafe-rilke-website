@@ -41,7 +41,7 @@ export function RilkeContainer() {
           <img
             src="/assets/rose/media-rosa-superior.png"
             alt=""
-            className="absolute top-1/2 left-[108%]  h-8 sm:h-12 brightness-[1.5]   transform -translate-x-1/2 -translate-y-1/2 rotate-90"
+            className="absolute top-1/2 left-[110%]  h-8 sm:h-12 brightness-[1.5]   transform -translate-x-1/2 -translate-y-1/2 rotate-90"
           />
           <img
             src="/assets/rose/media-rosa-inferior2.png"
