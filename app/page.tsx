@@ -12,11 +12,10 @@ export default function App() {
     <>
       <Navbar />
       <Home />
-      <div className=" lg:container lg:px-20 mx-auto">
-        {/* px-[20px] */}
+      <div id="acerca" className="lg:container lg:px-20 mx-auto">
         <About />
-        <Menu />
       </div>
+      <Menu />
       <RilkeContainer />
       <Gallery />
       <ContactForm />

@@ -38,7 +38,10 @@ export function ContactForm() {
 
   return (
     //  GRADIENTE  bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500
-    <div className="w-full bg-gradient-to-br from-[#F5F5F5] via-[#F5F5F5] to-gray-300 py-[56px] px-[32px] text-center lg:my-[0px] lg:px-[200px] lg:py-20">
+    <div
+      className="w-full bg-gradient-to-br from-[#F5F5F5] via-[#F5F5F5] to-gray-300 py-[56px] px-[32px] text-center lg:my-[0px] lg:px-[200px] lg:py-20"
+      id="contacto"
+    >
       <h1 className=" text-4xl font-medium lg:text-[35px] leading-[64px] ">
         Contactanos
       </h1>

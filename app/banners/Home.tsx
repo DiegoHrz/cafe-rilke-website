@@ -11,7 +11,7 @@ import homeCafe from "../../public/assets/home-cafe-2.jpg";
 
 export function Home() {
   return (
-    <div className="pt-4 lg:pt-0">
+    <div className="pt-4 lg:pt-0" id='home'>
       <div className="px-[20px] lg:px-[280px]">
 
       </div>

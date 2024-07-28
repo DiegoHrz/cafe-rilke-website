@@ -21,7 +21,7 @@ export function Menu() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   return (
-    <div className="py-[48px] lg:py-[60px]">
+    <div className="py-[48px] lg:py-[60px]" id="carta">
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3">
         Carta
       </h1>
