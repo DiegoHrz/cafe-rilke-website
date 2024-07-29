@@ -24,7 +24,7 @@ export function RilkeContainer() {
           marginLeft: "auto",
         }}
       >
-        <h1 className="text-center text-[32px] leading-[40px] font-semibold text-2xl  sm:text-4xl lg:leading-[72px] italic relative w-fit mx-auto">
+        <h1 className="text-center text-[32px] leading-[40px] font-bold text-2xl  sm:text-4xl lg:leading-[72px] italic relative w-fit mx-auto">
           La Rosa de Rilke
           {/* Rosa Vertical */}
           {/* <img
@@ -49,7 +49,7 @@ export function RilkeContainer() {
             className="absolute top-1/2 right-[104%]   h-8 sm:h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2 rotate-90  "
           />
         </h1>
-        <p className="text-center mt-20 lg:mt-[50px] mb-3 text-[15px]  lg:leading-7 italic font-light">
+        <p className="text-center mt-20 lg:mt-[50px] mb-3 text-[15px]  lg:leading-7 italic font-light font-rilke-aldus">
           Cuando el poeta Rainer Maria Rilke estudiaba en París, todos los días,
           él y una amiga tomaban el mismo camino a la universidad. Y todos los
           días pasaron por una señora sentada en el suelo, pidiendo limosna. La

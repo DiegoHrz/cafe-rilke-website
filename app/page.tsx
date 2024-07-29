@@ -13,8 +13,8 @@ export default function App() {
       <Navbar />
       <Home />
       <div id="acerca" className="lg:container lg:px-20 mx-auto">
-        <About />
       </div>
+        <About />
       <Menu />
       <RilkeContainer />
       <Gallery />

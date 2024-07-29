@@ -2,8 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Aldo3";
+  font-weight: 300;
+  src: url("/assets/fonts/Aldus.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Garamond";
+  src: url("/assets/fonts/Garamond.ttf") format("truetype");
+}
+
+
+
+@font-face {
+  font-family: 'Monecias';
+  src: url('/fonts/Monecias-Regular.ttf') format('truetype');
+  font-weight: 800; /* Regular weight */
+  font-style: normal;
+}
+
+
 * {
-  font-family: Aldus;
+  font-family: Aldo;
 }
 
 html {
@@ -215,10 +237,7 @@ html {
   transition: 0.5s;
   color: #000;
 }
-p {
-  font-size: 14px;
-  line-height: 24px;
-}
+
 .front {
   position: absolute;
   width: 100%;
@@ -279,8 +298,8 @@ p {
 }
 
 @keyframes custom-pulse {
-  0%, 100% {
-
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
