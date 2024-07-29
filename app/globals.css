@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Aldo3";
-  font-weight: 300;
+  font-family: "Aldus1";
+
   src: url("/assets/fonts/Aldus.ttf") format("truetype");
 }
 
@@ -18,14 +18,12 @@
 
 @font-face {
   font-family: 'Monecias';
-  src: url('/fonts/Monecias-Regular.ttf') format('truetype');
-  font-weight: 800; /* Regular weight */
-  font-style: normal;
+  src: url('/assets/fonts/Monecias-Regular.ttf') format("truetype");
 }
 
 
 * {
-  font-family: Aldo;
+  font-family: Aldus1;
 }
 
 html {

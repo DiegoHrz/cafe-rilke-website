@@ -14,10 +14,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        "rilke-aldo": "Aldo",
+        "rilke-aldus": "Aldus1",
         "rilke-garamond": "Garamond",
 
-        "rilke-monecias": "Monecias",
+        "rilke-monecias": 'Monecias',
       },
       colors: {
         "rilke-red": "#E92933",

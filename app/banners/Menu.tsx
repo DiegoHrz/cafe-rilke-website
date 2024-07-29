@@ -21,14 +21,14 @@ export function Menu() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   return (
-    <div className="py-[48px] lg:py-[60px]" id="carta">
-      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3">
+    <div className="py-[48px] lg:py-[60px] " id="carta">
+      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
         Carta
       </h1>
-      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3">
+      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
         Cafés y Panes
       </h1>
-      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-16">
+      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-16 font-rilke-monecias">
         Comidas y Cocteles
       </h1>
 
