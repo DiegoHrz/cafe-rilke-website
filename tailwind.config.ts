@@ -16,8 +16,7 @@ const config: Config = {
       fontFamily: {
         "rilke-aldus": "Aldus1",
         "rilke-garamond": "Garamond",
-
-        "rilke-monecias": 'Monecias',
+        "rilke-monecias": "Monecias",
       },
       colors: {
         "rilke-red": "#E92933",
