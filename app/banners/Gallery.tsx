@@ -10,7 +10,7 @@ export function Gallery() {
   return (
     <div className="flex flex-col w-full py-12 lg:py-[3.75rem] lg:px-[1.875rem] lg:flex-row lg:gap-x-6" id='galeria'>
       <div className="w-full  lg:py-8 ">
-        <div className="flex flex-col justify-center items-center py-10 md:py-14">
+        <div className="flex flex-col justify-center items-center  md:py-14">
           <h1 className="py-3 md:py-1 text-xs font-semibold text-[#172026] lg:text-xs lg:leading-7 tracking-[0.25em] md:tracking-[0.5em] font-rilke-monecias">
               INSTAGRAM
           </h1>
