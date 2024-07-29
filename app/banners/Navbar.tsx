@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import logoCafe from "../../public/assets/logo-cafe.png";
-import logoBlack from "../../public/assets/logo-black-no-bg.png";
+import logoBlack from "../../public/assets/logo/logo-no-bg/logo-black-no-bg.png";
 import logoBlackCutE from "../../public/assets/logo/logo-black-cut-e.png";
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
@@ -67,7 +67,7 @@ export function Navbar() {
           <Image
             src={scrolled || enterMouse ? logoBlack : logoCafe}
             alt="Logo"
-            className={"w-8 h-8 lg:w-28 lg:h-16"}
+            className={"w-8 h-8 lg:w-fit lg:h-16"}
           />
 
           <div className="hidden lg:flex pl-[74px] gap-x-[40px] italic">
