@@ -22,6 +22,7 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [enterMouse, setEnterMouse] = useState(false);
   const { currentSection, setSelectedTab, isLoading, setIsLoading } = useNavStore();
+  const [clickHamburgerMenu, setClickHamburgerMenu] = useState(false)
 
   const tabHandler = (tab: string) => {
     setSelectedTab(tab.toLowerCase());

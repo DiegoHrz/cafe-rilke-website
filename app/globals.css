@@ -8,19 +8,15 @@
   src: url("/assets/fonts/Aldus.ttf") format("truetype");
 }
 
-
 @font-face {
   font-family: "Garamond";
   src: url("/assets/fonts/Garamond.ttf") format("truetype");
 }
 
-
-
 @font-face {
-  font-family: 'Monecias';
-  src: url('/assets/fonts/Monecias-Regular.ttf') format("truetype");
+  font-family: "Monecias";
+  src: url("/assets/fonts/Monecias-Regular.ttf") format("truetype");
 }
-
 
 * {
   font-family: Aldus1;
@@ -311,4 +307,40 @@ html {
 
 .shadow-border-b {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUpSub {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }50%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.animate-fade-title {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.animate-fade-subtitle {
+  animation: fadeInUpSub 2s ease-out forwards;
+  
 }
