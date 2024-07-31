@@ -115,7 +115,7 @@ export function Navbar() {
       </div> */}
       </nav>
 
-      <nav className=" lg:hidden w-full items-center justify-between mt-[-16px]  lg:container lg:mx-0 lg:px-0 lg:py-0 ">
+      <nav className=" lg:hidden w-full items-center justify-between mt-[-16px]  lg:container lg:mx-0 lg:px-0 lg:py-0  py-2">
         <div
           className={` flex items-center justify-between fixed z-10 top-0 w-full py-2  px-6 lg:px-0 text-white    ${
             scrolled &&
