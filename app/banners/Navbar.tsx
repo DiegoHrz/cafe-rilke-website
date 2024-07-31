@@ -66,7 +66,7 @@ export function Navbar() {
           enterMouse && "hover:bg-white "
         } ${
           scrolled
-            ? "bg-white text-black "
+            ? "bg-white text-black shadow-border-b"
             : "text-white hover:text-black"
         }`}
         onMouseEnter={onEnterHandler}
