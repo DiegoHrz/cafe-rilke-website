@@ -2,10 +2,10 @@
 import Image from "next/image";
 import logoCafe from "../../public/assets/logo-cafe.png";
 import logoBlack from "../../public/assets/logo/logo-no-bg/logo-black-no-bg.png";
-import logoBlackCutE from "../../public/assets/logo/logo-black-cut-e.png";
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
 import { useEffect, useLayoutEffect, useState } from "react";
+import { useNavStore } from '../../store/useNavStore';
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -17,31 +17,37 @@ const navLinks = [
   { name: "Contacto", href: "#contacto" },
 ];
 
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [enterMouse, setEnterMouse] = useState(false);
-  const [clickTab, setClickTab] = useState("Home");
+  const { currentSection, setSelectedTab, isLoading, setIsLoading } = useNavStore();
 
   const tabHandler = (tab: string) => {
-    setClickTab(tab);
+    setSelectedTab(tab.toLowerCase());
   };
 
   useLayoutEffect(() => {
-    // Set initial state based on current scroll position
-    setScrolled(window.scrollY > 0);
-
     const handleScroll = () => {
       setScrolled(window.scrollY > 0);
     };
 
-    // Add event listener
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
-    // Remove event listener on cleanup
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Set isLoading to false after a short delay
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [setIsLoading]);
 
   const onEnterHandler = () => {
     setEnterMouse(true);
@@ -50,42 +56,46 @@ export function Navbar() {
     setEnterMouse(false);
   };
 
+
+
   return (
     <>
-      <nav className="hidden lg:flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-0 lg:px-0 lg:py-0">
-        <div
-          className={` lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48 ${
-            enterMouse && "hover:bg-white "
-          } ${
-            scrolled
-              ? "bg-white text-black border-b"
-              : "text-white hover:text-black"
-          }`}
-          onMouseEnter={onEnterHandler}
-          onMouseLeave={onLeaveHandler}
-        >
-          <Image
-            src={scrolled || enterMouse ? logoBlack : logoCafe}
-            alt="Logo"
-            className={"w-8 h-8 lg:w-fit lg:h-16"}
-          />
+   <nav className="hidden lg:flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-0 lg:px-0 lg:py-0">
+      <div
+        className={`lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48 ${
+          enterMouse && "hover:bg-white "
+        } ${
+          scrolled
+            ? "bg-white text-black border-b"
+            : "text-white hover:text-black"
+        }`}
+        onMouseEnter={onEnterHandler}
+        onMouseLeave={onLeaveHandler}
+      >
+        <Image
+          src={scrolled || enterMouse ? logoBlack : logoCafe}
+          alt="Logo"
+          className={"w-8 h-8 lg:w-28 lg:h-16"}
+        />
 
-          <div className="hidden lg:flex pl-[74px] gap-x-[40px] italic">
-            {navLinks.map((item, index) => (
-              <a
-                className={` -tracking-tighter font-extralight hover:text-rilke-red ${
-                  item.name == clickTab &&
-                  "border-b-2 border-rilke-red text-rilke-red"
-                }`}
-                key={index}
-                href={item.href}
-                onClick={() => tabHandler(item.name)}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
+        <div className="hidden lg:flex pl-[74px] gap-x-[40px] italic">
+          {navLinks.map((item) => (
+            <a
+              className={`-tracking-tighter font-extralight hover:text-rilke-red ${
+                !isLoading && item.href.slice(1) === currentSection
+                  ? "border-b-2 border-rilke-red text-rilke-red"
+                  : ""
+              }`}
+              key={item.href}
+              href={item.href}
+              onClick={() => tabHandler(item.name)}
+            >
+              {item.name}
+            </a>
+          ))}
         </div>
+      </div>
+
 
         <div className="flex gap-x-5 lg:hidden">
           <Image src={Menu} alt="Menu Button" className="lg:hidden bg-black" />

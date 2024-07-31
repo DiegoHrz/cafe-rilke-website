@@ -6,19 +6,38 @@ import { Home } from "./banners/Home";
 import { Navbar } from "./banners/Navbar";
 import { Menu } from "./banners/Menu";
 import { RilkeContainer } from "./banners/RilkeContainer";
+import { ScrollSpy } from "./components/ScrollSpy";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <Home />
-      <div id="acerca" className="lg:container lg:px-20 mx-auto">
-      </div>
+      <ScrollSpy />
+      
+      <section id="home">
+        <Home />
+      </section>
+
+      <section id="acerca">
         <About />
-      <Menu />
-      <RilkeContainer />
-      <Gallery />
-      <ContactForm />
+      </section>
+
+      <section id="carta">
+        <Menu />
+      </section>
+
+      <section id="evento">
+        <RilkeContainer />
+      </section>
+
+      <section id="galeria">
+        <Gallery />
+      </section>
+
+      <section id="contacto">
+        <ContactForm />
+      </section>
+
       <Footer />
     </>
   );

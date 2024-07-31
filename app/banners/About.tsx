@@ -11,7 +11,7 @@ import imageAbout from "../../public/assets/image-about.jpg";
 
 export function About() {
   return (
-    <div className="flex flex-col py-[56px] lg:py-[120px] " id="#acerca">
+    <div className="flex flex-col py-[56px] lg:py-[120px] " id="acerca">
       <h1 className="pt-[12px] text-2xl  text-[#172026] lg:text-[42px] lg:leading-[58px] text-center pb-10 font-rilke-monecias">
         Acerca de Café Rilke
       </h1>
