@@ -5,7 +5,7 @@ import logoBlack from "../../public/assets/logo/logo-no-bg/logo-black-no-bg.png"
 import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
 import { useEffect, useLayoutEffect, useState } from "react";
-import { useNavStore } from '../../store/useNavStore';
+import { useNavStore } from "../../store/useNavStore";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -17,12 +17,12 @@ const navLinks = [
   { name: "Contacto", href: "#contacto" },
 ];
 
-
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [enterMouse, setEnterMouse] = useState(false);
-  const { currentSection, setSelectedTab, isLoading, setIsLoading } = useNavStore();
-  const [clickHamburgerMenu, setClickHamburgerMenu] = useState(false)
+  const { currentSection, setSelectedTab, isLoading, setIsLoading } =
+    useNavStore();
+  const [clickHamburgerMenu, setClickHamburgerMenu] = useState(false);
 
   const tabHandler = (tab: string) => {
     setSelectedTab(tab.toLowerCase());
@@ -42,7 +42,6 @@ export function Navbar() {
   }, []);
 
   useEffect(() => {
-
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 100);
@@ -57,51 +56,46 @@ export function Navbar() {
     setEnterMouse(false);
   };
 
-
-
   return (
     <>
-   <nav className="hidden lg:flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-0 lg:px-0 lg:py-0">
-      <div
-        className={`lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48 transition-colors duration-1000 ease-in-out ${
-          enterMouse && "hover:bg-white "
-        } ${
-          scrolled
-            ? "bg-white text-black shadow-border-b"
-            : "text-white hover:text-black"
-        }`}
-        onMouseEnter={onEnterHandler}
-        onMouseLeave={onLeaveHandler}
-        style={{transitionDuration: '1500ms'}}
-      >
-        <Image
-          src={scrolled || enterMouse ? logoBlack : logoCafe}
-          alt="Logo"
-          className={"w-8 h-8 lg:w-28 lg:h-16"}
-        />
+      <nav className="hidden md:flex w-full items-center justify-between px-[20px] py-[16px] md:container md:mx-0 md:px-0 md:py-0">
+        <div
+          className={`md:flex items-center justify-between fixed z-10 top-0 w-full md:py-2 md:px-10 lg:px-20 md  lg:gap-4 md:gap-2 md:text-sm lg:text-base transition-colors duration-1000 ease-in-out ${
+            enterMouse && "hover:bg-white "
+          } ${
+            scrolled
+              ? "bg-white text-black shadow-border-b"
+              : "text-white hover:text-black"
+          }`}
+          onMouseEnter={onEnterHandler}
+          onMouseLeave={onLeaveHandler}
+          style={{ transitionDuration: "1250ms" }}
+        >
+          <Image
+            src={scrolled || enterMouse ? logoBlack : logoCafe}
+            alt="Logo"
+            className={"w-8 h-8 md:w-28 md:h-16"}
+          />
 
-        <div className="hidden lg:flex pl-[74px] gap-x-[40px] italic">
-          {navLinks.map((item) => (
-            <a
-              className={`-tracking-tighter font-extralight hover:text-rilke-red ${
-                !isLoading && item.href.slice(1) === currentSection
-                  ? "border-b-2 border-rilke-red text-rilke-red"
-                  : ""
-              }`}
-              key={item.href}
-              href={item.href}
-              onClick={() => tabHandler(item.name)}
-            >
-              {item.name}
-            </a>
-          ))}
+          <div className="hidden md:flex pl-[74px] md:gap-x-[2rem] lg:gap-x-[40px] italic">
+            {navLinks.map((item) => (
+              <a
+                className={`-tracking-tighter font-extralight hover:text-rilke-red ${
+                  !isLoading && item.href.slice(1) === currentSection
+                    ? "border-b-2 border-rilke-red text-rilke-red"
+                    : ""
+                }`}
+                key={item.href}
+                href={item.href}
+                onClick={() => tabHandler(item.name)}
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
 
 
-        <div className="flex gap-x-5 lg:hidden">
-          <Image src={Menu} alt="Menu Button" className="lg:hidden bg-black" />
-        </div>
 
         {/* <div className="flex gap-x-5">
         <p className="hidden lg:block font-medium  pr-[56px]"></p>
@@ -115,32 +109,50 @@ export function Navbar() {
       </div> */}
       </nav>
 
-      <nav className=" lg:hidden w-full items-center justify-between mt-[-16px]  lg:container lg:mx-0 lg:px-0 lg:py-0  py-2">
+      <nav className=" md:hidden w-full items-center justify-between mt-[-16px]  md:container md:mx-0 md:px-0 md:py-0  py-2 relative">
         <div
-          className={` flex items-center justify-between fixed z-10 top-0 w-full py-2  px-6 lg:px-0 text-white    ${
+          className={` flex items-center justify-between fixed z-10 top-0 w-full py-2  px-6 md:px-0 text-white    ${
             scrolled &&
+            "bg-white text-black border-b-2 border-b-[#E0E0E0] border-opacity-80"
+          } ${
+            clickHamburgerMenu &&
             "bg-white text-black border-b-2 border-b-[#E0E0E0] border-opacity-80"
           }`}
         >
           <div>
             <Image
-              src={scrolled ? logoBlack : logoCafe}
+              src={scrolled || clickHamburgerMenu ? logoBlack : logoCafe}
               alt="Logo"
               className={scrolled ? "w-24 h-15" : "w-24 h-15"}
             />
           </div>
-          <div className="">
-            <div className="hidden lg:flex  gap-x-[56px]">
+
+          <div className="flex gap-x-5 md:hidden">
+            <Image
+              src={Menu}
+              alt="Menu Button"
+              className="md:hidden "
+              onClick={() => setClickHamburgerMenu(!clickHamburgerMenu)}
+            />
+          </div>
+          {clickHamburgerMenu && (
+            <div className="absolute top-16 left-0 flex flex-col w-screen border  gap-x-[56px] justify-center items-center bg-white text-black">
               {navLinks.map((item, index) => (
-                <a className=" font-medium" key={index} href={item.href}>
+                <a
+                  className={`-tracking-tighter font-extralight hover:text-rilke-red py-1 ${
+                    !isLoading && item.href.slice(1) === currentSection
+                      ? " text-rilke-red"
+                      : ""
+                  }`}
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => tabHandler(item.name)}
+                >
                   {item.name}
                 </a>
               ))}
             </div>
-            <div className="flex gap-x-5 lg:hidden">
-              <Image src={Menu} alt="Menu Button" className="lg:hidden " />
-            </div>
-          </div>
+          )}
         </div>
 
         {/* <div className="flex gap-x-5">

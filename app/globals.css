@@ -312,7 +312,7 @@ html {
 @keyframes fadeInUpSub {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(150px);
   }50%{
     opacity: 0;
   }
@@ -341,6 +341,6 @@ html {
 }
 
 .animate-fade-subtitle {
-  animation: fadeInUpSub 2s ease-out forwards;
+  animation: fadeInUpSub 2.2s ease-out forwards;
   
 }

@@ -12,7 +12,7 @@ import logoCafe from "../../public/assets/logo-cafe.png";
 
 export function Home() {
   return (
-    <div className=" h-screen border-2 border-red-500" id="home">
+    <div className=" h-screen" id="home">
       <div className="relative flex h-full w-full justify-center  bg-parallax bg-cover bg-center bg-no-repeat">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
           <img
