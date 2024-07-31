@@ -62,15 +62,16 @@ export function Navbar() {
     <>
    <nav className="hidden lg:flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-0 lg:px-0 lg:py-0">
       <div
-        className={`lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48  ${
+        className={`lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48 transition-colors duration-1000 ease-in-out ${
           enterMouse && "hover:bg-white "
         } ${
           scrolled
-            ? "bg-white text-black border-b"
+            ? "bg-white text-black "
             : "text-white hover:text-black"
         }`}
         onMouseEnter={onEnterHandler}
         onMouseLeave={onLeaveHandler}
+        style={{transitionDuration: '1500ms'}}
       >
         <Image
           src={scrolled || enterMouse ? logoBlack : logoCafe}
