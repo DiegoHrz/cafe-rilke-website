@@ -13,12 +13,12 @@ import logoCafe from "../../public/assets/logo-cafe.png";
 export function Home() {
   return (
     <div className="pt-4 lg:pt-0 h-screen" id="home">
-      <div className="relative flex h-full w-full justify-center">
-        <img
+      <div className="relative flex h-full w-full justify-center bg-fixed bg-parallax bg-cover bg-center bg-no-repeat">
+        {/* <img
           src="/assets/home-cafe-2.jpg"
           alt=""
           className="min-h-[500px] object-cover lg:h-auto"
-        />
+        /> */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
           <img
             src="/assets/logo/logo-no-bg/logo-white-no-bg.png"

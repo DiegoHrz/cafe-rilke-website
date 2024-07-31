@@ -41,7 +41,7 @@ export function Navbar() {
   }, []);
 
   useEffect(() => {
-    // Set isLoading to false after a short delay
+
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 100);
@@ -62,7 +62,7 @@ export function Navbar() {
     <>
    <nav className="hidden lg:flex w-full items-center justify-between px-[20px] py-[16px] lg:container lg:mx-0 lg:px-0 lg:py-0">
       <div
-        className={`lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48 ${
+        className={`lg:flex items-center justify-between fixed z-10 top-0 w-full lg:py-2 px-20 lg:gap-48  ${
           enterMouse && "hover:bg-white "
         } ${
           scrolled
