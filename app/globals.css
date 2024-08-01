@@ -335,7 +335,6 @@ html {
 }
 
 
-
 .animate-fade-title {
   animation: fadeInUp 1.5s ease-out forwards;
 }
@@ -343,4 +342,38 @@ html {
 .animate-fade-subtitle {
   animation: fadeInUpSub 2.2s ease-out forwards;
   
+}
+
+@keyframes collapseIn {
+  0% {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  100% {
+    max-height: 600px; /* Ajusta esto según la altura esperada del contenido */
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+
+@keyframes collapseOut {
+  0% {
+    max-height: 600px; /* Ajusta esto según la altura esperada del contenido */
+    opacity: 1;
+    overflow: hidden;
+  }
+  100% {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+.animate-collapse-in {
+  animation: collapseIn 1.5s ease forwards;
+}
+
+.animate-collapse-out {
+  animation: collapseOut 1.5s ease forwards;
 }

@@ -23,6 +23,7 @@ export function Navbar() {
   const { currentSection, setSelectedTab, isLoading, setIsLoading } =
     useNavStore();
   const [clickHamburgerMenu, setClickHamburgerMenu] = useState(false);
+  const [menuClass, setMenuClass] = useState('');
 
   const tabHandler = (tab: string) => {
     setSelectedTab(tab.toLowerCase());
@@ -54,6 +55,17 @@ export function Navbar() {
   };
   const onLeaveHandler = () => {
     setEnterMouse(false);
+  };
+  const toggleMenu = () => {
+    if (clickHamburgerMenu) {
+      setMenuClass('animate-collapse-out');
+      setTimeout(() => {
+        setClickHamburgerMenu(false);
+      }, 1500); // Duración de la animación de salida
+    } else {
+      setClickHamburgerMenu(true);
+      setMenuClass('animate-collapse-in');
+    }
   };
 
   return (
@@ -95,8 +107,6 @@ export function Navbar() {
           </div>
         </div>
 
-
-
         {/* <div className="flex gap-x-5">
         <p className="hidden lg:block font-medium  pr-[56px]"></p>
 
@@ -132,14 +142,18 @@ export function Navbar() {
               src={Menu}
               alt="Menu Button"
               className="md:hidden "
-              onClick={() => setClickHamburgerMenu(!clickHamburgerMenu)}
+              onClick={toggleMenu}
             />
           </div>
           {clickHamburgerMenu && (
-            <div className="absolute top-16 left-0 flex flex-col w-screen border  gap-x-[56px] justify-center items-center bg-white text-black">
+        <div
+        className={`absolute top-16 left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${
+          menuClass
+        }`}
+      >
               {navLinks.map((item, index) => (
                 <a
-                  className={`-tracking-tighter font-extralight hover:text-rilke-red py-1 ${
+                  className={`-tracking-tighter font-extralight hover:text-rilke-red py-[0.6rem] ${
                     !isLoading && item.href.slice(1) === currentSection
                       ? " text-rilke-red"
                       : ""
