@@ -29,23 +29,29 @@ export function Navbar() {
   const tabHandler = (tab: string) => {
     setSelectedTab(tab.toLowerCase());
   };
-  const tabAndToggle=(tab: string)=>{
-    toggleMenu()
-    tabHandler(tab)
-  }
+
+  const tabAndToggle = (tab: string) => {
+    toggleMenu();
+    tabHandler(tab);
+  };
 
   useLayoutEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 0);
+      if (window.scrollY > 0 && clickHamburgerMenu) {
+        setTimeout(() => {
+          setClickHamburgerMenu(false);
+        }, 700);
+        setMenuClass("animate-collapse-out");
+      }
     };
 
-    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [clickHamburgerMenu]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -58,9 +64,11 @@ export function Navbar() {
   const onEnterHandler = () => {
     setEnterMouse(true);
   };
+
   const onLeaveHandler = () => {
     setEnterMouse(false);
   };
+
   const toggleMenu = () => {
     if (clickHamburgerMenu) {
       setMenuClass("animate-collapse-out");
@@ -77,7 +85,7 @@ export function Navbar() {
     <>
       <nav className="hidden md:flex w-full items-center justify-between px-[20px] py-[16px] md:container md:mx-0 md:px-0 md:py-0">
         <div
-          className={`md:flex items-center justify-between fixed z-10 top-0 w-full md:py-2 md:px-10 lg:px-20 md  lg:gap-4 md:gap-2 md:text-sm lg:text-base transition-colors duration-1000 ease-in-out ${
+          className={`md:flex items-center justify-between fixed z-10 top-0 w-full md:py-2 md:px-10 lg:px-20 md lg:gap-4 md:gap-2 md:text-sm lg:text-base transition-colors duration-1000 ease-in-out ${
             enterMouse && "hover:bg-white "
           } ${
             scrolled
@@ -111,26 +119,12 @@ export function Navbar() {
             ))}
           </div>
         </div>
-
-        {/* <div className="flex gap-x-5">
-        <p className="hidden lg:block font-medium  pr-[56px]"></p>
-
-        <div className="flex items-center gap-x-2">
-          <Image src={User} alt="User Profile" />
-          <span className="hidden font-medium text-[#36485C] lg:block"></span>
-        </div>
-
-        <Image src={Menu} alt="Menu Button" className="lg:hidden" />
-      </div> */}
       </nav>
 
-      <nav className=" md:hidden w-full items-center justify-between mt-[-16px]  md:container md:mx-0 md:px-0 md:py-0  py-2 relative">
+      <nav className="md:hidden w-full items-center justify-between mt-[-16px] md:container md:mx-0 md:px-0 md:py-0 py-2 relative">
         <div
-          className={` flex items-center justify-between fixed z-10 top-0 w-full py-2  px-6 md:px-0 text-white    ${
-            scrolled &&
-            "bg-white text-black border-b-2 border-b-[#E0E0E0] border-opacity-80"
-          } ${
-            clickHamburgerMenu &&
+          className={`flex items-center justify-between fixed z-10 top-0 w-full py-2 px-6 md:px-0 text-white ${
+            (scrolled || clickHamburgerMenu) &&
             "bg-white text-black border-b-2 border-b-[#E0E0E0] border-opacity-80"
           }`}
         >
@@ -138,7 +132,7 @@ export function Navbar() {
             <Image
               src={scrolled || clickHamburgerMenu ? logoBlack : logoCafe}
               alt="Logo"
-              className={scrolled ? "w-24 h-15" : "w-24 h-15"}
+              className="w-24 h-15"
             />
           </div>
 
@@ -153,7 +147,7 @@ export function Navbar() {
             <div
               className={`absolute top-[4.7rem] left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
             >
-              {navLinks.map((item, index) => (
+              {navLinks.map((item) => (
                 <a
                   className={`-tracking-tighter font-extralight hover:text-rilke-red py-[0.6rem] ${
                     !isLoading && item.href.slice(1) === currentSection
@@ -170,17 +164,6 @@ export function Navbar() {
             </div>
           )}
         </div>
-
-        {/* <div className="flex gap-x-5">
-        <p className="hidden lg:block font-medium  pr-[56px]"></p>
-
-        <div className="flex items-center gap-x-2">
-          <Image src={User} alt="User Profile" />
-          <span className="hidden font-medium text-[#36485C] lg:block"></span>
-        </div>
-
-        <Image src={Menu} alt="Menu Button" className="lg:hidden" />
-      </div> */}
       </nav>
     </>
   );

@@ -14,11 +14,12 @@ export default function App() {
     <>
       <Navbar />
       <ScrollSpy />
-      
+
       <section id="home">
         <Home />
+
+        <Marketing />
       </section>
-      <Marketing/>
       <section id="acerca">
         <About />
       </section>
