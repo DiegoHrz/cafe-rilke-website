@@ -14,10 +14,8 @@ export default function App() {
     <>
       <Navbar />
       <ScrollSpy />
-
       <section id="home">
         <Home />
-
         <Marketing />
       </section>
       <section id="acerca">
