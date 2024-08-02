@@ -27,8 +27,8 @@ const Marketing = () => {
       </div>
       <div className=" text-center  text-[#999999] text-2xl max-w-[30rem]  md:max-w-[50rem] mx-auto lg:mx-0 ">
         <p className="md:hidden pb-5">
-          "La inauguración del café propició el encuentro del arte, la música y
-          la gastronomía"
+          &apos;La inauguración del café propició el encuentro del arte, la
+          música y la gastronomía&apos;
         </p>
         <a
           href="https://cosas.pe/vida-social/68622/cafe-rilke/"
@@ -42,8 +42,8 @@ const Marketing = () => {
           />
         </a>
         <p className="hidden md:block mt-2">
-          "La inauguración del café propició el encuentro del arte, la música y
-          la gastronomía"
+          &apos;La inauguración del café propició el encuentro del arte, la
+          música y la gastronomía&apos;
         </p>
       </div>
     </div>

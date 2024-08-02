@@ -6,6 +6,7 @@ import User from "../../public/assets/User.svg";
 import Menu from "../../public/assets/Menu.svg";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useNavStore } from "../../store/useNavStore";
+import { IoIosMenu } from "react-icons/io";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -23,7 +24,7 @@ export function Navbar() {
   const { currentSection, setSelectedTab, isLoading, setIsLoading } =
     useNavStore();
   const [clickHamburgerMenu, setClickHamburgerMenu] = useState(false);
-  const [menuClass, setMenuClass] = useState('');
+  const [menuClass, setMenuClass] = useState("");
 
   const tabHandler = (tab: string) => {
     setSelectedTab(tab.toLowerCase());
@@ -58,13 +59,13 @@ export function Navbar() {
   };
   const toggleMenu = () => {
     if (clickHamburgerMenu) {
-      setMenuClass('animate-collapse-out');
+      setMenuClass("animate-collapse-out");
       setTimeout(() => {
         setClickHamburgerMenu(false);
       }, 1500); // Duración de la animación de salida
     } else {
       setClickHamburgerMenu(true);
-      setMenuClass('animate-collapse-in');
+      setMenuClass("animate-collapse-in");
     }
   };
 
@@ -138,19 +139,16 @@ export function Navbar() {
           </div>
 
           <div className="flex gap-x-5 md:hidden">
-            <Image
-              src={Menu}
-              alt="Menu Button"
-              className="md:hidden "
+            <IoIosMenu
+            size={32}
+              className="md:hidden text-rilke-red"
               onClick={toggleMenu}
             />
           </div>
           {clickHamburgerMenu && (
-        <div
-        className={`absolute top-16 left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${
-          menuClass
-        }`}
-      >
+            <div
+              className={`absolute top-16 left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
+            >
               {navLinks.map((item, index) => (
                 <a
                   className={`-tracking-tighter font-extralight hover:text-rilke-red py-[0.6rem] ${
