@@ -3,9 +3,10 @@ import { RiStarSFill } from "react-icons/ri";
 
 const Marketing = () => {
   return (
-    <div className="flex flex-col md:flex-row md:w-full justify-center py-10 md:py-20 px-6 gap-6 lg:gap-0 bg-[#F7F7F7] animate-fade-title">
+    <div className="flex flex-col md:flex-row md:w-full justify-center py-9 md:py-20 px-6 gap-6 lg:gap-0 bg-[#F7F7F7] animate-fade-title">
       <div className="flex flex-col  text-center md:text-left">
-        <div className="hidden md:flex justify-center md:justify-normal">
+
+        <div className="flex justify-center md:justify-normal py-3">
           <RiStarSFill className="text-rilke-red text-2xl" />
           <RiStarSFill className="text-rilke-red text-2xl" />
           <RiStarSFill className="text-rilke-red text-2xl" />
@@ -14,19 +15,16 @@ const Marketing = () => {
         </div>
 
         <div className="text-[#4D4D4D] text-4xl  md:text-4xl  md:min-w-48 font-semibold">
-          <p>4.9</p>
-          <p>reviews</p>
+          <p className="hidden md:block text-[#4D4D4D] text-4xl  md:text-4xl  md:min-w-48 font-semibold">
+            4.9-star
+          </p>
+          <p className="hidden md:block">reviews</p>
+          <p className="block md:hidden" >4.9 reviews</p>
         </div>
-        <div className="flex md:hidden justify-center md:justify-normal">
-          <RiStarSFill className="text-rilke-red text-2xl" />
-          <RiStarSFill className="text-rilke-red text-2xl" />
-          <RiStarSFill className="text-rilke-red text-2xl" />
-          <RiStarSFill className="text-rilke-red text-2xl" />
-          <RiStarSFill className="text-rilke-red text-2xl" />
-        </div>
+
       </div>
-      <div className=" text-center  text-[#999999] text-2xl max-w-[30rem]  md:max-w-[50rem] mx-auto lg:mx-0 ">
-        <p className="md:hidden pb-5">
+      <div className=" text-center  text-[#999999] text-xl md:text-2xl max-w-[30rem]  md:max-w-[50rem] mx-auto lg:mx-0 ">
+        <p className="md:hidden pb-6">
           &apos;La inauguración del café propició el encuentro del arte, la
           música y la gastronomía&apos;
         </p>
