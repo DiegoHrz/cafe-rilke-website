@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Aldus1";
 
@@ -313,7 +317,8 @@ html {
   0% {
     opacity: 0;
     transform: translateY(150px);
-  }50%{
+  }
+  50% {
     opacity: 0;
   }
 
@@ -334,14 +339,12 @@ html {
   }
 }
 
-
 .animate-fade-title {
   animation: fadeInUp 1.5s ease-out forwards;
 }
 
 .animate-fade-subtitle {
   animation: fadeInUpSub 2.2s ease-out forwards;
-  
 }
 
 @keyframes collapseIn {
@@ -376,4 +379,20 @@ html {
 
 .animate-collapse-out {
   animation: collapseOut 1.5s ease forwards;
+}
+
+@keyframes opacity-infinite {
+  0% {
+    opacity: 0.6;
+  }
+  50%{
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.animation-opacity-infinite{
+  animation: opacity-infinite 4s ease infinite;
 }

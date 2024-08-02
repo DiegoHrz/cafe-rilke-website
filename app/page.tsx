@@ -7,6 +7,7 @@ import { Navbar } from "./banners/Navbar";
 import { Menu } from "./banners/Menu";
 import { RilkeContainer } from "./banners/RilkeContainer";
 import { ScrollSpy } from "./components/ScrollSpy";
+import Marketing from "./banners/Marketing";
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
       <section id="home">
         <Home />
       </section>
-
+      <Marketing/>
       <section id="acerca">
         <About />
       </section>

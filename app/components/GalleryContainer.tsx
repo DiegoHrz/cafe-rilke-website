@@ -8,7 +8,7 @@ const GalleryContainer = () => {
         <ImageContainer image="ravioli-yuca" />
         <ImageContainer image="tartaleta-fresa" />
         <ImageContainer image="tacu-tacu" />
-        <ImageContainer image="almuerzo-frejoles" />
+        <ImageContainer image="causa" />
         <ImageContainer image="cafe-rilke" />
         <ImageContainer image="estofado-vino" />
       </div>
