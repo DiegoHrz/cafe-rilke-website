@@ -11,22 +11,22 @@ import imageAbout from "../../public/assets/image-about.jpg";
 
 export function About() {
   return (
-    <div className="flex flex-col py-16 lg:py-36 " id="acerca">
+    <div className="flex flex-col py-16 lg:py-36 px-4 md:px-8 lg:px-4" id="acerca">
       <h1 className="pt-[12px] text-2xl  text-[#172026] lg:text-[42px] lg:leading-[58px] text-center pb-10 font-rilke-monecias">
         Acerca de Café Rilke
       </h1>
-      <div className="flex flex-col lg:flex-row gap-x-6 items-center  mx-auto">
-        <div className=" ">
+      <div className="flex flex-col lg:flex-row gap-x-6 items-center  mx-auto gap-2">
+        <div className="">
           <img
             src="/assets/image-about.jpg"
             alt="Feature 1 image"
-            className="w-96 p-2 lg:p-0"
+            className="w-[29rem] p-2 lg:p-0"
           />
         </div>
 
         <div className=" ">
-          <div className="  md:w-[550px]  py-[26px] flex flex-col justify-center items-center  text-[#666666] text-[15px] md:text-[16px] italic  leading-7">
-            <p className="px-6 font-rilke-aldus">
+          <div className=" 2 lg:w-[32rem]  py-[26px] flex flex-col justify-center items-center   text-[15px] md:text-[16px] italic  leading-7">
+            <p className="mx-[0.63rem] font-rilke-aldus text-[#666666]">
               Café Rilke es el sueño común de la periodista, filósofa y teóloga
               alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de
               la Jara. Crearon el Café Rilke según el lema del obíspo brasileño,
@@ -49,9 +49,12 @@ export function About() {
               <button className="border-2 border-rilke-red  rounded-3xl px-6 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
                 Descargar Menu
               </button>
+                <a href="#galeria">
               <button className="border-2 border-rilke-red rounded-3xl px-6 py-2 lg:px-9 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
+
                 Ver Galería
               </button>
+                </a>
             </div>
           </div>
         </div>

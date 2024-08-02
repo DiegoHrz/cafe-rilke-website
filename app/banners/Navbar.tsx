@@ -45,7 +45,7 @@ export function Navbar() {
         setMenuClass("animate-collapse-out");
       }
     };
-    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
