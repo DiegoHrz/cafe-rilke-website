@@ -348,7 +348,7 @@ html {
 @keyframes collapseIn {
   0% {
     max-height: 0;
-    opacity: 0;
+    opacity: 0.9;
     overflow: hidden;
   }
   100% {
@@ -366,17 +366,17 @@ html {
   }
   100% {
     max-height: 0;
-    opacity: 0;
+    opacity: 0.95;
     overflow: hidden;
   }
 }
 
 .animate-collapse-in {
-  animation: collapseIn 1.5s ease forwards;
+  animation: collapseIn 0.5s ease forwards;
 }
 
 .animate-collapse-out {
-  animation: collapseOut 1.5s ease forwards;
+  animation: collapseOut 0.5s ease forwards;
 }
 
 @keyframes opacity-infinite {

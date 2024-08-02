@@ -29,6 +29,10 @@ export function Navbar() {
   const tabHandler = (tab: string) => {
     setSelectedTab(tab.toLowerCase());
   };
+  const tabAndToggle=(tab: string)=>{
+    toggleMenu()
+    tabHandler(tab)
+  }
 
   useLayoutEffect(() => {
     const handleScroll = () => {
@@ -62,7 +66,7 @@ export function Navbar() {
       setMenuClass("animate-collapse-out");
       setTimeout(() => {
         setClickHamburgerMenu(false);
-      }, 1500); // Duración de la animación de salida
+      }, 500); // Duración de la animación de salida
     } else {
       setClickHamburgerMenu(true);
       setMenuClass("animate-collapse-in");
@@ -140,14 +144,14 @@ export function Navbar() {
 
           <div className="flex gap-x-5 md:hidden">
             <IoIosMenu
-            size={32}
+              size={32}
               className="md:hidden text-rilke-red"
               onClick={toggleMenu}
             />
           </div>
           {clickHamburgerMenu && (
             <div
-              className={`absolute top-16 left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
+              className={`absolute top-[4.7rem] left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
             >
               {navLinks.map((item, index) => (
                 <a
@@ -158,7 +162,7 @@ export function Navbar() {
                   }`}
                   key={item.href}
                   href={item.href}
-                  onClick={() => tabHandler(item.name)}
+                  onClick={() => tabAndToggle(item.name)}
                 >
                   {item.name}
                 </a>
