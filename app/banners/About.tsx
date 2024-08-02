@@ -25,7 +25,7 @@ export function About() {
         </div>
 
         <div className=" ">
-          <div className="  md:w-[550px]  py-[26px] flex flex-col justify-center items-center  text-[#666666] text-[15px] md:text-[16px] italic opacity-80 leading-7">
+          <div className="  md:w-[550px]  py-[26px] flex flex-col justify-center items-center  text-[#666666] text-[15px] md:text-[16px] italic  leading-7">
             <p className="px-6 font-rilke-aldus">
               Café Rilke es el sueño común de la periodista, filósofa y teóloga
               alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de
@@ -46,10 +46,10 @@ export function About() {
               lugar sano y saludable.
             </p>
             <div className="flex justify-center items-center gap-4 lg:gap-10 pt-10">
-              <button className="border-2 border-rilke-red rounded-3xl px-6 py-3 lg:px-8 italic hover:bg-rilke-red hover:text-white text-[#741d1d] !font-light">
+              <button className="border-2 border-rilke-red  rounded-3xl px-6 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
                 Descargar Menu
               </button>
-              <button className="border-2 border-rilke-red rounded-3xl px-6 py-3 lg:px-9 italic hover:bg-rilke-red hover:text-white text-[#666666]  !font-light">
+              <button className="border-2 border-rilke-red rounded-3xl px-6 py-2 lg:px-9 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
                 Ver Galería
               </button>
             </div>
