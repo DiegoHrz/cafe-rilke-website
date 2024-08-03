@@ -11,7 +11,10 @@ import imageAbout from "../../public/assets/image-about.jpg";
 
 export function About() {
   return (
-    <div className="flex flex-col py-16 lg:py-36 px-4 md:px-8 lg:px-4" id="acerca">
+    <div
+      className="flex flex-col py-16 lg:py-36 px-4 md:px-8 lg:px-4"
+      id="acerca"
+    >
       <h1 className="pt-[12px] text-2xl  text-[#172026] lg:text-[42px] lg:leading-[58px] text-center pb-10 font-rilke-monecias">
         Acerca de Café Rilke
       </h1>
@@ -49,12 +52,11 @@ export function About() {
               <button className="border-2 border-rilke-red  rounded-3xl px-6 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
                 Descargar Menu
               </button>
-                <a href="#galeria">
-              <button className="border-2 border-rilke-red rounded-3xl px-6 py-2 lg:px-9 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
-
-                Ver Galería
-              </button>
-                </a>
+              <a href="#galeria">
+                <button className="border-2 border-rilke-red rounded-3xl px-6 py-2 lg:px-9 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
+                  Ver Galería
+                </button>
+              </a>
             </div>
           </div>
         </div>
