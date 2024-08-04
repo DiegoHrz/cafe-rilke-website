@@ -36,7 +36,7 @@ const Marketing = () => {
           <img
             src="/assets/cosas/cosas.png"
             alt=""
-            className=" h-12 md:h-10 animation-opacity-infinite mx-auto   w-fit "
+            className=" h-12 md:h-10 animation-opacity-infinite mx-auto    "
           />
         </a>
         <p className="hidden md:block mt-2">

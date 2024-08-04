@@ -102,7 +102,7 @@ export function Navbar() {
             className={"w-8 h-8 md:w-28 md:h-16"}
           />
 
-          <div className="hidden md:flex pl-[74px] md:gap-x-[2rem] lg:gap-x-[40px] italic">
+          <div className="hidden md:flex pl-[74px] md:gap-x-[2rem] lg:gap-x-[40px] ">
             {navLinks.map((item) => (
               <a
                 className={`-tracking-tighter font-extralight hover:text-rilke-red ${
