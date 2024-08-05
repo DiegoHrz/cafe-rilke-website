@@ -18,7 +18,7 @@ const CardSlider = () => {
 
 
   return (
-    <div className="flex items-center justify-center min-h-screen  bg-gray-500">
+    <div className="flex items-center justify-center  bg-gray-500">
       <div className="container max-w-7xl mx-auto px-4">
         <Swiper
           modules={[Pagination, Navigation]}
@@ -31,11 +31,10 @@ const CardSlider = () => {
             prevEl: '.swiper-button-prev',
           }}
           breakpoints={{
-            0: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            0: { slidesPerView: 3 },
+            768: { slidesPerView: 5 }
           }}
-          className="slider-wrapper overflow-hidden mb-14"
+          className="slider overflow-hidden "
         >
           {users.map((user, index) => (
             <SwiperSlide key={index} className="card-item p-9 flex flex-col items-center justify-center rounded-lg backdrop-blur-md bg-white/20 border border-white/50">
@@ -43,7 +42,7 @@ const CardSlider = () => {
               <h2 className="text-white text-xl font-semibold">{user.name}</h2>
               <p className="text-gray-200 text-lg font-medium mt-3 mb-10">{user.profession}</p>
               <button className="text-xl px-9 py-2.5 text-[#030728] rounded-md font-medium cursor-pointer bg-white border border-transparent transition-all duration-200 hover:bg-white/10 hover:border-white hover:text-white">
-                Message
+                Pidelo
               </button>
             </SwiperSlide>
           ))}
