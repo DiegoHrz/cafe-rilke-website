@@ -8,6 +8,7 @@ import { Menu } from "./banners/Menu";
 import { RilkeContainer } from "./banners/RilkeContainer";
 import { ScrollSpy } from "./components/ScrollSpy";
 import Marketing from "./banners/Marketing";
+import CardSlider from "./components/CardSlider";
 // import Carousel from "./components/Carousel";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       <section id="home">
         <Home />
         {/* <Carousel/> */}
+        <CardSlider />
         <Marketing />
       </section>
       <section id="acerca">
