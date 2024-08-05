@@ -307,6 +307,21 @@ html {
   animation: custom-pulse 10s infinite;
 }
 
+@keyframes custom-pulse-2 {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.animate-custom-pulse {
+  animation: custom-pulse-2 4s infinite;
+}
+
+
 .shadow-border-b {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
