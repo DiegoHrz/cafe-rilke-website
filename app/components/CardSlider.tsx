@@ -41,7 +41,7 @@ const CardSlider = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center bg-gray-500 border-4 border-blue-500">
+    <div className="flex items-center justify-center   py-12">
       <Swiper
         modules={[Pagination, Navigation]}
         loop={true}
@@ -55,16 +55,16 @@ const CardSlider = () => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        // breakpoints={{
-        //   0: { slidesPerView: 3 },
-        //   768: { slidesPerView: 5 },
-        // }}
-        className="slider overflow-visible border-4 border-red-500"
+        breakpoints={{
+          0: { slidesPerView: 3 },
+          768: { slidesPerView: 5 },
+        }}
+        className="slider overflow-visible max-w-7xl"
       >
         {users.map((user, index) => (
           <SwiperSlide
             key={index}
-            className="card-item p-9 my-20 flex flex-col items-center justify-center rounded-lg backdrop-blur-md bg-white border border-white/50 relative"
+            className="card-item p-9 my-20 flex flex-col items-center justify-center rounded-lg backdrop-blur-md bg-white border  relative"
             style={{ width: "300px" }} // Fixed width for each slide
           >
             <img

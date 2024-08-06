@@ -3,7 +3,7 @@ import { RiStarSFill } from "react-icons/ri";
 
 const Marketing = () => {
   return (
-    <div className="flex flex-col md:flex-row md:w-full justify-center py-9 md:py-20 px-6 gap-6 lg:gap-0 bg-[#F7F7F7] animate-fade-title">
+    <div className="flex flex-col md:flex-row md:w-full justify-center py-9 md:py-20 px-6 gap-6 lg:gap-0  animate-fade-title">
       <div className="flex flex-col  text-center md:text-left">
 
         <div className="flex justify-center md:justify-normal py-3">
