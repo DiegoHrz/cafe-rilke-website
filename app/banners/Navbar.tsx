@@ -10,11 +10,11 @@ import { IoIosMenu } from "react-icons/io";
 
 const navLinks = [
   { name: "Home", href: "#home" },
-  { name: "Acerca", href: "#acerca" },
   { name: "Carta", href: "#carta" },
   { name: "Galeria", href: "#galeria" },
   { name: "Testimonios", href: "#testimonios" },
   { name: "Evento", href: "#evento" },
+  { name: "Acerca", href: "#acerca" },
   { name: "Contacto", href: "#contacto" },
 ];
 
@@ -168,4 +168,3 @@ export function Navbar() {
     </>
   );
 }
-

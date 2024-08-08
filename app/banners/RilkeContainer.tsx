@@ -27,7 +27,7 @@ export function RilkeContainer() {
         <h1 className="text-center text-[32px] leading-[40px]  text-2xl  sm:text-4xl lg:leading-[72px]  relative w-fit mx-auto italic font-semibold" style={{fontFamily:'Aldus'}} >
           La Rosa de Rilke
           {/* Rosa Vertical */}
-          {/* <img
+          <img
             src="/assets/rose/media-rosa-superior.png"
             alt=""
             className="absolute bottom-[39%] lg:bottom-[37%] left-1/2 h-12   transform -translate-x-1/2 -translate-y-1/2"
@@ -36,9 +36,9 @@ export function RilkeContainer() {
             src="/assets/rose/media-rosa-inferior2.png"
             alt=""
             className="absolute top-[163%] lg:top-[120%] left-1/2 h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2"
-          /> */}
+          />
           {/* Rosa Horizontal */}
-          <img
+          {/* <img
             src="/assets/rose/media-rosa-superior.png"
             alt=""
             className="absolute top-1/2 left-[110%]  h-8 sm:h-12 brightness-[1.5]   transform -translate-x-1/2 -translate-y-1/2 rotate-90"
@@ -47,7 +47,7 @@ export function RilkeContainer() {
             src="/assets/rose/media-rosa-inferior2.png"
             alt=""
             className="absolute top-1/2 right-[104%]   h-8 sm:h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2 rotate-90  "
-          />
+          /> */}
         </h1>
         <p className="text-center mt-20 lg:mt-[50px] mb-3 text-[15px]  lg:leading-7 italic font-light ">
           Cuando el poeta Rainer Maria Rilke estudiaba en París, todos los días,
