@@ -25,7 +25,7 @@ const CardSlider = () => {
     },
     {
       name: "Fetuccini a la Huancaina con Lomo",
-      profession: "Marketing Specialist",
+      profession: "Ingredientes Ingredientes Ingredientes Ingredientes Ingredientes Ingredientes",
       image: "/assets/best-sellers/best-seller-1.webp",
     },
     {
@@ -59,7 +59,7 @@ const CardSlider = () => {
           800: { slidesPerView: 3, spaceBetween: 50 },
           1024: { slidesPerView: 4, spaceBetween: 80 },
         }}
-        className="slider overflow-visible w-full flex flex-wrap justify-center gap-4 shadow-[0_0_50px_rgba(0,0,0,0.25)] lg:rounded-3xl"
+        className="slider overflow-visible w-full flex flex-wrap justify-center gap-4 shadow-[0px_0_50px_rgba(0,0,0,0.3)] lg:rounded-3xl"
       >
         {users.map((user, index) => (
           // <div
@@ -73,11 +73,11 @@ const CardSlider = () => {
             //     aspectRatio: '1/1.3'
             // }}
           >
-            <div>
+            <div className="">
               <img
                 src={user.image}
                 alt={user.name}
-                className=" rounded-full"
+                className=" rounded-full h-[85%] w-[85%] max-h-full max-w-full mx-auto shadow-[10px_10px_50px_rgba(0,0,0,1)]  object-left"
               />
             </div>
             <div className=" h-24">
@@ -90,8 +90,8 @@ const CardSlider = () => {
                 {user.profession}
               </p>
             </div>
-            <div className="border-2 border-yellow-500">
-              <button className="text-xs sm:text-sm md:text-base px-3 sm:px-4 py-1 sm:py-2 text-white rounded-md font-medium cursor-pointer border border-transparent transition-all duration-200 hover:bg-white/10 hover:border-white hover:text-white font-sans bg-rilke-red animate-custom-pulse">
+            <div className="border-2 border-yellow-500 flex justify-center items-center">
+              <button className="text-xs sm:text-sm md:text-lg px-3 sm:px-4 py-1 sm:py-2  font-medium cursor-pointer border border-rilke-red transition-all duration-1000 bg-rilke-red hover:scale-110 hover:shadow-red-700  hover:shadow-[0_0_15px_rgba(0,0,0,0.25)] text-white font-sans w-4/6 animate-custom-pulse hover:font-black">
                 Pidelo
               </button>
             </div>

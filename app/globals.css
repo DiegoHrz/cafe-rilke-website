@@ -299,12 +299,12 @@ html {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.96);
+    transform: scale(0.98);
   }
 }
 
 .animate-custom-pulse {
-  animation: custom-pulse 10s infinite;
+  animation: custom-pulse 4s infinite;
 }
 
 @keyframes custom-pulse-2 {
@@ -317,7 +317,7 @@ html {
   }
 }
 
-.animate-custom-pulse {
+.animate-custom-pulse-2 {
   animation: custom-pulse-2 4s infinite;
 }
 
