@@ -26,7 +26,7 @@ export function Menu() {
         Carta
       </h1>
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
-        Cafés y Panes
+        Cafes y Panes
       </h1>
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-16 font-rilke-monecias">
         Comidas y Cocteles

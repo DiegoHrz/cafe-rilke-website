@@ -43,7 +43,7 @@ export function ContactForm() {
       id="contacto"
     >
       <h1 className=" text-4xl font-medium lg:text-[35px] leading-[64px] font-rilke-monecias">
-        Contáctanos
+        Contacta
       </h1>
       <p className="font-medium text-xl pt-6 lg:pt-[40px] lg:text-[20px] italic">
         Cualquier sugerencia, escribanos
