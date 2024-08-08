@@ -41,12 +41,12 @@ const CardSlider = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto flex flex-col justify-center gap-4 px-5 md:px-9">
+    <div className="max-w-7xl mx-auto flex flex-col justify-center gap-4 ">
       <Swiper
         modules={[Pagination, Navigation]}
         loop={true}
         grabCursor={true}
-        spaceBetween={20}
+
         slidesPerView={3}
         centeredSlides={true}
         pagination={{ clickable: true, dynamicBullets: true }}
@@ -55,10 +55,11 @@ const CardSlider = () => {
           prevEl: ".swiper-button-prev",
         }}
         breakpoints={{
-          0: { slidesPerView: 3, spaceBetween: 1 },
-          768: { slidesPerView: 5, spaceBetween: 15 },
+          0: { slidesPerView: 2, spaceBetween: 30 },
+          800: { slidesPerView: 3, spaceBetween: 50 },
+          1024: { slidesPerView: 4, spaceBetween: 80 },
         }}
-        className="slider overflow-visible w-full flex flex-wrap justify-center gap-4"
+        className="slider overflow-visible w-full flex flex-wrap justify-center gap-4 shadow-[0_0_50px_rgba(0,0,0,0.25)] lg:rounded-3xl"
       >
         {users.map((user, index) => (
           // <div
@@ -67,7 +68,7 @@ const CardSlider = () => {
           // >
           <SwiperSlide
             key={index}
-            className="card-item  flex flex-col items-center justify-center rounded-lg backdrop-blur-md bg-white  relative border-red-500 border-4 w-[calc(33.333%-1rem)] md:w-[calc(16.666%-1rem)] "
+            className="card-item  flex flex-col justify-center items-center  rounded-3xl backdrop-blur-md   relative   w-[calc(33.333%-1rem)] md:w-[calc(16.666%-1rem)] mb-10 mt-4"
             //   style={{
             //     aspectRatio: '1/1.3'
             // }}
@@ -76,16 +77,16 @@ const CardSlider = () => {
               <img
                 src={user.image}
                 alt={user.name}
-                className=" rounded-full   p-1  border-green-500 border-4"
+                className=" rounded-full"
               />
             </div>
-            <div className="border-2 border-purple-500">
-              <h2 className="text-black text-xs sm:text-sm md:text-base lg:text-lg font-semibold mt-10 sm:mt-14 md:mt-24 text-center px-2">
+            <div className=" h-24">
+              <h2 className="text-black text-xl md:text-2xl lg:text-[1.2rem]  font-semibold  text-center px-2 ">
                 {user.name}
               </h2>
             </div>
-            <div className="border-2 border-blue-500">
-              <p className="text-[#B3B3B3] text-xs sm:text-sm font-medium mt-1 sm:mt-2 mb-3 sm:mb-4 md:mb-6 text-center px-2">
+            <div className="border-2 border-blue-500 h-14">
+              <p className="text-[#B3B3B3] text-xs sm:text-sm font-medium text-center px-2">
                 {user.profession}
               </p>
             </div>
