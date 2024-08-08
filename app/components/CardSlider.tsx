@@ -77,7 +77,8 @@ const CardSlider = () => {
               <img
                 src={user.image}
                 alt={user.name}
-                className=" rounded-full h-[85%] w-[85%] max-h-full max-w-full mx-auto shadow-[10px_10px_50px_rgba(0,0,0,1)]  object-left"
+                className=" rounded-full h-[85%] w-[85%] max-h-full max-w-full mx-auto "
+                // shadow-[10px_10px_50px_rgba(0,0,0,1)] 
               />
             </div>
             <div className=" h-24">
