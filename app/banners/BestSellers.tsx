@@ -5,7 +5,7 @@ import { GiLaurelCrown } from "react-icons/gi";
 const BestSellers = () => {
   return (
     <div className="pb-12 lg:pb-16">
-      <div className="text-center py-20">
+      <div className="text-center py-10">
         <h1 className="py-3 md:py-1 text-xs font-semibold text-[#172026] lg:text-xs lg:leading-7 tracking-[0.25em] md:tracking-[0.15em] font-rilke-monecias">
           DESDE EL BOSQUE DE DIANA
         </h1>
