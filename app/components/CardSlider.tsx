@@ -10,32 +10,32 @@ const CardSlider = () => {
   const users = [
     {
       name: "Ensalada de Quinua",
-      profession: "Software Developer",
+      profession: "Mix de quinua con champiñones salteados",
       image: "/assets/best-sellers/dish1-min.png",
     },
     {
       name: "Lomo Saltado Rilke",
-      profession: "Graphic Designer",
+      profession: "Lomo fino salteado estilo rilke",
       image: "/assets/best-sellers/dish2-min.png",
     },
     {
       name: "Arroz con Pato",
-      profession: "Project Manager",
+      profession: "Arroz al culantro y loche con pato a la chicha de jora",
       image: "/assets/best-sellers/dish3-min.png",
     },
     {
       name: "Fetuccini a la Huancaina con Lomo",
-      profession: "Ingredientes Ingredientes Ingredientes Ingredientes Ingredientes Ingredientes",
+      profession: "Fetuccini con Lomo saltado",
       image: "/assets/best-sellers/dish4-min.png",
     },
     {
       name: "Quinoto ",
-      profession: "Data Scientist",
+      profession: "Guiso de Quinua blanca con vegetales rostizados",
       image: "/assets/best-sellers/dish5-min.png",
     },
     {
-      name: "Richard Wilson",
-      profession: "Product Designer",
+      name: "Ñoquis al Pesto",
+      profession: "Ñoquis al pesto artesanales hecho en casa",
       image: "/assets/best-sellers/dish6-min.png",
     },
   ];
@@ -88,7 +88,7 @@ const CardSlider = () => {
               </h2>
             </div>
             <div className=" h-16 pt-2">
-              <p className="text-[#858484] text-[50%] sm:text-sm font-medium text-center ">
+              <p className="text-[#858484]   text-sm font-medium text-center ">
                 {user.profession}
               </p>
             </div>
