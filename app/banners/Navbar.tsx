@@ -8,10 +8,10 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import { useNavStore } from "../../store/useNavStore";
 import { IoIosMenu } from "react-icons/io";
 
-const smoothScroll = (targetId:string) => {
+const smoothScroll = (targetId: string) => {
   const target = document.getElementById(targetId);
   if (target) {
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 };
 
@@ -28,19 +28,32 @@ const navLinks = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [enterMouse, setEnterMouse] = useState(false);
-  const { currentSection, setSelectedTab, isLoading, setIsLoading } =
-    useNavStore();
+  const {
+    currentSection,
+    setSelectedTab,
+    isLoading,
+    setIsLoading,
+    setCurrentSection,
+  } = useNavStore();
   const [clickHamburgerMenu, setClickHamburgerMenu] = useState(false);
   const [menuClass, setMenuClass] = useState("");
   const [scrollPositionOnClick, setScrollPositionOnClick] = useState(0);
 
-  const tabHandler = (tab: string, event: React.MouseEvent<HTMLAnchorElement>) => {
+  const tabHandler = (
+    tab: string,
+    event: React.MouseEvent<HTMLAnchorElement>
+  ) => {
     event.preventDefault();
-    setSelectedTab(tab.toLowerCase());
-    smoothScroll(tab.toLowerCase());
+    const sectionId = tab.toLowerCase();
+    setSelectedTab(sectionId);
+    setCurrentSection(sectionId); // Add this line
+    smoothScroll(sectionId);
   };
 
-  const tabAndToggle = (tab: string, event: React.MouseEvent<HTMLAnchorElement>) => {
+  const tabAndToggle = (
+    tab: string,
+    event: React.MouseEvent<HTMLAnchorElement>
+  ) => {
     event.preventDefault();
     toggleMenu();
     tabHandler(tab, event);
@@ -117,14 +130,14 @@ export function Navbar() {
           <div className="hidden md:flex pl-[74px] md:gap-x-[2rem] lg:gap-x-[40px] ">
             {navLinks.map((item) => (
               <a
-                className={`-tracking-tighter font-extralight hover:text-rilke-red ${
-                  !isLoading && item.href.slice(1) === currentSection
-                    ? "border-b-2 border-rilke-red text-rilke-red"
-                    : ""
-                }`}
+              className={`-tracking-tighter font-extralight hover:text-rilke-red ${
+                !isLoading && item.name.toLowerCase() === currentSection
+                  ? "border-b-2 border-rilke-red text-rilke-red"
+                  : ""
+              }`}
                 key={item.href}
                 href={item.href}
-                onClick={(event) => tabHandler(item.name,event)}
+                onClick={(event) => tabHandler(item.name, event)}
               >
                 {item.name}
               </a>
@@ -168,7 +181,7 @@ export function Navbar() {
                   }`}
                   key={item.href}
                   href={item.href}
-                  onClick={(event) => tabAndToggle(item.name,event)}
+                  onClick={(event) => tabAndToggle(item.name, event)}
                 >
                   {item.name}
                 </a>
