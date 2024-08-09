@@ -16,17 +16,22 @@ export function Home() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const parallaxShift = scrollPosition * 0.5;
   return (
-    <div className="h-screen" id="home">
-      <div
-        className="flex relative  h-full w-full justify-center bg-center  bg-no-repeat"
-        style={{
-          backgroundImage: "url('/assets/home-cafe-2.jpg')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: `center `,
-        }}
-      >
+    <div className="h-screen relative overflow-hidden" id="home">
+      <div className="h-full w-full relative">
+        <div
+          className="absolute w-full h-full"
+          style={{
+            transform: `translateY(${parallaxShift}px)`,
+          }}
+        >
+          <img
+            src="/assets/home-cafe-2.jpg"
+            alt="Parallax Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
           <img
             src="/assets/logo/logo-no-bg/logo-white-no-bg.png"
