@@ -20,14 +20,11 @@ export function Footer() {
         <li>Enterprise</li>
         <li>Careers</li>
       </ul> */}
-      <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-xl text-center w-[90%] max-w-7xl text-xs sm:text-base bg-black shadow-white shadow-[0px_0px_10px] "
-
-      >
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-xl text-center w-[90%] max-w-7xl text-xs sm:text-base bg-black shadow-white shadow-[0px_0px_10px] ">
         <div>
           <p className=" text-sm md:text-lg lg:text-xl m-3">
-          &quot;Este es el milagro que sucede a aquellos que aman de verdad:&nbsp;
-            Cuanto más dan, más poseen.&quot;
+            &quot;Este es el milagro que sucede a aquellos que aman de
+            verdad:&nbsp; Cuanto más dan, más poseen.&quot;
           </p>
           <p className="mb-2">-Rainer Maria Rilke</p>
         </div>
@@ -50,22 +47,31 @@ export function Footer() {
         <div className="flex flex-col justify-center items-center w-full  gap-2 lg:w-1/3">
           <p className="text-[#464646]">CONECTATE</p>
           <div className="flex gap-2">
-            <FaFacebookF
-              size={25}
-              className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
-            />
-            <IoMailOutline
-              size={28}
-              className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
-            />
-            <FaWhatsapp
-              size={28}
-              className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
-            />
-            <FaInstagram
-              size={28}
-              className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
-            />
+            <a href="https://www.facebook.com/labodeguitadanke/" target="_blank">
+              <FaFacebookF
+                size={25}
+                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+              />
+            </a>
+            <a href="mailto:correo@mail.com?subject=Consulta&body=Hola, me encantaría saber más del servicio...">
+              <IoMailOutline
+                size={28}
+                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+              />
+            </a>
+            <a href="https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido" target="_blank">
+
+              <FaWhatsapp
+                size={28}
+                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+              />
+            </a>
+            <a href="https://www.instagram.com/caferilkeperu/" target="_blank">
+              <FaInstagram
+                size={28}
+                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+              />
+            </a>
           </div>
         </div>
 
