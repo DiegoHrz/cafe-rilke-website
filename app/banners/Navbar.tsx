@@ -109,39 +109,44 @@ export function Navbar() {
   return (
     <>
       <nav className="hidden md:flex w-full items-center justify-between px-[20px] py-[16px] md:container md:mx-0 md:px-0 md:py-0">
-        <div
-          className={`md:flex items-center justify-between fixed z-10 top-0 w-full md:py-2 md:px-10 lg:px-20 md lg:gap-4 md:gap-2 md:text-sm lg:text-base transition-colors duration-1000 ease-in-out ${
-            enterMouse && "hover:bg-white "
-          } ${
-            scrolled
-              ? "bg-white text-black shadow-border-b"
-              : "text-white hover:text-black"
-          }`}
-          onMouseEnter={onEnterHandler}
-          onMouseLeave={onLeaveHandler}
-          style={{ transitionDuration: "1250ms" }}
-        >
-          <Image
-            src={scrolled || enterMouse ? logoBlack : logoCafe}
-            alt="Logo"
-            className={"w-8 h-8 md:w-28 md:h-16"}
-          />
+        <div className="fixed z-10 top-0 w-full">
+          <div className="bg-[#32304c] text-center text-white font-sans text-xs p-1 font-light">
+            MENU DE LUNES A SABADOS DE 12pm a 4pm desde S/20.
+          </div>
+          <div
+            className={`md:flex items-center justify-between  w-full md:py-2 md:px-10 lg:px-20 md lg:gap-4 md:gap-2 md:text-sm lg:text-base transition-colors duration-1000 ease-in-out ${
+              enterMouse && "hover:bg-white "
+            } ${
+              scrolled
+                ? "bg-white text-black shadow-border-b"
+                : "text-white hover:text-black"
+            }`}
+            onMouseEnter={onEnterHandler}
+            onMouseLeave={onLeaveHandler}
+            style={{ transitionDuration: "1250ms" }}
+          >
+            <Image
+              src={scrolled || enterMouse ? logoBlack : logoCafe}
+              alt="Logo"
+              className={"w-8 h-8 md:w-28 md:h-16"}
+            />
 
-          <div className="hidden md:flex pl-[74px] md:gap-x-[2rem] lg:gap-x-[40px] ">
-            {navLinks.map((item) => (
-              <a
-              className={`-tracking-tighter font-extralight hover:text-rilke-red ${
-                !isLoading && item.name.toLowerCase() === currentSection
-                  ? "border-b-2 border-rilke-red text-rilke-red"
-                  : ""
-              }`}
-                key={item.href}
-                href={item.href}
-                onClick={(event) => tabHandler(item.name, event)}
-              >
-                {item.name}
-              </a>
-            ))}
+            <div className="hidden md:flex pl-[74px] md:gap-x-[2rem] lg:gap-x-[40px] ">
+              {navLinks.map((item) => (
+                <a
+                  className={`-tracking-tighter font-extralight hover:text-rilke-red ${
+                    !isLoading && item.name.toLowerCase() === currentSection
+                      ? "border-b-2 border-rilke-red text-rilke-red"
+                      : ""
+                  }`}
+                  key={item.href}
+                  href={item.href}
+                  onClick={(event) => tabHandler(item.name, event)}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </nav>
