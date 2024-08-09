@@ -8,6 +8,13 @@ import { useEffect, useLayoutEffect, useState } from "react";
 import { useNavStore } from "../../store/useNavStore";
 import { IoIosMenu } from "react-icons/io";
 
+const smoothScroll = (targetId:string) => {
+  const target = document.getElementById(targetId);
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "Carta", href: "#carta" },
@@ -27,13 +34,16 @@ export function Navbar() {
   const [menuClass, setMenuClass] = useState("");
   const [scrollPositionOnClick, setScrollPositionOnClick] = useState(0);
 
-  const tabHandler = (tab: string) => {
+  const tabHandler = (tab: string, event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
     setSelectedTab(tab.toLowerCase());
+    smoothScroll(tab.toLowerCase());
   };
 
-  const tabAndToggle = (tab: string) => {
+  const tabAndToggle = (tab: string, event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
     toggleMenu();
-    tabHandler(tab);
+    tabHandler(tab, event);
   };
 
   useLayoutEffect(() => {
@@ -114,7 +124,7 @@ export function Navbar() {
                 }`}
                 key={item.href}
                 href={item.href}
-                onClick={() => tabHandler(item.name)}
+                onClick={(event) => tabHandler(item.name,event)}
               >
                 {item.name}
               </a>
@@ -158,7 +168,7 @@ export function Navbar() {
                   }`}
                   key={item.href}
                   href={item.href}
-                  onClick={() => tabAndToggle(item.name)}
+                  onClick={(event) => tabAndToggle(item.name,event)}
                 >
                   {item.name}
                 </a>
