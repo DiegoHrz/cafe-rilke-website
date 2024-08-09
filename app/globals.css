@@ -418,4 +418,8 @@ html {
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #f9f9f9;
 }
 
-
+@supports (-webkit-touch-callout: none) {
+  .safari-fix {
+    background-attachment: scroll;
+  }
+}
