@@ -20,7 +20,7 @@ export function Home() {
   return (
     <div className="h-screen" id="home">
       <div 
-        className="relative flex h-full w-full justify-center bg-center bg-cover bg-no-repeat"
+        className="relative flex h-full w-full justify-center bg-center  bg-no-repeat"
         style={{ 
           backgroundImage: "url('/assets/home-cafe-2.jpg')",
           backgroundAttachment: "fixed",
