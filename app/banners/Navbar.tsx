@@ -25,6 +25,7 @@ export function Navbar() {
     useNavStore();
   const [clickHamburgerMenu, setClickHamburgerMenu] = useState(false);
   const [menuClass, setMenuClass] = useState("");
+  const [scrollPositionOnClick, setScrollPositionOnClick] = useState(0);
 
   const tabHandler = (tab: string) => {
     setSelectedTab(tab.toLowerCase());
@@ -38,7 +39,7 @@ export function Navbar() {
   useLayoutEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 0);
-      if (window.scrollY > 0 && clickHamburgerMenu) {
+      if (clickHamburgerMenu && window.scrollY !== scrollPositionOnClick) {
         setTimeout(() => {
           setClickHamburgerMenu(false);
         }, 700);
@@ -78,6 +79,7 @@ export function Navbar() {
     } else {
       setClickHamburgerMenu(true);
       setMenuClass("animate-collapse-in");
+      setScrollPositionOnClick(window.scrollY);
     }
   };
 
