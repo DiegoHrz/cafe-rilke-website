@@ -26,8 +26,8 @@ export function Footer() {
       >
         <div>
           <p className=" text-sm md:text-lg lg:text-xl m-3">
-            "Este es el milagro que sucede a aquellos que aman de verdad:&nbsp;
-            Cuanto más dan, más poseen."
+          &quot;Este es el milagro que sucede a aquellos que aman de verdad:&nbsp;
+            Cuanto más dan, más poseen.&quot;
           </p>
           <p className="mb-2">-Rainer Maria Rilke</p>
         </div>
