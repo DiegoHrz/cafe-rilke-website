@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
   font-family: "Aldus1";
 
@@ -321,7 +319,6 @@ html {
   animation: custom-pulse-2 4s infinite;
 }
 
-
 .shadow-border-b {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
@@ -398,7 +395,7 @@ html {
   0% {
     opacity: 0.6;
   }
-  50%{
+  50% {
     opacity: 0.3;
   }
   100% {
@@ -406,22 +403,21 @@ html {
   }
 }
 
-.animation-opacity-infinite{
+.animation-opacity-infinite {
   animation: opacity-infinite 2.5s ease infinite;
 }
 
+.levatate-effect {
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #f9f9f9;
+}
 
-  .levatate-effect {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
-      -10px -10px 10px #f9f9f9;
-  }
+.levatate-effect-y {
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #f9f9f9;
+}
+.levatate-effect {
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #f9f9f9;
+}
 
-  .levatate-effect-y {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
-      -10px -10px 10px #f9f9f9;
-  }
-  .levatate-effect {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
-      -10px -10px 10px #f9f9f9;
-  }
-
+.bg-parallax-img {
+  background-image: url("../public/assets/home-cafe-2.jpg");
+}
