@@ -8,7 +8,7 @@ import { IoMailOutline } from "react-icons/io5";
 
 export function Footer() {
   return (
-    <div className="pt-32 pb-[40px] bg-black mx-auto   text-white lg:text-[#d9d9d9] relative">
+    <div className="pt-32 pb-[40px] bg-black    text-white lg:text-[#d9d9d9] relative">
       {/* <div className="flex items-center justify-center gap-x-[12px]">
         <Image src={Logo} alt="Logo" />
         <p className="font-bold text-[#36485C] text-[17px]">Jan Marshal</p>
@@ -21,17 +21,19 @@ export function Footer() {
         <li>Careers</li>
       </ul> */}
       <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded text-center w-[90%] md:w-fit text-sm sm:text-base bg-transparent   border-black shadow-rilke-red shadow-[0px_0px_15px] "
-        style={{ background: "linear-gradient(to right,#181818 60%, red)" }}
+        className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-xl text-center w-[90%] max-w-7xl text-xs sm:text-base bg-black shadow-white shadow-[0px_0px_10px] "
+
       >
-        <p className="m-2  ">
-          "Este es el milagro que sucede a aquellos que aman de verdad:  <br /> Cuanto más dan, más poseen."
-        </p>
-        <p>-Rainer Maria Rilke</p>
-        <p></p>
+        <div>
+          <p className=" text-sm md:text-lg lg:text-xl m-3">
+            "Este es el milagro que sucede a aquellos que aman de verdad:&nbsp;
+            Cuanto más dan, más poseen."
+          </p>
+          <p className="mb-2">-Rainer Maria Rilke</p>
+        </div>
       </div>
-      <div className="flex flex-col sm:flex-row justify-start md:justify-center items-center md:items-start gap-10 md:gap-40 w-full ">
-        <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2 w-full lg:w-auto ">
+      <div className="flex flex-col md:flex-row justify-start md:justify-center items-center md:items-start gap-10 md:gap-40 w-[90%] max-w-7xl mx-auto">
+        <div className="flex flex-col justify-center lg:justify-start items-center lg:items-start gap-2 w-full lg:w-1/3 ">
           <p className="text-[#464646] border-[#464646] font-black ">
             CONTACTANOS
           </p>
@@ -45,7 +47,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center w-full lg:w-auto gap-2">
+        <div className="flex flex-col justify-center items-center w-full  gap-2 lg:w-1/3">
           <p className="text-[#464646]">CONECTATE</p>
           <div className="flex gap-2">
             <FaFacebookF
@@ -67,7 +69,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center lg:justify-end items-center lg:items-end w-full lg:w-auto gap-2">
+        <div className="flex flex-col justify-center lg:justify-end items-center lg:items-end w-full lg:w-1/3 gap-2 text-center">
           <p className="text-[#464646]">ENCUENTRANOS</p>
           <div className="flex flex-col text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full p-1">
             <p>C. José Galvez 685, Miraflores 15074, Lima</p>
@@ -81,10 +83,8 @@ export function Footer() {
         <FaWhatsapp size={24} className="text-[#666666]" />
         <FaInstagram size={24} className="text-[#666666]" />
       </div> */}
-      <div>
-        <p className=" text-center text-[14px] font-medium text-[#666666] pt-16">
-          © 2024 Café Rilke. Todos los derechos reservados.
-        </p>
+      <div className=" text-center text-[14px] font-medium text-[#666666] pt-16">
+        <p>© 2024 Café Rilke. Todos los derechos reservados.</p>
       </div>
     </div>
   );
