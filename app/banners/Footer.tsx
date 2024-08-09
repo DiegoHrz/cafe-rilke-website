@@ -5,6 +5,7 @@ import Twitter from "../../public/assets/X.svg";
 import Feed from "../../public/assets/Feed.svg";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
+import { ImLocation2 } from "react-icons/im";
 
 export function Footer() {
   return (
@@ -47,7 +48,10 @@ export function Footer() {
         <div className="flex flex-col justify-center items-center w-full  gap-2 lg:w-1/3">
           <p className="text-[#464646]">CONECTATE</p>
           <div className="flex gap-2">
-            <a href="https://www.facebook.com/labodeguitadanke/" target="_blank">
+            <a
+              href="https://www.facebook.com/labodeguitadanke/"
+              target="_blank"
+            >
               <FaFacebookF
                 size={25}
                 className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
@@ -59,8 +63,10 @@ export function Footer() {
                 className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
               />
             </a>
-            <a href="https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido" target="_blank">
-
+            <a
+              href="https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
+              target="_blank"
+            >
               <FaWhatsapp
                 size={28}
                 className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
@@ -77,8 +83,11 @@ export function Footer() {
 
         <div className="flex flex-col justify-center lg:justify-end items-center lg:items-end w-full lg:w-1/3 gap-2 text-center">
           <p className="text-[#464646]">ENCUENTRANOS</p>
-          <div className="flex flex-col text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full p-1">
-            <p>C. José Galvez 685, Miraflores 15074, Lima</p>
+          <div className=" text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full p-1">
+            <a href="https://www.google.com/maps/place/Caf%C3%A9+Rilke+Per%C3%BA/@-12.1213276,-77.0368608,19.77z/data=!4m6!3m5!1s0x9105c9b327b765cb:0x560f84cb9c54101a!8m2!3d-12.1213366!4d-77.0366567!16s%2Fg%2F11vbxjvk1w?entry=ttu" target="_blank" className="flex items-center " >
+              <ImLocation2 className="hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1" size={23} />
+              <p>C. José Galvez 685, Miraflores 15074, Lima</p>
+            </a>
           </div>
         </div>
       </div>
