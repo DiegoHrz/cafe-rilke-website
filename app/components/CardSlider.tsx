@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -7,38 +7,43 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const CardSlider = () => {
+  const [clickHover, setClickHover] = useState(false)
   const users = [
     {
       name: "Ensalada de Quinua",
-      profession: "Mix de quinua con champiñones salteados",
+      details: "Mix de quinua con champiñones salteados",
       image: "/assets/best-sellers/dish1-min.png",
     },
     {
       name: "Lomo Saltado Rilke",
-      profession: "Lomo fino salteado estilo rilke",
+      details: "Lomo fino salteado estilo rilke",
       image: "/assets/best-sellers/dish2-min.png",
     },
     {
       name: "Arroz con Pato",
-      profession: "Arroz al culantro y loche con pato a la chicha de jora",
+      details: "Arroz al culantro y loche con pato a la chicha de jora",
       image: "/assets/best-sellers/dish3-min.png",
     },
     {
       name: "Fetuccini a la Huancaina con Lomo",
-      profession: "Fetuccini con Lomo saltado",
+      details: "Fetuccini con Lomo saltado",
       image: "/assets/best-sellers/dish4-min.png",
     },
     {
       name: "Quinoto ",
-      profession: "Guiso de Quinua blanca con vegetales rostizados",
+      details: "Guiso de Quinua blanca con vegetales rostizados",
       image: "/assets/best-sellers/dish5-min.png",
     },
     {
       name: "Ñoquis al Pesto",
-      profession: "Ñoquis al pesto artesanales hecho en casa",
+      details: "Ñoquis al pesto artesanales hecho en casa",
       image: "/assets/best-sellers/dish6-min.png",
     },
   ];
+
+  const handleClickHover = () =>{
+    setClickHover(!clickHover)
+  }
 
   return (
     <div className="max-w-full mx-auto flex flex-col justify-center gap-4 ">
@@ -73,11 +78,12 @@ const CardSlider = () => {
             //     aspectRatio: '1/1.3'
             // }}
           >
-            <div className="relative">
+            <div className="relative" >
               <img
                 src={user.image}
                 alt={user.name}
-                className=" rounded-full h-[85%] w-[85%] max-h-full max-w-full mx-auto bg-gradient-radial z-50 hover:scale-125 md:hover:scale-[1.15] transform duration-500 "
+                onMouseEnter={handleClickHover} onMouseLeave={handleClickHover}
+                className={` rounded-full h-[85%] w-[85%] max-h-full max-w-full mx-auto bg-gradient-radial z-50  md:hover:scale-[1.15] transform duration-500 ${clickHover && 'hover:scale-125'}`}
                 // shadow-[10px_10px_50px_rgba(0,0,0,1)] 
               />
               {/* <div className="absolute h-full w-full border-t border-x top-1/2 -z-10 rounded-t-xl"></div> */}
@@ -87,12 +93,12 @@ const CardSlider = () => {
                 {user.name}
               </h2>
             </div>
-            <div className=" h-16 pt-2">
+            <div className=" h-16 pt-2 px-1">
               <p className="text-[#858484]   text-sm font-medium text-center ">
-                {user.profession}
+                {user.details}
               </p>
             </div>
-            <div className="border-x mb-3  flex justify-center items-center">
+            <div className="border-x mb-6  flex justify-center items-center">
               <button className="text-xs sm:text-sm md:text-lg px-3 sm:px-4 py-1 sm:py-2  font-medium cursor-pointer border border-rilke-red transition-all duration-1000 bg-rilke-red hover:scale-110 hover:shadow-red-700  hover:shadow-[0_0_15px_rgba(0,0,0,0.25)] text-white font-sans w-4/6 animate-custom-pulse hover:font-black">
                 Pidelo
               </button>
