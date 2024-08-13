@@ -100,6 +100,7 @@ const CardSlider = () => {
             </div>
             <div className="border-x mb-6  flex justify-center items-center">
               <button className="text-xs sm:text-sm md:text-lg px-3 sm:px-4 py-1 sm:py-2  font-medium cursor-pointer border border-rilke-red transition-all duration-1000 bg-rilke-red hover:scale-110 hover:shadow-red-700  hover:shadow-[0_0_15px_rgba(0,0,0,0.25)] text-white font-sans w-4/6 animate-custom-pulse hover:font-black">
+              
                 Pidelo
               </button>
             </div>
