@@ -152,47 +152,52 @@ export function Navbar() {
       </nav>
 
       <nav className="md:hidden w-full items-center justify-between mt-[-16px] md:container md:mx-0 md:px-0 md:py-0 py-2 relative">
-        <div
-          className={`flex items-center justify-between fixed z-10 top-0 w-full py-2 px-6 md:px-0 text-white ${
-            (scrolled || clickHamburgerMenu) &&
-            "bg-white text-black border-b-2 border-b-[#E0E0E0] border-opacity-80"
-          }`}
-        >
-          <div>
-            <Image
-              src={scrolled || clickHamburgerMenu ? logoBlack : logoCafe}
-              alt="Logo"
-              className="w-24 h-15"
-            />
+        <div className="fixed z-10 top-0 w-full">
+          <div className="bg-[#32304c] text-center text-white font-sans text-xs p-1 font-light">
+            MENU DE LUNES A SABADOS DE 12pm a 4pm desde S/20.
           </div>
-
-          <div className="flex gap-x-5 md:hidden">
-            <IoIosMenu
-              size={32}
-              className="md:hidden text-rilke-red"
-              onClick={toggleMenu}
-            />
-          </div>
-          {clickHamburgerMenu && (
-            <div
-              className={`absolute top-[4.7rem] left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
-            >
-              {navLinks.map((item) => (
-                <a
-                  className={`-tracking-tighter font-extralight hover:text-rilke-red py-[0.6rem] ${
-                    !isLoading && item.href.slice(1) === currentSection
-                      ? " text-rilke-red"
-                      : ""
-                  }`}
-                  key={item.href}
-                  href={item.href}
-                  onClick={(event) => tabAndToggle(item.name, event)}
-                >
-                  {item.name}
-                </a>
-              ))}
+          <div
+            className={`flex items-center justify-between  z-10 top-0 w-full py-2 px-6 md:px-0 text-white ${
+              (scrolled || clickHamburgerMenu) &&
+              "bg-white text-black border-b-2 border-b-[#E0E0E0] border-opacity-80"
+            }`}
+          >
+            <div>
+              <Image
+                src={scrolled || clickHamburgerMenu ? logoBlack : logoCafe}
+                alt="Logo"
+                className="w-24 h-15"
+              />
             </div>
-          )}
+
+            <div className="flex gap-x-5 md:hidden">
+              <IoIosMenu
+                size={32}
+                className="md:hidden text-rilke-red"
+                onClick={toggleMenu}
+              />
+            </div>
+            {clickHamburgerMenu && (
+              <div
+                className={`absolute top-[4.7rem] left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
+              >
+                {navLinks.map((item) => (
+                  <a
+                    className={`-tracking-tighter font-extralight hover:text-rilke-red py-[0.6rem] ${
+                      !isLoading && item.href.slice(1) === currentSection
+                        ? " text-rilke-red"
+                        : ""
+                    }`}
+                    key={item.href}
+                    href={item.href}
+                    onClick={(event) => tabAndToggle(item.name, event)}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </nav>
     </>
