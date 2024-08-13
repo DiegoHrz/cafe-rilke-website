@@ -3,7 +3,7 @@ import React from "react";
 
 const Ebook = () => {
   return (
-    <a href="/Pdf" target="_blank">
+    <a href="/Pdf" target="_blank" rel="noopener noreferrer">
       <div className="book pt-8">
         <input type="checkbox" id="c1" style={{ display: "none" }} />
         <input type="checkbox" id="c2" style={{ display: "none" }} />
