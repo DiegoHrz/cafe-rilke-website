@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const CardSlider = () => {
-  const [activeIndex, setActiveIndex] = useState<number|null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const users = [
     {
@@ -49,7 +49,11 @@ const CardSlider = () => {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Element | null;
-      if (target && activeIndex !== null && !target.closest('.image-container')) {
+      if (
+        target &&
+        activeIndex !== null &&
+        !target.closest(".image-container")
+      ) {
         setActiveIndex(null);
       }
     };
@@ -88,6 +92,12 @@ const CardSlider = () => {
               className="relative image-container"
               onClick={() => handleClickHover(index)}
             >
+              <img
+                src={user.image}
+                alt={user.name}
+                className={`hidden sm:block rounded-full h-[85%] w-[85%] max-h-full max-w-full mx-auto bg-gradient-radial z-50  md:hover:scale-[1.15] transform duration-500  hover:scale-125`}
+                // shadow-[10px_10px_50px_rgba(0,0,0,1)]
+              />
               <img
                 src={user.image}
                 alt={user.name}
