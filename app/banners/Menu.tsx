@@ -9,7 +9,7 @@ import carta4 from "../../public/assets/menu/carta-04.jpeg";
 import carta5 from "../../public/assets/menu/carta-05.jpeg";
 import carta6 from "../../public/assets/menu/carta-06.jpg";
 import dynamic from "next/dynamic";
-import Book from "../components/Book";
+
 import Ebook from "../components/Ebook";
 
 const Flipbook = dynamic(() => import("../components/Flipbook"), {
@@ -17,8 +17,7 @@ const Flipbook = dynamic(() => import("../components/Flipbook"), {
 });
 
 export function Menu() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  
 
   return (
     <div className="py-[48px] lg:py-[60px] " id="carta">
@@ -32,8 +31,8 @@ export function Menu() {
         Comidas y Cocteles
       </h1>
 
-      {/* <Flipbook /> */}
-      {/* <Book /> */}
+      <Flipbook />
+
       <Ebook />
     </div>
   );

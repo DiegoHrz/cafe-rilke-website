@@ -1,10 +1,9 @@
-'use client'
 import Link from "next/link";
 import React from "react";
 
 const Ebook = () => {
   return (
-    <a href="assets/menu/carta.pdf" target="_blank" rel="noopener noreferrer">
+    <a href="/Pdf" target="_blank" className="hidden md:block">
       <div className="book pt-8">
         <input type="checkbox" id="c1" style={{ display: "none" }} />
         <input type="checkbox" id="c2" style={{ display: "none" }} />
@@ -27,7 +26,7 @@ const Ebook = () => {
             {/* Pagina 1 */}
             <div className="front p-1 bg-[#DCDEDD]  relative overflow-hidden shadow-2xl shadow-gray-600">
               <img
-                src="/assets/menu/carta-intro.png"
+                src="/assets/menu/carta-nueva-0.png"
                 className="border-2 border-[#9A753B] h-full w-full"
               />
 
@@ -75,7 +74,10 @@ const Ebook = () => {
             </div>
             {/* Pagina 5 */}
             <div className="front p-[0.11rem] bg-[#DCDEDD]  relative  border-2 border-[#9A753B]">
-              <div className="border-2 border-[#9A753B] h-full w-full" />
+              <div
+
+                className="border-2 border-[#9A753B] h-full w-full"
+              />
               <img
                 src="/assets/menu/carta-nueva-1.png"
                 className=" h-[100.1%] w-[105%] absolute top-0 right-[0.10rem] rounded-3xl "
