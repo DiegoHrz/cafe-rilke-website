@@ -24,8 +24,10 @@ const SimpleFlipbook: React.FC = () => {
 
   return (
     <a
-      href="/Pdf" target="_blank"
-      className="md:hidden  flex flex-col items-center justify-center relative max-w-[370px] max-h-[520px] mx-auto p-4"
+      href="assets/menu/carta.pdf"
+      rel="noopener noreferrer"
+      target="_blank"
+      className="sm:hidden  flex flex-col items-center justify-center relative max-w-[370px] max-h-[520px] mx-auto p-4"
       style={{
         boxSizing: "border-box",
         boxShadow:

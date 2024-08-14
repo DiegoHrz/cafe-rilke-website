@@ -3,7 +3,12 @@ import React from "react";
 
 const Ebook = () => {
   return (
-    <a href="/Pdf" target="_blank" className="hidden md:block">
+    <a
+      href="assets/menu/carta.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hidden sm:block"
+    >
       <div className="book pt-8">
         <input type="checkbox" id="c1" style={{ display: "none" }} />
         <input type="checkbox" id="c2" style={{ display: "none" }} />
@@ -74,10 +79,7 @@ const Ebook = () => {
             </div>
             {/* Pagina 5 */}
             <div className="front p-[0.11rem] bg-[#DCDEDD]  relative  border-2 border-[#9A753B]">
-              <div
-
-                className="border-2 border-[#9A753B] h-full w-full"
-              />
+              <div className="border-2 border-[#9A753B] h-full w-full" />
               <img
                 src="/assets/menu/carta-nueva-1.png"
                 className=" h-[100.1%] w-[105%] absolute top-0 right-[0.10rem] rounded-3xl "
