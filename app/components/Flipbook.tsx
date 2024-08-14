@@ -23,7 +23,8 @@ const SimpleFlipbook: React.FC = () => {
   };
 
   return (
-    <div
+    <a
+      href="/Pdf" target="_blank"
       className="md:hidden  flex flex-col items-center justify-center relative max-w-[370px] max-h-[520px] mx-auto p-4"
       style={{
         boxSizing: "border-box",
@@ -41,11 +42,14 @@ const SimpleFlipbook: React.FC = () => {
         </div>
       </div>
       <div className=" flex space-x-4">
-        <button className="py-2 absolute top-1/2 -left-[0.2rem] border-8 -translate-y-1/2" onClick={goToPreviousPage}>
+        <button
+          className="py-2 absolute top-1/2 -left-[0.2rem]  -translate-y-1/2 "
+          onClick={goToPreviousPage}
+        >
           <button
             onClick={goToPreviousPage}
             disabled={currentPage === 0}
-            className=" border  bg-rilke-red text-white  disabled:bg-transparent disabled:border-none ] -translate-y-1/2 px-[0.65rem] py-2 rounded-l-sm "
+            className=" border  bg-rilke-red text-white  disabled:bg-transparent disabled:border-none  px-[0.65rem] py-2 rounded-l-sm "
           >
             <FaArrowLeft />
           </button>
@@ -54,14 +58,19 @@ const SimpleFlipbook: React.FC = () => {
           Page {currentPage + 1} of {pages.length}
         </span> */}
         <button
+          className="py-2 absolute top-1/2 -right-[0.2rem]  -translate-y-1/2 "
           onClick={goToNextPage}
-          disabled={currentPage === pages.length - 1}
-          className=" border  bg-rilke-red text-white disabled:bg-transparent disabled:border-none  absolute top-1/2 -right-[0.1rem] -translate-y-1/2 px-[0.65rem] py-2 rounded-r-sm"
         >
-          <FaArrowRight color="white" className="   " size={15} />
+          <button
+            onClick={goToNextPage}
+            disabled={currentPage === pages.length - 1}
+            className=" border  bg-rilke-red text-white  disabled:bg-transparent disabled:border-none  px-[0.65rem] py-2 rounded-l-sm "
+          >
+            <FaArrowRight color="white" className="   " size={15} />
+          </button>
         </button>
       </div>
-    </div>
+    </a>
   );
 };
 
