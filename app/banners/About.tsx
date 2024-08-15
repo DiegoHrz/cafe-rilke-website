@@ -12,14 +12,18 @@ import imageAbout from "../../public/assets/image-about.jpg";
 export function About() {
   return (
     <div
-      className="flex flex-col py-16 lg:py-36 px-4 md:px-8 lg:px-4"
+      className="flex flex-col py-16 lg:py-36 px-4 md:px-8 lg:px-4 "
       id="acerca"
     >
       <h1 className="pt-[12px] text-2xl  text-[#172026] lg:text-[42px] lg:leading-[58px] text-center pb-10 font-rilke-monecias">
         Acerca de Café Rilke
       </h1>
-      <div className="flex flex-col lg:flex-row gap-x-6 items-center  mx-auto gap-2">
-        <div className="">
+      <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start  mx-auto  relative p-4 ">
+        <img
+          src="/assets/rose/rosa-banner.png"
+          className="hidden md:block w-28 absolute -bottom-10 lg:-bottom-20 right-0 lg:-right-10"
+        />
+        <div className="h-full">
           <img
             src="/assets/image-about.jpg"
             alt="Feature 1 image"
@@ -28,8 +32,8 @@ export function About() {
         </div>
 
         <div className=" ">
-          <div className=" 2 lg:w-[32rem]  py-[26px] flex flex-col justify-center items-center   text-[15px] md:text-[16px] italic  leading-7">
-            <p className="mx-[0.63rem] font-rilke-aldus text-[#666666]">
+          <div className=" 2 lg:w-[30rem]   flex flex-col justify-center items-center   text-[15px] md:text-[16px] italic  leading-7">
+            <p className=" font-rilke-aldus text-[#666666]">
               Café Rilke es el sueño común de la periodista, filósofa y teóloga
               alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de
               la Jara. Crearon el Café Rilke según el lema del obíspo brasileño,
@@ -43,9 +47,9 @@ export function About() {
               paladar y disfrutando de este extraordinario ambiente apoyan a la
               asociación Sembrando Semillas - Educación para Todos. Gran parte
               de los beneficios del Café Rilke está destinada a que los los
-              niños, adolescentes y jóvenes de este proyecto vayan al colegio, que
-              reciban un buen almuerzo, que estén acompañados con sus tareas y
-              que puedan pasar su tiempo libre jugando y divertiendose en un
+              niños, adolescentes y jóvenes de este proyecto vayan al colegio,
+              que reciban un buen almuerzo, que estén acompañados con sus tareas
+              y que puedan pasar su tiempo libre jugando y divertiendose en un
               lugar sano y saludable.
             </p>
             <div className="flex justify-center items-center gap-4 lg:gap-10 pt-10">
