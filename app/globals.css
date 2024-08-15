@@ -328,12 +328,12 @@ html {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9);
+    transform: scale(1.5);
   }
 }
 
 .animate-custom-pulse-2 {
-  animation: custom-pulse-2 4s infinite;
+  animation: custom-pulse-2 3s infinite;
 }
 
 .shadow-border-b {

@@ -1,78 +1,98 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { RxDoubleArrowLeft, RxDoubleArrowRight } from "react-icons/rx";
 
 const SimpleFlipbook: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   // Array of image paths (replace with your actual image paths)
   const pages = [
     "/assets/menu/carta-nueva-0.png",
     "/assets/menu/carta-nueva-1.png",
-    "/assets/menu/carta-nueva-1.png",
-    "/assets/menu/carta-nueva-1.png",
-    "/assets/menu/carta-nueva-1.png",
   ];
 
   const goToPreviousPage = () => {
-    setCurrentPage((prev) => (prev > 0 ? prev - 1 : prev));
+    if (currentPage > 0 && !isAnimating) {
+      setIsAnimating(true);
+      setCurrentPage((prev) => prev - 1);
+    }
   };
 
   const goToNextPage = () => {
-    setCurrentPage((prev) => (prev < pages.length - 1 ? prev + 1 : prev));
+    if (currentPage < pages.length - 1 && !isAnimating) {
+      setIsAnimating(true);
+      setCurrentPage((prev) => prev + 1);
+    }
   };
 
+  useEffect(() => {
+    if (isAnimating) {
+      const timer = setTimeout(() => {
+        setIsAnimating(false);
+      }, 300); // Match this with the transition duration
+      return () => clearTimeout(timer);
+    }
+  }, [isAnimating]);
+
   return (
-    <a
-      href="assets/menu/carta.pdf"
-      rel="noopener noreferrer"
-      target="_blank"
-      className="md:hidden  flex flex-col items-center justify-center relative max-w-[370px] max-h-[520px] mx-auto p-4 z-10"
-      style={{
-        boxSizing: "border-box",
-        boxShadow:
-          "0 -10px 50px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.5)",
-      }}
-    >
-      <div className="p-4">
-        <div className=" bg-transparent border-4   ">
-          <img
-            src={pages[currentPage]}
-            alt={`Page ${currentPage + 1}`}
-            className=" border-[#9A753B] border-2 w-fit "
-          />
+    <div className="m-10">
+      <a
+        className="md:hidden flex flex-col items-center justify-center relative p-6 z-0 w-fit mx-auto"
+        style={{
+          boxSizing: "border-box",
+          boxShadow: "0 5px 50px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        <div className="">
+          <div className="bg-transparent max-w-[500px] overflow-hidden">
+            <div
+              className="flex transition-transform duration-700 ease-in-out"
+              style={{ transform: `translateX(-${currentPage * 100}%)` }}
+            >
+              {pages.map((page, index) => (
+                <img
+                  key={index}
+                  src={page}
+                  alt={`Page ${index + 1}`}
+                  className="border-[#9A753B] border-2 w-full flex-shrink-0"
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-      <div className=" flex space-x-4">
-        <button
-          className="py-2 absolute top-1/2 -left-[0.2rem]  -translate-y-1/2 z-50"
-          onClick={goToPreviousPage}
-        >
+        <div className="flex space-x-4">
           <button
+            className="py-2 absolute top-1/2 -left-[2rem] -translate-y-1/2 z-10"
             onClick={goToPreviousPage}
-            disabled={currentPage === 0}
-            className=" border  bg-rilke-red text-white  disabled:bg-transparent disabled:border-none  px-[0.65rem] py-2 rounded-l-sm z-50"
           >
-            <FaArrowLeft />
+            <button
+              disabled={currentPage === 0 || isAnimating}
+              className="  disabled:text-transparent text-rilke-red disabled:bg-transparent disabled:border-none px-[0.65rem] py-1 rounded-l-sm z-40 "
+            >
+              <RxDoubleArrowLeft size={50} />
+            </button>
           </button>
-        </button>
-        {/* <span className="px-4 py-2">
-          Page {currentPage + 1} of {pages.length}
-        </span> */}
-        <button
-          className="py-2 absolute top-1/2 -right-[0.2rem]  -translate-y-1/2 z-50"
-          onClick={goToNextPage}
-        >
           <button
+            className="py-2 absolute top-1/2 -right-[2rem] -translate-y-1/2 z-10"
             onClick={goToNextPage}
-            disabled={currentPage === pages.length - 1}
-            className=" border  bg-rilke-red text-white  disabled:bg-transparent disabled:border-none  px-[0.65rem] py-2 rounded-l-sm z-50"
           >
-            <FaArrowRight color="white" className="   " size={15} />
+            <button
+              disabled={currentPage === pages.length - 1 || isAnimating}
+              className={`
+                ${currentPage === 0 ? "bg-transparent" : ""}
+                 disabled:bg-transparent disabled:border-none disabled:text-transparent px-[0.65rem] py-1 rounded-full text-rilke-red
+              `}
+            >
+              <RxDoubleArrowRight
+
+                className={`${currentPage === 0 && "animate-custom-pulse-2"} disabled:text-transparent`}
+                size={currentPage === 0 ? 50 : 50}
+              />
+            </button>
           </button>
-        </button>
-      </div>
-    </a>
+        </div>
+      </a>
+    </div>
   );
 };
 
