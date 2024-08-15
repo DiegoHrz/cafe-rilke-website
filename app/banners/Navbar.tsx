@@ -179,7 +179,7 @@ export function Navbar() {
             </div>
             {clickHamburgerMenu && (
               <div
-                className={`absolute top-[4.7rem] left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
+                className={`absolute top-[6.3rem] left-0 flex flex-col w-screen border gap-x-[56px] justify-center items-center bg-white text-black ${menuClass}`}
               >
                 {navLinks.map((item) => (
                   <a

@@ -40,7 +40,8 @@ const SimpleFlipbook: React.FC = () => {
         className="md:hidden flex flex-col items-center justify-center relative p-6 z-0 w-fit mx-auto"
         style={{
           boxSizing: "border-box",
-          boxShadow: "0 5px 50px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.5)",
+          boxShadow:
+            "0 5px 50px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.5)",
         }}
       >
         <div className="">
@@ -67,9 +68,14 @@ const SimpleFlipbook: React.FC = () => {
           >
             <button
               disabled={currentPage === 0 || isAnimating}
-              className="  disabled:text-transparent text-rilke-red disabled:bg-transparent disabled:border-none px-[0.65rem] py-1 rounded-l-sm z-40 "
+              className="  disabled:text-transparent  disabled:bg-transparent disabled:border-none px-[0.65rem] py-1 rounded-l-sm z-40 text-[#fff5f5] "
             >
-              <RxDoubleArrowLeft size={50} />
+              <RxDoubleArrowLeft
+                size={50}
+                className={`rounded-full ${
+                  currentPage !== 0 && 'custom-shadow'
+                } bg-transparent`}
+              />
             </button>
           </button>
           <button
@@ -80,12 +86,14 @@ const SimpleFlipbook: React.FC = () => {
               disabled={currentPage === pages.length - 1 || isAnimating}
               className={`
                 ${currentPage === 0 ? "bg-transparent" : ""}
-                 disabled:bg-transparent disabled:border-none disabled:text-transparent px-[0.65rem] py-1 rounded-full text-rilke-red
+                 disabled:bg-transparent disabled:border-none disabled:text-transparent px-[0.65rem] py-1 rounded-full text-[#FFFBF5]
               `}
             >
               <RxDoubleArrowRight
-
-                className={`${currentPage === 0 && "animate-custom-pulse-2"} disabled:text-transparent`}
+                className={`${
+                  currentPage === 0 &&
+                  "animate-custom-pulse-2 rounded-full custom-shadow bg-transparent"
+                } disabled:text-transparent`}
                 size={currentPage === 0 ? 50 : 50}
               />
             </button>
