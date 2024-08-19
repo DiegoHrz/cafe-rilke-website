@@ -11,14 +11,15 @@ import carta6 from "../../public/assets/menu/carta-06.jpg";
 import dynamic from "next/dynamic";
 
 import Ebook from "../components/Ebook";
+import ScrollIndicator from "../components/ScrollIndicator";
+
+
 
 const Flipbook = dynamic(() => import("../components/Flipbook"), {
   ssr: false,
 });
 
 export function Menu() {
-  
-
   return (
     <div className="py-[48px] lg:py-[60px] " id="carta">
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
@@ -30,6 +31,8 @@ export function Menu() {
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-16 font-rilke-monecias">
         Comidas y Cocteles
       </h1>
+
+      <ScrollIndicator />
 
       <Flipbook />
 

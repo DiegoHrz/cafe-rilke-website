@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { RxDoubleArrowLeft, RxDoubleArrowRight } from "react-icons/rx";
 
+
 const SimpleFlipbook: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -89,6 +90,7 @@ const SimpleFlipbook: React.FC = () => {
                  disabled:bg-transparent disabled:border-none disabled:text-transparent px-[0.65rem] py-1 rounded-full text-[#FFFBF5]
               `}
             >
+              
               <RxDoubleArrowRight
                 className={`${
                   currentPage === 0 &&
@@ -98,6 +100,7 @@ const SimpleFlipbook: React.FC = () => {
               />
             </button>
           </button>
+        
         </div>
       </a>
     </div>
