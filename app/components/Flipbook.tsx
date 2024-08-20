@@ -72,7 +72,7 @@ const SimpleFlipbook: React.FC = () => {
               disabled={currentPage === 0 || isAnimating}
               className="  disabled:text-transparent  disabled:bg-transparent disabled:border-none px-[0.65rem] py-1 rounded-l-sm z-40 text-[#fff5f5] "
             >
-              {currentPage !== 0  && <ScrollIndicatorLeft />}
+              {currentPage !== 0 && <ScrollIndicatorLeft />}
               {/* size={50}
                 className={`rounded-full ${
                   currentPage !== 0 && 'custom-shadow'
@@ -91,7 +91,9 @@ const SimpleFlipbook: React.FC = () => {
                  disabled:bg-transparent disabled:border-none disabled:text-transparent px-[0.65rem] py-1 rounded-full text-[#FFFBF5]
               `}
             >
-              {currentPage !== pages.length - 1 && <ScrollIndicator />}
+              {currentPage !== pages.length - 1 && (
+                <ScrollIndicator isFirstPage={currentPage === 0} />
+              )}
               {/* <RxDoubleArrowRight
                 className={`${
                   currentPage === 0 &&
