@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { RxDoubleArrowLeft, RxDoubleArrowRight } from "react-icons/rx";
-
+import ScrollIndicator from "./ScrollIndicator";
 
 const SimpleFlipbook: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -71,12 +71,12 @@ const SimpleFlipbook: React.FC = () => {
               disabled={currentPage === 0 || isAnimating}
               className="  disabled:text-transparent  disabled:bg-transparent disabled:border-none px-[0.65rem] py-1 rounded-l-sm z-40 text-[#fff5f5] "
             >
-              <RxDoubleArrowLeft
-                size={50}
+              {currentPage !== 0  && <ScrollIndicator isLeft={true} />}
+              {/* size={50}
                 className={`rounded-full ${
                   currentPage !== 0 && 'custom-shadow'
                 } bg-transparent`}
-              />
+              /> */}
             </button>
           </button>
           <button
@@ -90,17 +90,16 @@ const SimpleFlipbook: React.FC = () => {
                  disabled:bg-transparent disabled:border-none disabled:text-transparent px-[0.65rem] py-1 rounded-full text-[#FFFBF5]
               `}
             >
-              
-              <RxDoubleArrowRight
+              {currentPage !== pages.length - 1 && <ScrollIndicator isLeft={false} />}
+              {/* <RxDoubleArrowRight
                 className={`${
                   currentPage === 0 &&
                   "animate-custom-pulse-2 rounded-full custom-shadow bg-transparent"
                 } disabled:text-transparent`}
                 size={currentPage === 0 ? 50 : 50}
-              />
+              /> */}
             </button>
           </button>
-        
         </div>
       </a>
     </div>

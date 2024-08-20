@@ -445,3 +445,76 @@ html {
   box-shadow: 0px 10px 50px rgba(255, 0, 0, 1),  inset 0px 10px 50px rgba(255, 0, 0, 0.2);
   border: none;
 }
+/* 
+.indicator{
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(45deg);
+}
+
+.indicator span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  box-sizing: border-block;
+  border: none;
+  border-top: 3px solid red;
+  border-right: 3px solid red;
+  animation: animate 1s linear infinite;
+}
+
+.indicator span:nth-child(1){
+  top: 0;
+  left: 0rem;
+}
+.indicator span:nth-child(2){
+  top: 0;
+  left: 1rem;
+  
+}
+.indicator span:nth-child(3){
+  top: 0;
+  left: 2rem;
+}
+.indicator span:nth-child(4){
+  top: 0;
+  left: 3rem;
+}
+.indicator span:nth-child(5){
+  top: 0;
+  left: 4rem;
+}*/
+
+
+
+@keyframes animate {
+  0%{
+    border-color: #FFFBF5;
+    transform: translateX(0);
+  }
+  20%{
+    border-color: #A5884B;
+    transform: translateX(10px);
+  }
+  20.1% , 100%{
+    border-color: #A5884B;
+  }
+} 
+
+/* @keyframes animate {
+  0%{
+    border-color: red;
+    transform: translate(0,0); 
+  }
+  20%{
+    border-color: #222;
+     transform: translate(15px,15px); 
+  }
+  20.1% , 100%{
+    border-color: #222;
+  }
+} */

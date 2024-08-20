@@ -32,7 +32,7 @@ export function Menu() {
         Comidas y Cocteles
       </h1>
 
-      <ScrollIndicator />
+      {/* <ScrollIndicator /> */}
 
       <Flipbook />
 
