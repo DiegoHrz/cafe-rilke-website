@@ -10,6 +10,7 @@ import { ScrollSpy } from "./components/ScrollSpy";
 import Marketing from "./banners/Marketing";
 import CardSlider from "./components/CardSlider";
 import BestSellers from "./banners/BestSellers";
+import Whatsapp from "./components/Whatsapp";
 // import Carousel from "./components/Carousel";
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
       </section>
 
       <Footer />
+      <Whatsapp/>
     </>
   );
 }
