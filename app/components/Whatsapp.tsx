@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Whatsapp: React.FC = () => {
   return (
-    <div className="fixed bottom-10 right-8  z-50  flex flex-col justify-center items-center animate-custom-pulse-3 gap-3">
+    <div className="fixed bottom-4 right-4  z-50  flex flex-col justify-center items-center animate-custom-pulse-3 gap-3">
       <div className="bg-[#47C755] text-white   text-xl p-2 relative">
         <p className="font-sans">Pide Ya!</p>
         <div
