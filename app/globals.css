@@ -333,6 +333,20 @@ html {
   animation: custom-pulse-2 3s infinite;
 }
 
+@keyframes custom-pulse-3{
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.90);
+  }
+}
+
+.animate-custom-pulse-3 {
+  animation: custom-pulse-3 2s infinite;
+}
+
 .shadow-border-b {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
