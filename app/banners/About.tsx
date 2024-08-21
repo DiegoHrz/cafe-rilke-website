@@ -21,7 +21,7 @@ export function About() {
       <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start  mx-auto  relative p-4 ">
         <img
           src="/assets/rose/rosa-banner.png"
-          className="hidden md:block w-28 absolute -bottom-10 lg:-bottom-20 right-0 lg:-right-10"
+          className="hidden md:block w-28 absolute -bottom-10 lg:-bottom-32 right-0 lg:left-1/2 lg:-translate-x-1/2"
         />
         <div className="h-full">
           <img
