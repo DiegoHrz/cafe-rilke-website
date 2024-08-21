@@ -12,7 +12,7 @@ import imageAbout from "../../public/assets/image-about.jpg";
 export function About() {
   return (
     <div
-      className="flex flex-col py-16 lg:py-36 px-4 md:px-8 lg:px-4 "
+      className="flex flex-col py-16 lg:pt-24 lg:pb-52 px-4 md:px-8 lg:px-4 "
       id="acerca"
     >
       <h1 className="pt-[12px] text-2xl  text-[#172026] lg:text-[42px] lg:leading-[58px] text-center pb-10 font-rilke-monecias">
@@ -21,7 +21,7 @@ export function About() {
       <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start  mx-auto  relative p-4 ">
         <img
           src="/assets/rose/rosa-banner.png"
-          className="hidden md:block w-28 absolute -bottom-10 lg:-bottom-32 right-0 lg:left-1/2 lg:-translate-x-1/2"
+          className="hidden md:block w-28 absolute -bottom-10 lg:-bottom-40 right-0 lg:left-1/2 lg:-translate-x-1/2"
         />
         <div className="h-full">
           <img
@@ -53,7 +53,7 @@ export function About() {
               lugar sano y saludable.
             </p>
             <div className="flex justify-center items-center gap-4 lg:gap-10 pt-10">
-              <button className="border-2 border-rilke-red  rounded-3xl px-6 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
+              <button className="border-2 border-rilke-red  rounded-3xl px-3 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
                 Descargar Menu
               </button>
               <a href="#galeria">

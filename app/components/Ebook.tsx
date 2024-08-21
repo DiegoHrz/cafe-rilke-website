@@ -14,7 +14,7 @@ const Ebook = () => {
   };
 
   return (
-    <div className="hidden md:block  overflow-hidden py-20">
+    <div className="hidden md:block  overflow-hidden pb-20">
       <a
         href="assets/menu/carta.pdf"
         target="_blank"

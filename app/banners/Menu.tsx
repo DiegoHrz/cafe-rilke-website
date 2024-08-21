@@ -21,15 +21,12 @@ const Flipbook = dynamic(() => import("../components/Flipbook"), {
 
 export function Menu() {
   return (
-    <div className="py-[48px] lg:py-[60px] " id="carta">
+    <div className="py-[48px] lg:py-[50px]" id="carta">
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
         Carta
       </h1>
       <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
         Cafes y Panes
-      </h1>
-      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-16 font-rilke-monecias">
-        Comidas y Cocteles
       </h1>
 
       {/* <ScrollIndicator /> */}
