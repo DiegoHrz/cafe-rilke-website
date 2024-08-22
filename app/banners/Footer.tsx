@@ -21,9 +21,9 @@ export function Footer() {
         <li>Enterprise</li>
         <li>Careers</li>
       </ul> */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-xl text-center w-[90%] max-w-7xl text-xs sm:text-base bg-black shadow-white shadow-[0px_0px_10px] ">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-xl text-center w-[84%] max-w-7xl text-xs sm:text-base bg-black shadow-white shadow-[0px_0px_10px] ">
         <div>
-          <p className=" text-sm md:text-lg lg:text-xl m-3">
+          <p className=" text-sm md:text-lg lg:text-xl m-5">
             &quot;Este es el milagro que sucede a aquellos que aman de
             verdad:&nbsp; Cuanto más dan, más poseen.&quot;
           </p>
@@ -58,7 +58,11 @@ export function Footer() {
                 className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
               />
             </a>
-            <a href="mailto:correo@mail.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..." target="_blank" rel="noopener noreferrer">
+            <a
+              href="mailto:correo@mail.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IoMailOutline
                 size={28}
                 className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
@@ -66,14 +70,19 @@ export function Footer() {
             </a>
             <a
               href="https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaWhatsapp
                 size={28}
                 className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
               />
             </a>
-            <a href="https://www.instagram.com/caferilkeperu/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/caferilkeperu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagram
                 size={28}
                 className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
@@ -85,8 +94,16 @@ export function Footer() {
         <div className="flex flex-col justify-center lg:justify-end items-center lg:items-end w-full lg:w-1/3 gap-2 text-center">
           <p className="text-[#464646]">ENCUENTRANOS</p>
           <div className=" text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full p-1">
-            <a href="https://www.google.com/maps/place/Caf%C3%A9+Rilke+Per%C3%BA/@-12.1213276,-77.0368608,19.77z/data=!4m6!3m5!1s0x9105c9b327b765cb:0x560f84cb9c54101a!8m2!3d-12.1213366!4d-77.0366567!16s%2Fg%2F11vbxjvk1w?entry=ttu" target="_blank" rel="noopener noreferrer" className="flex items-center " >
-              <ImLocation2 className="hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1" size={23} />
+            <a
+              href="https://www.google.com/maps/place/Caf%C3%A9+Rilke+Per%C3%BA/@-12.1213276,-77.0368608,19.77z/data=!4m6!3m5!1s0x9105c9b327b765cb:0x560f84cb9c54101a!8m2!3d-12.1213366!4d-77.0366567!16s%2Fg%2F11vbxjvk1w?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center "
+            >
+              <ImLocation2
+                className="hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+                size={23}
+              />
               <p>C. José Galvez 685, Miraflores 15074, Lima</p>
             </a>
           </div>
