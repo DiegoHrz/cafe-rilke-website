@@ -1,14 +1,3 @@
-import Image from "next/image";
-import Feature1 from "../../public/assets/feature-1.svg";
-import Feature2 from "../../public/assets/feature-2.svg";
-import Feature3 from "../../public/assets/feature-3.svg";
-import Check from "../../public/assets/check.svg";
-import bluebutton from "../../public/assets/blue-button.svg";
-import greenButton from "../../public/assets/green-button.svg";
-import pinkButton from "../../public/assets/pink-button.svg";
-import homeCafe from "../../public/assets/home-cafe-2.jpg";
-import imageAbout from "../../public/assets/image-about.jpg";
-
 export function About() {
   return (
     <div
@@ -32,7 +21,7 @@ export function About() {
         </div>
 
         <div className=" ">
-          <div className=" 2 lg:w-[30rem]   flex flex-col justify-center items-center   text-[15px] md:text-[16px] italic  leading-7">
+          <div className="lg:w-[30rem] flex flex-col justify-center items-center text-[15px] md:text-[16px] italic leading-7">
             <p className=" font-rilke-aldus text-[#666666]">
               Café Rilke es el sueño común de la periodista, filósofa y teóloga
               alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de

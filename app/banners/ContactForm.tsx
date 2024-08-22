@@ -61,7 +61,7 @@ export function ContactForm() {
                 required: true,
                 pattern: /^[a-zA-Z]+(?: [a-zA-Z]+)*$/,
               })}
-              className="border p-3 text-sm h-10 placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-base rounded-md"
+              className="border p-3 text-sm h-10 placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-sm rounded-md"
             />
 
             <label htmlFor="name" className=" flex text-sm">
@@ -91,7 +91,7 @@ export function ContactForm() {
                 required: true,
                 pattern: /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/,
               })}
-              className="border p-3 text-sm h-10 placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-base rounded-md"
+              className="border p-3 text-sm h-10 placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-sm rounded-md"
             />
 
             <label htmlFor="email" className="flex text-sm text-slate-600">
@@ -141,7 +141,7 @@ export function ContactForm() {
               {...register("asunto", {
                 required: true,
               })}
-              className="border p-3 text-sm h-10 placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-base rounded-md"
+              className="border p-3 text-sm h-10 placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-sm rounded-md"
             />
 
             <label htmlFor="asunto" className="flex  text-sm text-slate-600">
@@ -164,7 +164,7 @@ export function ContactForm() {
               {...register("mensaje", {
                 required: true,
               })}
-              className="border p-3 text-sm placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-base rounded-md"
+              className="border p-3 text-sm placeholder:text-[#757575]/70 placeholder:italic placeholder:font-[100] placeholder:text-sm rounded-md"
             ></textarea>
 
             <label htmlFor="mensaje" className="flex text-sm text-slate-600">

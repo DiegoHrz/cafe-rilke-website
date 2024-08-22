@@ -21,7 +21,7 @@ export function Footer() {
         <li>Enterprise</li>
         <li>Careers</li>
       </ul> */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-xl text-center w-[84%] max-w-7xl text-xs sm:text-base bg-black shadow-white shadow-[0px_0px_10px] ">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-xl text-center w-[88%] max-w-7xl text-xs sm:text-base bg-black shadow-white shadow-[0px_0px_10px] ">
         <div>
           <p className=" text-sm md:text-lg lg:text-xl m-5">
             &quot;Este es el milagro que sucede a aquellos que aman de
