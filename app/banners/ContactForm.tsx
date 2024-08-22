@@ -18,18 +18,13 @@ export function ContactForm() {
   const onSubmit = async (data: any) => {
     try {
       console.log(data);
-      const response = await axios.post(
-        "https://juntxs.vercel.app/nodemailer",
-        data
-      );
-
+      const response = await axios.post("/api/nodemailer", data);
       if (response.data.message === "Email sent successfully!") {
         setSuccessMessage(
-          "¡Recibimos tu mensaje! Pronto te daremos respuesta."
+          "¡Recibimos tu mensaje! Pronto te daremos respuesta. Muchas Gracias!"
         );
         reset();
       }
-
       console.log("Respuesta del servidor:", response.data);
     } catch (error: any) {
       console.error("Error al enviar datos al servidor:", error.message);
@@ -48,7 +43,7 @@ export function ContactForm() {
       <p className="font-medium text-xl pt-6 lg:pt-[40px] lg:text-[20px] italic">
         Cualquier sugerencia, escribanos
       </p>
-
+      <div className="text-[#03b418] py-3 " >{successMessage && <p>{successMessage}</p>}</div>
       <div className="w-full  lg:p-8 mt-2 rounded-2xl flex justify-center">
         <form
           action=""
@@ -191,7 +186,6 @@ export function ContactForm() {
             />
           </div>
         </form>
-        {successMessage && <p>{successMessage}</p>}
       </div>
     </div>
   );
