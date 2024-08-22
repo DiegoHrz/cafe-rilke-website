@@ -29,7 +29,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ isFirstPage }) => {
           animationDelay: "0.2s",
         }}
       ></span>
-      {isFirstPage && (
+      {/* {isFirstPage && (
         <span
           className="absolute top-5 -left-6 w-full h-full block box-border border-none"
           style={{
@@ -39,7 +39,7 @@ const ScrollIndicator: React.FC<ScrollIndicatorProps> = ({ isFirstPage }) => {
             animationDelay: "0.4s",
           }}
         ></span>
-      )}
+      )} */}
     </div>
   );
 };
