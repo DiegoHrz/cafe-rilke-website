@@ -38,10 +38,10 @@ export default function App() {
         <About />
       </section>
 
-      <section id="contacto">
+      {/* <section id="contacto">
         <ContactForm />
-      </section>
-      {/* <ContactTwo /> */}
+      </section> */}
+      <ContactTwo />
       <Footer />
       <Whatsapp />
     </>
