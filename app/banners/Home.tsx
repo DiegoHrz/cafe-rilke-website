@@ -36,12 +36,12 @@ export function Home() {
           <img
             src="/assets/logo/logo-no-bg/logo-white-no-bg.png"
             alt="White Logo"
-            className="h-auto w-fit mx-auto px-3"
+            className="h-auto w-fit mx-auto px-3 animate-fade-title"
           />
           <img
-            src="/assets/logo/logo-no-bg/logo-cafe-bistre-no-bg.png"
+            src="/assets/logo/logo-no-bg/logo-cafe-bistre-no-bg.png "
             alt="Cafe Logo"
-            className="mx-auto mt-4"
+            className="mx-auto mt-4 animate-fade-subtitle"
           />
         </div>
       </div>

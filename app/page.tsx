@@ -11,6 +11,7 @@ import Marketing from "./banners/Marketing";
 import CardSlider from "./components/CardSlider";
 import BestSellers from "./banners/BestSellers";
 import Whatsapp from "./components/Whatsapp";
+import ContactTwo from "./banners/ContactTwo";
 // import Carousel from "./components/Carousel";
 
 export default function App() {
@@ -40,9 +41,9 @@ export default function App() {
       <section id="contacto">
         <ContactForm />
       </section>
-
+      {/* <ContactTwo /> */}
       <Footer />
-      <Whatsapp/>
+      <Whatsapp />
     </>
   );
 }

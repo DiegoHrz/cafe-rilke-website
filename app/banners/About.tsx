@@ -42,9 +42,15 @@ export function About() {
               lugar sano y saludable.
             </p>
             <div className="flex justify-center items-center gap-4 lg:gap-10 pt-10">
-              <button className="border-2 border-rilke-red  rounded-3xl px-3 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
-                Descargar Menu
-              </button>
+              <a
+                href="assets/menu/carta.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="border-2 border-rilke-red  rounded-3xl px-3 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
+                  Descargar Menu
+                </button>
+              </a>
               <a href="#galeria">
                 <button className="border-2 border-rilke-red rounded-3xl px-6 py-2 lg:px-9 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
                   Ver Galería

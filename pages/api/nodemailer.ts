@@ -23,28 +23,37 @@ export default async function handler(
         from: `"Cafe Rilke Website" <your_email@gmail.com>`, // Replace with your Gmail email
         to: "diegomania1999@gmail.com", // Replace with the recipient's email
         subject: `Formulario de Contacto con Asunto: ${asunto}`,
-        html: `
-        <div style="font-family: Arial, sans-serif; color: #333;">
-          <p>Has recibido un nuevo mensaje a través del formulario de contacto de la página de <strong>Cafe Rilke</strong>.</p>
-          
-          <h3 style="color: #eb4d4b;">Detalles del mensaje:</h3>
-          <ul style="list-style: none; padding: 0;">
-            <li><strong>Nombre:</strong> ${nombre}</li>
-            <li><strong>Correo:</strong> ${correo}</li>
-            <li><strong>Asunto:</strong> ${asunto}</li>
-          </ul>
-          
-          <h3 style="color: #eb4d4b;">Mensaje:</h3>
-          <div style="background-color: #f9f9f9; padding: 15px; border: 1px solid #ddd; border-radius: 5px;">
-            <p>${mensaje}</p>
-          </div>
-          
-          <p>¡Que tengas un gran día!</p>
-          
-          <p style="color: #888;">Saludos,<br>
-          El equipo de Cafe Rilke</p>
-        </div>
-      `,
+        html: `<div>
+        <p>Has recibido un nuevo mensaje a través del formulario de contacto de la página de <strong>Cafe Rilke</strong>.</p>
+        
+        
+    <div style="font-family: Arial, sans-serif; color: #333; max-width: 600px; margin: 5rem auto;">
+      <h3 style="color: black; font-size: 1.4rem; margin: 0 auto;">Mensaje de Contacto</h3>
+      <table width="100%" cellpadding="10" cellspacing="0" style="border: 2px dashed #ddd; margin-top: 2rem">
+        <tr>
+          <td width="15%" style="font-size: 1rem; font-weight: bold;">Nombre:</td>
+          <td style="font-size: 0.8rem;">${nombre}</td>
+        </tr>
+        <tr>
+          <td width="15%" style="font-size: 1rem; font-weight: bold;">Correo:</td>
+          <td style="font-size: 0.8rem;">${correo}</td>
+        </tr>
+        <tr>
+          <td width="15%" style="font-size: 1rem; font-weight: bold;">Asunto:</td>
+          <td style="font-size: 0.8rem;">${asunto}</td>
+        </tr>
+        <tr>
+          <td width="15%" style="font-size: 1rem; font-weight: bold;">Mensaje:</td>
+          <td style="font-size: 0.8rem;">${mensaje}</td>
+        </tr>
+      </table>
+
+      </div>
+      <p>¡Que tengas un gran día!</p>
+      
+      <p style="color: #888;">Saludos,<br>El equipo de Cafe Rilke</p>
+    </div>
+  `,
       };
 
       // Send the email

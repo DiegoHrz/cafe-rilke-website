@@ -22,12 +22,12 @@ const Flipbook = dynamic(() => import("../components/Flipbook"), {
 export function Menu() {
   return (
     <div className="py-[48px] lg:py-[50px]" id="carta">
-      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
+      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-4xl pb-12 font-rilke-monecias">
         Carta
       </h1>
-      <h1 className="text-[#172026] text-center font-medium  text-2xl lg:text-[42px] pb-3 font-rilke-monecias">
-        Cafes y Panes
-      </h1>
+      <p className=" text-center font-medium  text-lg lg:text-sm pb-3 font-rilke-monecias px-6">
+      En Café Rilke, los sabores de Alemania y Perú se fusionan en cada plato. En nuestra panadería, los aromas de panes recién horneados y bebidas artesanales te envuelven en una experiencia única.
+      </p>
 
       {/* <ScrollIndicator /> */}
 
