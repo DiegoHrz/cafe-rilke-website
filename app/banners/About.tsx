@@ -8,10 +8,10 @@ export function About() {
         Acerca de Café Rilke
       </h1>
       <div className="flex flex-col lg:flex-row gap-16 items-center lg:items-start  mx-auto  relative p-4 ">
-        <img
+        {/* <img
           src="/assets/rose/rosa-banner.png"
           className="hidden md:block w-28 absolute -bottom-10 lg:-bottom-40 right-0 lg:left-1/2 lg:-translate-x-1/2"
-        />
+        /> */}
         <div className="h-full">
           <img
             src="/assets/image-about.jpg"
@@ -22,7 +22,7 @@ export function About() {
 
         <div className=" ">
           <div className="lg:w-[30rem] flex flex-col justify-center items-center text-[15px] md:text-[16px] italic leading-7">
-            <p className=" font-rilke-aldus text-[#666666]">
+            <p className=" font-rilke-aldus text-[#666666] relative">
               Café Rilke es el sueño común de la periodista, filósofa y teóloga
               alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de
               la Jara. Crearon el Café Rilke según el lema del obíspo brasileño,
@@ -40,6 +40,10 @@ export function About() {
               que reciban un buen almuerzo, que estén acompañados con sus tareas
               y que puedan pasar su tiempo libre jugando y divertiendose en un
               lugar sano y saludable.
+              <img
+                src="/assets/rose/rosa-banner.png"
+                className=" w-28 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 opacity-10"
+              />
             </p>
             <div className="flex justify-center items-center gap-4 lg:gap-10 pt-10">
               <a

@@ -60,6 +60,44 @@ html {
 .rainbow {
   animation: rainbow 5s linear infinite;
 }
+
+/* @keyframes full-rainbow {
+  0% {
+    color: #fff;
+  }
+
+  12% {
+    color: red;
+  }
+  24% {
+    color: #c0b6ab;
+  }
+  36% {
+    color: #ffff00;
+  }
+  48% {
+    color: #328a26;
+  }
+  60% {
+    color: #2c74c1;
+  }
+  72% {
+    color: #b7ed8a;
+  }
+  84% {
+    color: #e1be9e;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+.full-rainbow {
+  animation: full-rainbow 5s 1s linear infinite;
+} */
+
+
+
 /* 
   .landing-container {
     background-color: black;

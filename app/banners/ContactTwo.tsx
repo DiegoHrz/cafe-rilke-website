@@ -37,7 +37,7 @@ const ContactTwo = () => {
   return (
     //  GRADIENTE  bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500
     <div
-      className="w-full bg-gradient-to-br from-[#FDBFBD] via-[#FDBFBD] to-[#FDBFBD]  px-8
+      className="w-full bg-gradient-to-br from-[#f4e7d2] via-[#ebe1d2] to-[#FFFBF5]  px-8
       lg:px-16 text-center lg:my-[0px]  pt-14 pb-60  lg:pb-52 "
       id="contacto"
     >
@@ -203,7 +203,7 @@ const ContactTwo = () => {
             />
           </div>
 
-          <div className="hidden lg:block  lg:absolute   top-20 h-[34rem] right-0 translate-x-1/2 w-1/2 max-w-[28rem] px-14 py-20 rounded-xl bg-[#534547]">
+          <div className="hidden lg:block  lg:absolute   top-20 h-[34rem] right-0 translate-x-1/2 w-1/2 max-w-[28rem] px-14 py-20 rounded-xl bg-[#524747]">
             <div className="text-left relative text-[#D5CACA]">
               <img
                 src="/assets/rose/rosa-banner.png"

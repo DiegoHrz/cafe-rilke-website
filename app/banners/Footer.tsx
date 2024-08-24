@@ -98,10 +98,10 @@ export function Footer() {
               href="https://www.google.com/maps/place/Caf%C3%A9+Rilke+Per%C3%BA/@-12.1213276,-77.0368608,19.77z/data=!4m6!3m5!1s0x9105c9b327b765cb:0x560f84cb9c54101a!8m2!3d-12.1213366!4d-77.0366567!16s%2Fg%2F11vbxjvk1w?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center "
+              className="flex items-center hover:text-rilke-red"
             >
               <ImLocation2
-                className="hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+                className="hover:shadow-rilke-red p-1"
                 size={23}
               />
               <p>C. José Galvez 685, Miraflores 15074, Lima</p>

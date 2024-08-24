@@ -8,7 +8,7 @@ const Whatsapp: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div className="bg-[#47C755] text-white rounded-md  text-xl p-2 relative">
+        <div className="bg-[#47C755] text-white rounded-3xl  text-xl px-3 py-2 relative r">
           <p className="font-sans flex gap-1">
             <FaWhatsapp color="white" className="" size={30} />
             Pide Ya!
