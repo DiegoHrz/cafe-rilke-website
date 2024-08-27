@@ -55,7 +55,7 @@ export function Footer() {
             >
               <FaFacebookF
                 size={25}
-                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+                className="text-white  transition-all duration-700  hover:scale-110  rounded-full hover:text-rilke-red p-1"
               />
             </a>
             <a
@@ -65,7 +65,7 @@ export function Footer() {
             >
               <IoMailOutline
                 size={28}
-                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+                className="text-white  transition-all duration-700  hover:scale-110 rounded-full hover:text-rilke-red p-1"
               />
             </a>
             <a
@@ -75,7 +75,7 @@ export function Footer() {
             >
               <FaWhatsapp
                 size={28}
-                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+                className="text-white  transition-all duration-700 hover:scale-110  rounded-full hover:text-rilke-red p-1"
               />
             </a>
             <a
@@ -85,7 +85,7 @@ export function Footer() {
             >
               <FaInstagram
                 size={28}
-                className="text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full hover:text-rilke-red p-1"
+                className="text-white  transition-all duration-700  hover:scale-110 rounded-full hover:text-rilke-red p-1"
               />
             </a>
           </div>
@@ -93,7 +93,7 @@ export function Footer() {
 
         <div className="flex flex-col justify-center lg:justify-end items-center lg:items-end w-full lg:w-1/3 gap-2 text-center">
           <p className="text-[#464646]">ENCUENTRANOS</p>
-          <div className=" text-white  transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-full p-1">
+          <div className=" text-white  transition-all duration-700  hover:scale-110 rounded-full p-1">
             <a
               href="https://www.google.com/maps/place/Caf%C3%A9+Rilke+Per%C3%BA/@-12.1213276,-77.0368608,19.77z/data=!4m6!3m5!1s0x9105c9b327b765cb:0x560f84cb9c54101a!8m2!3d-12.1213366!4d-77.0366567!16s%2Fg%2F11vbxjvk1w?entry=ttu"
               target="_blank"
