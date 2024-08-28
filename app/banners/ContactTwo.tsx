@@ -58,7 +58,7 @@ const ContactTwo = () => {
           autoComplete=""
           className="max-w-[61rem] w-full  lg:max-w-[800px]  flex flex-col gap-4 mx-auto relative py-[4.5rem] lg:pr-64 lg:pl-16  rounded-xl bg-white "
         >
-          <header className="text-[#534547] text-3xl pb-4 font-semibold  lg:text-left font-rilke-monecias">
+          <header className="text-[#534547] text-3xl pb-4   lg:text-left font-rilke-monecias">
             Contacto
           </header>
           <img
