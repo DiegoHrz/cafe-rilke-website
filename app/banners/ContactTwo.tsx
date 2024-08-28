@@ -56,7 +56,7 @@ const ContactTwo = () => {
           id="form"
           onSubmit={handleSubmit(onSubmit)}
           autoComplete=""
-          className="max-w-[61rem] w-full  lg:max-w-[800px]  flex flex-col gap-4 mx-auto relative py-[4.5rem] lg:pr-64 lg:pl-16  rounded-xl bg-white "
+          className="max-w-[61rem] w-full  lg:max-w-[800px]  flex flex-col gap-4 mx-auto relative py-[4.5rem] pr-4 pl-4 lg:pr-64 lg:pl-16  rounded-xl bg-white"
         >
           <header className=" text-3xl pb-4   lg:text-left font-rilke-monecias">
             Contacto
@@ -309,46 +309,109 @@ const ContactTwo = () => {
             </div>
           </div>
         </form>
-        <div className="block lg:hidden border-4 border-rose-200 bg-white min-h-[37rem]   px-8 sm:px-14 py-20 rounded-xl mx-auto relative">
-          <img
-            src="/assets/rose/rosa-banner.png"
-            className="block lg:hidden w-12 lg:w-10 z-10 absolute bottom-6  -left-2 -translate-x-1/2 "
-          />
-          <img
-            src="/assets/rose/rosa-banner.png"
-            className="block lg:hidden w-12 lg:w-10 z-10 absolute top-10   -right-12 -translate-x-1/2 "
-          />
-          <div className="text-left">
-            <p className="text-3xl  pb-8 font-rilke-monecias">Te esperamos </p>
-            <p className="pb-8">
+
+        <div className="block lg:hidden mt-10  bg-[#524747] min-h-[37rem]   px-10 sm:px-14 py-20 rounded-xl mx-auto relative">
+          <div className="text-left relative text-[#D5CACA]">
+            <img
+              src="/assets/rose/rosa-banner.png"
+              className="lg:hidden w-9 sm:w-12  z-10 absolute -translate-x-1/2 -bottom-14 -right-10"
+            />
+            <img
+              src="/assets/rose/rosa-banner.png"
+              className="lg:hidden w-9 sm:w-12  z-10 absolute -translate-x-1/2 -top-12 left-0"
+            />
+            {/* <img
+                src="/assets/rose/rosa-banner.png"
+                className="hidden lg:block w-12 lg:w-10 z-10 absolute -bottom-1 lg:-bottom-14  lg:-right-[6.5rem] -translate-x-1/2 "
+              /> */}
+            <p className="text-3xl pb-8 font-rilke-monecias text-white text-center">
+              Te esperamos{" "}
+            </p>
+            <p className="pb-8 ">
               En nuestro cafe ubicado en el distrito más bohemio y rico de
               cultura internacional de todo el Perú
             </p>
-            <div className="">
-              <div className="flex gap-4 pb-4 border">
-                <div className="border">📍</div>
-                <div>
-                  <p className="text-xl pb-1 border">MIRAFLORES</p>
-                  <p>Mariscal 214 San Antonio</p>
+            <div className="flex justify-center flex-col">
+              <a
+                href="https://www.google.com/maps/place/Caf%C3%A9+Rilke+Per%C3%BA/@-12.1213276,-77.0368608,19.77z/data=!4m6!3m5!1s0x9105c9b327b765cb:0x560f84cb9c54101a!8m2!3d-12.1213366!4d-77.0366567!16s%2Fg%2F11vbxjvk1w?entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex gap-4 pb-3 mb-3 hover:scale-110 transform duration-500 hover:shadow-2xl rounded-lg">
+                  <div className="">
+                    <IoLocationSharp color="#FF7776" size={22} className="" />
+                  </div>
+                  <div className="">
+                    <p className="text-lg pb-[0.15rem] font-black text-[#D8CCCC] brightness-110  flex leading-6">
+                      Miraflores
+                    </p>
+                    <p className="text-sm">C. Jose Galvez 685</p>
+                    <p className="text-sm leading-4">Miraflores, Lima, Perú</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex gap-4 pb-4">
-                <div>📍</div>
-                <div>
-                  <p className="text-xl pb-1">Miraflores</p>
+              </a>
+              <a
+                href="mailto:correo@mail.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex gap-4 pb-3 mb-3 hover:scale-110 transform duration-500 hover:shadow-2xl rounded-lg">
+                  <div>
+                    <IoMdMail color="#FF7776" size={18} />
+                  </div>
+                  <div>
+                    <p className="text-sm pb-1 leading-5">info@caferilke.com</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex gap-4 pb-8">
-                <div>📍</div>
-                <div>
-                  <p className="text-xl">Miraflores</p>
+              </a>
+              <a href="tel:+983902010">
+                <div className="flex gap-4 pb-4 mb-6 hover:scale-110 transform duration-500 hover:shadow-2xl">
+                  <div>
+                    <IoCall color="#FF7776" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-sm">+51 93939392</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-            <div className="flex gap-10 mx-auto border sm:pl-10 pb-8 justify-center sm:justify-normal ">
-              <p>☎️</p>
-              <p>☎️</p>
-              <p>☎️</p>
+            <div className="flex gap-10 justify-center pt-10">
+              <p>
+                <a
+                  href="https://www.instagram.com/caferilkeperu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram
+                    size={25}
+                    className="hover:text-white text-[#e7e7e7] hover:scale-125 duration-700 transform "
+                  />
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.facebook.com/labodeguitadanke/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF
+                    size={25}
+                    className="hover:text-white text-[#e7e7e7] hover:scale-125 duration-700 transform "
+                  />
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoLogoWhatsapp
+                    size={28}
+                    className="hover:text-white text-[#e7e7e7] hover:brightness-200 hover:scale-125 duration-700 transform  "
+                  />
+                </a>
+              </p>
             </div>
           </div>
         </div>
