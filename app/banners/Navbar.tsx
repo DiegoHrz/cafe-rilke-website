@@ -19,8 +19,8 @@ const navLinks = [
   { name: "Home", href: "#home" },
   { name: "Carta", href: "#carta" },
   { name: "Galeria", href: "#galeria" },
-  { name: "Testimonios", href: "#testimonios" },
-  { name: "Evento", href: "#evento" },
+  // { name: "Testimonios", href: "#testimonios" },
+  // { name: "Evento", href: "#evento" },
   { name: "Acerca", href: "#acerca" },
   { name: "Contacto", href: "#contacto" },
 ];

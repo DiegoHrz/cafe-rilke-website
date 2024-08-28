@@ -4,7 +4,7 @@ const Whatsapp: React.FC = () => {
   return (
     <div className="fixed bottom-10 right-7  z-50  flex justify-center items-center animate-custom-pulse-3 gap-3 ">
       <a
-        href="https://wa.me/926637773?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
+        href="https://wa.me/913441311?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
         target="_blank"
         rel="noopener noreferrer"
       >
