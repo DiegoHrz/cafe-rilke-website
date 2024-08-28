@@ -119,7 +119,7 @@ const CardSlider = () => {
             <div className="border-x mb-6 flex justify-center items-center">
               <a
                 className="text-xs sm:text-sm md:text-lg px-3 sm:px-4 py-1 sm:py-2 font-medium cursor-pointer border border-rilke-red transition-all duration-1000 bg-rilke-red hover:scale-110 hover:shadow-red-700 hover:shadow-[0_0_15px_rgba(0,0,0,0.25)] text-white font-sans w-4/6 animate-custom-pulse hover:font-black text-center"
-                href={`https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido%20de%20${user.name}`}
+                href={`https://wa.me/926637773?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido%20de%20${user.name}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

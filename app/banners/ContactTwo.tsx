@@ -257,13 +257,13 @@ const ContactTwo = () => {
                     </div>
                   </div>
                 </a>
-                <a href="tel:+983902010">
+                <a href="tel:+51926637773">
                   <div className="flex gap-4 pb-4 mb-6 hover:scale-110 transform duration-500 hover:shadow-2xl">
                     <div>
                       <IoCall color="#FF7776" size={20} />
                     </div>
                     <div>
-                      <p className="text-sm">+51 93939392</p>
+                      <p className="text-sm">+51 926 637 773</p>
                     </div>
                   </div>
                 </a>
@@ -295,7 +295,7 @@ const ContactTwo = () => {
                 </p>
                 <p>
                   <a
-                    href="https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
+                    href="https://wa.me/926637773?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -364,13 +364,13 @@ const ContactTwo = () => {
                   </div>
                 </div>
               </a>
-              <a href="tel:+983902010">
+              <a href="tel:+51926637773">
                 <div className="flex gap-4 pb-4 mb-6 hover:scale-110 transform duration-500 hover:shadow-2xl">
                   <div>
                     <IoCall color="#FF7776" size={20} />
                   </div>
                   <div>
-                    <p className="text-sm">+51 93939392</p>
+                    <p className="text-sm">+51 926 637 773</p>
                   </div>
                 </div>
               </a>
@@ -402,7 +402,7 @@ const ContactTwo = () => {
               </p>
               <p>
                 <a
-                  href="https://wa.me/983902010?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
+                  href="https://wa.me/926637773?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
