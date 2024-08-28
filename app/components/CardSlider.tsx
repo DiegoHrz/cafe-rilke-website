@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 
 const CardSlider = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const users = [
     {
@@ -42,6 +43,9 @@ const CardSlider = () => {
     },
   ];
 
+
+
+
   const handleClickHover = (index: number) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
@@ -62,6 +66,38 @@ const CardSlider = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, [activeIndex]);
+
+  useEffect(() => {
+    const loadImages = async () => {
+      const imagePromises = users.map((user) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = resolve;
+          img.onerror = reject;
+          img.src = user.image;
+        });
+      });
+  
+      try {
+        await Promise.all(imagePromises);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error loading images:", error);
+        setIsLoading(false); // Set loading to false even if there's an error, to avoid infinite loading state
+      }
+    };
+  
+    loadImages();
+  
+    // ... (rest of the useEffect logic)
+  }, [activeIndex]);
+
+
+  if (isLoading) {
+    return ; // Or any loading indicator you prefer
+  }
+
+
 
   return (
     <div className="max-w-full mx-auto flex flex-col justify-center gap-4">
