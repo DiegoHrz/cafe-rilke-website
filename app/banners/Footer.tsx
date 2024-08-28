@@ -21,7 +21,7 @@ export function Footer() {
         <li>Enterprise</li>
         <li>Careers</li>
       </ul> */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5  rounded-md text-center w-[88%] max-w-7xl text-xs sm:text-base bg-white shadow-white shadow-[0px_0px_10px] ">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 md:px-5   text-center w-[88%] max-w-7xl text-xs sm:text-base bg-white shadow-black shadow-[0px_0px_5px] ">
         <div>
           <p className=" text-sm md:text-lg lg:text-xl m-5 text-black">
             &quot;Este es el milagro que sucede a aquellos que aman de
@@ -36,12 +36,12 @@ export function Footer() {
             CONTACTANOS
           </p>
           <div className="flex flex-col gap-1">
-            <div className=" transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-xl  p-1">
-              <p className="hover:brightness-150">caferilkebiz@biz.com</p>
-            </div>
-            <div className=" transition-all duration-700  hover:shadow-rilke-red hover:shadow-[0px_0px_15px] rounded-xl p-1">
-              <p className="hover:brightness-150 ">hello@caferilke.com</p>
-            </div>
+            <a href="#" className=" transition-all duration-700  hover:text-rilke-red hover:scale-110 rounded-xl  p-1">
+              caferilkebiz@biz.com
+            </a>
+            <a href="#" className=" transition-all duration-700  hover:text-rilke-red hover:scale-110 rounded-xl  p-1">
+              hello@caferilke.com
+            </a>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ export function Footer() {
             >
               <FaFacebookF
                 size={25}
-                className="text-white  transition-all duration-700  hover:scale-110  rounded-full hover:text-rilke-red p-1"
+                className="text-white  transition-all duration-700  hover:scale-125  rounded-full hover:text-rilke-red p-1"
               />
             </a>
             <a
@@ -100,10 +100,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="flex items-center hover:text-rilke-red"
             >
-              <ImLocation2
-                className="hover:shadow-rilke-red p-1"
-                size={23}
-              />
+              <ImLocation2 className="hover:shadow-rilke-red p-1" size={23} />
               <p>C. José Galvez 685, Miraflores 15074, Lima</p>
             </a>
           </div>
