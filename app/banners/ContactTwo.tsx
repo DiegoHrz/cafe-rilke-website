@@ -318,7 +318,7 @@ const ContactTwo = () => {
             />
             <img
               src="/assets/rose/rosa-banner.png"
-              className="lg:hidden w-9 sm:w-12  z-10 absolute -translate-x-1/2 -top-12 left-0"
+              className="lg:hidden w-9 sm:w-12  z-10 absolute -translate-x-1/2 -top-16 left-0"
             />
             {/* <img
                 src="/assets/rose/rosa-banner.png"
@@ -370,7 +370,7 @@ const ContactTwo = () => {
                     <IoCall color="#FF7776" size={20} />
                   </div>
                   <div>
-                    <p className="text-sm">+51 926 637 773</p>
+                    <p className="text-sm">+51 913 441 311</p>
                   </div>
                 </div>
               </a>
