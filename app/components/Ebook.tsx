@@ -15,10 +15,10 @@ const Ebook = () => {
 
   return (
     <div className="hidden md:block  overflow-hidden pb-20">
-      <a
-        href=""
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
+        // href="#"
+        // target="_blank"
+        // rel="noopener noreferrer"
         className=""
       >
         <div className={`book pt-8 ${centered && "centered "}`}>
@@ -124,14 +124,14 @@ const Ebook = () => {
                   src="/assets/menu/carta-nueva-ultima.png"
                   className="h-[100%] w-[105%] absolute top-0 right-0 rounded-3xl"
                 />
-                <label className="next-btn" htmlFor="c3" >
+                {/* <label className="next-btn" htmlFor="c3" >
                   Next
-                </label>
+                </label> */}
               </div>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   );
 };

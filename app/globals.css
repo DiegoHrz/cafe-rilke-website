@@ -155,7 +155,7 @@ html {
 .book {
   display: flex;
   align-items: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   transform-style: preserve-3d; /* para que funcione perspective*/
   position: relative;
 }
