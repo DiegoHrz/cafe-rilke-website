@@ -67,8 +67,8 @@ export function RilkeContainer() {
         <p className="text-center mt-8 mb-3 text-[15px] lg:text-sm lg:leading-7 italic font-light">
           Después de esta semana, vuelve nuevamente y sigue su vida de antes,
           sentada en el suelo, pidiendo limosna. La amiga de Rilke, asombrada,
-          le pregunta a él: De qué habrá vivido esta mujer todos estos días sin
-          dinero? Y Rilke le contesta: De la rosa.
+          le pregunta a él: <br/>-¿De qué habrá vivido esta mujer todos estos días sin
+          dinero?<br/> Y Rilke le contesta: <br/>-De la <span className="text-rilke-red">rosa.</span>
         </p>
       </div>
 

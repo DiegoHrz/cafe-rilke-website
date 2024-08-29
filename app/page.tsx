@@ -24,12 +24,15 @@ export default function App() {
         <BestSellers />
         <Marketing />
       </section>
-      <section id="carta">
-        <Menu />
-      </section>
-      <section id="galeria">
-        <Gallery />
-      </section>
+      {/* #e9e0e0 */}
+      <div >
+        <section id="carta" >
+          <Menu />
+        </section>
+        <section id="galeria">
+          <Gallery />
+        </section>
+      </div>
       <section id="evento">
         <RilkeContainer />
       </section>
