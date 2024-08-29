@@ -234,7 +234,7 @@ const ContactTwo = () => {
                       <p className="text-lg pb-[0.15rem] font-black text-[#D8CCCC] brightness-110  flex leading-6">
                         Miraflores
                       </p>
-                      <p className="text-sm">C. Jose Galvez 685</p>
+                      <p className="text-sm">C. José Gálvez 685</p>
                       <p className="text-sm leading-4">
                         Miraflores, Lima, Perú
                       </p>
@@ -263,7 +263,7 @@ const ContactTwo = () => {
                       <IoCall color="#FF7776" size={20} />
                     </div>
                     <div>
-                      <p className="text-sm">+51 926 637 773</p>
+                      <p className="text-sm">+51 913 441 311</p>
                     </div>
                   </div>
                 </a>
@@ -318,7 +318,7 @@ const ContactTwo = () => {
             />
             <img
               src="/assets/rose/rosa-banner.png"
-              className="lg:hidden w-9 sm:w-12  z-10 absolute -translate-x-1/2 -top-16 left-0"
+              className="lg:hidden w-9 sm:w-12  z-1 absolute -translate-x-1/2 -top-16 left-0"
             />
             {/* <img
                 src="/assets/rose/rosa-banner.png"
@@ -345,7 +345,7 @@ const ContactTwo = () => {
                     <p className="text-lg pb-[0.15rem] font-black text-[#D8CCCC] brightness-110  flex leading-6">
                       Miraflores
                     </p>
-                    <p className="text-sm">C. Jose Galvez 685</p>
+                    <p className="text-sm">C. José Gálvez 685</p>
                     <p className="text-sm leading-4">Miraflores, Lima, Perú</p>
                   </div>
                 </div>

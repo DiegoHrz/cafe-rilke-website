@@ -101,7 +101,7 @@ export function Footer() {
               className="flex items-center hover:text-rilke-red"
             >
               <ImLocation2 className="hover:shadow-rilke-red p-1" size={23} />
-              <p>C. José Galvez 685, Miraflores 15074, Lima</p>
+              <p>C. José Gálvez 685, Miraflores 15074, Lima</p>
             </a>
           </div>
         </div>
