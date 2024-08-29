@@ -28,7 +28,7 @@ export function Menu() {
       <h1 className="text-black text-center font-medium  text-4xl lg:text-4xl pb-12 font-rilke-monecias">
         Carta
       </h1>
-      <p className=" text-center font-medium  text-lg lg:text-xl text-[#7b6c6c] pb-3  px-10 sm:px-24 lg:max-w-[72rem] mx-auto">
+      <div className=" text-center font-medium  text-lg lg:text-xl text-[#7b6c6c] pb-3  px-10 sm:px-24 lg:max-w-[72rem] mx-auto">
         En Café Rilke, los sabores de Alemania y Perú se fusionan en cada plato.
         En nuestra panadería, los aromas de panes recién horneados y bebidas
         artesanales te envuelven en una experiencia única.
@@ -43,7 +43,7 @@ export function Menu() {
             aquí
           </a>
         </p>
-      </p>
+      </div>
 
       {/* <ScrollIndicator /> */}
 
