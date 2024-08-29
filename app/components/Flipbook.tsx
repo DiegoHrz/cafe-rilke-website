@@ -11,6 +11,7 @@ const SimpleFlipbook: React.FC = () => {
   const pages = [
     "/assets/menu/carta-nueva-0.png",
     "/assets/menu/carta-nueva-1.png",
+    "/assets/menu/carta-nueva-ultima.png",
   ];
 
   const goToPreviousPage = () => {

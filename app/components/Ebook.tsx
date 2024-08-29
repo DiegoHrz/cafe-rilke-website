@@ -121,10 +121,10 @@ const Ebook = () => {
                   // }}
                 />
                 <img
-                  src="/assets/menu/carta-nueva-1.png"
+                  src="/assets/menu/carta-nueva-ultima.png"
                   className="h-[100%] w-[105%] absolute top-0 right-0 rounded-3xl"
                 />
-                <label className="next-btn" htmlFor="c3">
+                <label className="next-btn" htmlFor="c3" >
                   Next
                 </label>
               </div>
