@@ -38,9 +38,9 @@ const SimpleFlipbook: React.FC = () => {
   }, [isAnimating]);
 
   return (
-    <div className="m-10">
+    <div className="m-10 ">
       <a
-        className="md:hidden flex flex-col items-center justify-center relative p-6 z-0 w-fit mx-auto"
+        className="md:hidden flex flex-col items-center justify-center relative p-6 z-0 w-fit mx-auto bg-[linear-gradient(180deg,_#fff_50%,_#e7dbdb_100%)]"
         style={{
           boxSizing: "border-box",
           boxShadow:

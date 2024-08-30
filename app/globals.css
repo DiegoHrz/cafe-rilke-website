@@ -96,8 +96,6 @@ html {
   animation: full-rainbow 5s 1s linear infinite;
 } */
 
-
-
 /* 
   .landing-container {
     background-color: black;
@@ -266,7 +264,7 @@ html {
   transition: all 0.5s ease;
 }
 .book.centered {
-  transform: translateX(18vh); /* Reset any transform when centered */
+  transform: translate(185px); /* Reset any transform when centered */
   transition: all 1s ease-out;
 }
 
@@ -306,19 +304,21 @@ html {
 }
 .next-btn {
   position: absolute;
-  bottom: 13px;
-  right: 13px;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: -2rem;
   cursor: pointer;
   color: #000;
-  border: 2px solid red;
+
 }
 .back-btn {
   position: absolute;
-  bottom: 13px;
-  right: 13px;
+  bottom: 50%;
+  left: -2rem;
+  transform: translateY(50%);
   cursor: pointer;
   color: #000;
-  border: 2px solid red;
+  z-index: 20;
 }
 #p1 {
   z-index: 3;
@@ -371,13 +371,13 @@ html {
   animation: custom-pulse-2 3s infinite;
 }
 
-@keyframes custom-pulse-3{
+@keyframes custom-pulse-3 {
   0%,
   100% {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.90);
+    transform: scale(0.9);
   }
 }
 
@@ -571,3 +571,27 @@ html {
     border-color: #222;
   }
 } */
+
+.transition-transform-opacity {
+  transition: transform 1.2s ease, opacity 0.8s ease;
+}
+
+.translate-left {
+  transform: translateX(-100%);
+  opacity: 0.1;
+}
+
+.translate-right {
+  transform: translateX(30%);
+  opacity: 0.1;
+}
+
+.translate-reset {
+  transform: translateX(0);
+  opacity: 0.6;
+}
+
+.special-shadow{
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
+              -10px -10px 10px white;
+}
