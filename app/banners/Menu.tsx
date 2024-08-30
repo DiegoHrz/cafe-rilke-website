@@ -27,7 +27,7 @@ export function Menu() {
       className="pt-[8.6rem] pb-[2rem] lg:pt-[100px] lg:pb-[10px]   "
       id="carta"
     >
-      <h1 className="text-[#7b6c6c] text-center font-medium  text-6xl lg:text-5xl pb-12 font-rilke-monecias">
+      <h1 className="text-[#7b6c6c] text-center font-medium  text-5xl lg:text-5xl pb-12 font-rilke-monecias">
         Carta
       </h1>
       <div className=" text-center font-medium  text-lg lg:text-xl text-[#7b6c6c] pb-3  px-10 sm:px-24 lg:max-w-[72rem] mx-auto ">
