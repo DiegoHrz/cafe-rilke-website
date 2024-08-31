@@ -143,7 +143,7 @@ const CardSlider = () => {
               />
             </div>
             <div className="h-16 flex justify-center items-center">
-              <h2 className="text-black text-xl md:text-2xl lg:text-[1.2rem] font-serif  text-center px-1">
+              <h2 className="text-black text-lg md:text-xl lg:text-[1rem] font-serif  text-center px-1">
                 {user.name}
               </h2>
             </div>

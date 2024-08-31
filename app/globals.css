@@ -595,3 +595,26 @@ html {
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1),
               -10px -10px 10px white;
 }
+
+
+.landing-container {
+  background-color: black;
+  height: 110%;
+  background: linear-gradient(45deg, #eed9b6, #fff,#ECE2D2);
+  /* background: linear-gradient(90deg, #eed9b6, white,white, white,#000000, #000000,#000000, #000000, #000000, white, white,white,white); */
+  background-size: 300% 300%;
+  animation: color 7s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0, 50%;
+  }
+  50% {
+    background-position: 100%, 50%;
+  }
+  100% {
+    background-position: 0, 50%;
+  }
+}
+
