@@ -5,7 +5,7 @@ import { RiStarSFill } from "react-icons/ri";
 
 const Marketing = () => {
   return (
-    <div className="mx-auto w-[80%] mt-20">
+    <div className="mx-auto w-[80%] my-10">
       <div className="w-fit border-4 border-[#AA8A43] rounded-full mx-auto relative">
         <div className="w-fit border-4 border-[#77421A] rounded-full mx-auto">
           <div className="flex  flex-col   mx-auto justify-center py-3 md:py-5 px-6   lg:gap-0  landing-container rounded max-h-[18rem] aspect-square   max-w-[18rem] border-4 border-[#DDC47E]">

@@ -306,7 +306,7 @@ html {
   position: absolute;
   bottom: 50%;
   transform: translateY(50%);
-  right: -2rem;
+  right: -2.4rem;
   cursor: pointer;
   color: #000;
 
@@ -314,7 +314,7 @@ html {
 .back-btn {
   position: absolute;
   bottom: 50%;
-  left: -2rem;
+  left: -2.4rem;
   transform: translateY(50%);
   cursor: pointer;
   color: #000;
@@ -603,7 +603,7 @@ html {
   background: linear-gradient(45deg, #eed9b6, #fff,#ECE2D2);
   /* background: linear-gradient(90deg, #eed9b6, white,white, white,#000000, #000000,#000000, #000000, #000000, white, white,white,white); */
   background-size: 300% 300%;
-  animation: color 7s ease-in-out infinite;
+  animation: color 5s ease-in-out infinite;
 }
 
 @keyframes color {

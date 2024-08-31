@@ -81,11 +81,11 @@ const Ebook = () => {
                     htmlFor="c1"
                     onClick={handleFirstBackClick}
                   >
-                    <IoIosArrowBack size={45} className="text-rilke-red" />
+                    <IoIosArrowBack size={50} className="text-[#ddb766]" />
                   </label>
                 </div>
                 {/* Pagina 1 */}
-                <div className="front p-1 bg-[#DCDEDD]  relative  shadow-2xl shadow-gray-600">
+                <div className="front p-1 bg-[#DCDEDD]  relative  shadow-2xl shadow-gray-600  ">
                   <img
                     src="/assets/menu/carta-nueva-0.png"
                     className="border-2 border-[#9A753B] h-full w-full"
@@ -97,8 +97,8 @@ const Ebook = () => {
                     onClick={handleFirstNextClick}
                   >
                     <IoIosArrowForward
-                      size={45}
-                      className="text-rilke-red "
+                      size={50}
+                      className="text-[#ddb766]"
                     />
                   </label>
                 </div>
@@ -112,7 +112,7 @@ const Ebook = () => {
                   />
 
                   <label className="back-btn" htmlFor="c2">
-                    <IoIosArrowBack size={45} className="text-rilke-red" />
+                    <IoIosArrowBack size={50} className="text-[#ddb766]" />
                   </label>
                 </div>
                 {/* Pagina 3 */}
@@ -124,8 +124,8 @@ const Ebook = () => {
 
                   <label className="next-btn" htmlFor="c2">
                     <IoIosArrowForward
-                      size={45}
-                      className="text-rilke-red "
+                      size={50}
+                      className="text-[#ddb766] "
                     />
                   </label>
                 </div>
