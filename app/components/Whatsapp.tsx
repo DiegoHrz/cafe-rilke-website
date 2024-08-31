@@ -9,10 +9,10 @@ const Whatsapp: React.FC = () => {
         rel="noopener noreferrer"
       >
         <div className="bg-[#47C755] text-white rounded-3xl  text-xl px-3 py-2 relative r">
-          <p className="font-sans flex gap-1">
+          <div className=" flex gap-1">
             <FaWhatsapp color="white" className="" size={30} />
-            Pide Ya!
-          </p>
+            <span className="font-sans " >Pide Ya!</span>
+          </div>
           <div
             className=" absolute -bottom-3 left-1/2 -translate-x-1/2 -translate-y-1/2  "
             style={{

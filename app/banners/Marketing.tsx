@@ -6,9 +6,9 @@ import { RiStarSFill } from "react-icons/ri";
 const Marketing = () => {
   return (
     <div className="mx-auto w-[80%] mt-20">
-      <div className="w-fit border-8 border-[#AA8A43] rounded-full mx-auto relative">
+      <div className="w-fit border-4 border-[#AA8A43] rounded-full mx-auto relative">
         <div className="w-fit border-4 border-[#77421A] rounded-full mx-auto">
-          <div className="flex  flex-col   mx-auto justify-center py-3 md:py-5 px-6   lg:gap-0  landing-container rounded   max-w-[18rem] border-4 border-[#DDC47E]">
+          <div className="flex  flex-col   mx-auto justify-center py-3 md:py-5 px-6   lg:gap-0  landing-container rounded max-h-[18rem] aspect-square   max-w-[18rem] border-4 border-[#DDC47E]">
             <div className="flex flex-col  text-center md:pb-1 ">
               <p className="block  font-sans text-3xl md:text-2xl font-medium ">4.9</p>
               <div className="flex justify-center  ">
