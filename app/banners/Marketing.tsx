@@ -30,6 +30,7 @@ const Marketing = () => {
                 href="https://cosas.pe/vida-social/68622/cafe-rilke/"
                 target="_blank"
                 className="block w-fit mx-auto pb-2"
+                rel="noopener noreferrer"
               >
                 <img
                   src="/assets/cosas/cosas.png"
