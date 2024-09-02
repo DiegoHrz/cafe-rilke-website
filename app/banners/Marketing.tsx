@@ -16,7 +16,7 @@ const Marketing = () => {
             />
           </div>
 
-          <div className=" text-center  text-black text-base md:text-base px-2 max-w-[13rem]  md:max-w-[50rem] mx-auto font-bold ">
+          <div className=" text-center   text-base md:text-base px-2 max-w-[13rem]  md:max-w-[50rem] mx-auto  ">
             <a
               href="https://cosas.pe/vida-social/68622/cafe-rilke/"
               target="_blank"
