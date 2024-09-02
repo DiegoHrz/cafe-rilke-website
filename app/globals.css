@@ -600,7 +600,7 @@ html {
 .landing-container {
   background-color: black;
   height: 110%;
-  background: linear-gradient(45deg, #eed9b6, #fff,#ECE2D2);
+  background: linear-gradient(45deg, #FFF9BC, #FFF7BA,#EEB048,#783F1A);
   /* background: linear-gradient(90deg, #eed9b6, white,white, white,#000000, #000000,#000000, #000000, #000000, white, white,white,white); */
   background-size: 300% 300%;
   animation: color 5s ease-in-out infinite;
@@ -633,4 +633,18 @@ html {
   display: inline-block;
   white-space: nowrap;
   animation: slideIn 1s ease-out;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.animation-rotation{
+  animation: rotation 60s linear infinite;
 }
