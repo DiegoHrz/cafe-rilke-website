@@ -5,7 +5,7 @@ import { RiStarSFill } from "react-icons/ri";
 
 const Marketing = () => {
   return (
-    <div className="mx-auto w-[80%] py-10 sm:my-16 ">
+    <div className="mx-auto w-[80%] py-10 sm:my-10 ">
       <div className="w-fit   mx-auto   ">
       <a
               href="https://cosas.pe/vida-social/68622/cafe-rilke/"
@@ -30,7 +30,7 @@ const Marketing = () => {
                 className=" h-8 md:h-10 animation-opacity-infinite mx-auto    "
               />
             
-            <p className=" px-4 text-sm  sm:text-base">
+            <p className=" px-4 text-sm mt-2 md:text-base md:pt-2">
               &apos;La inauguración del café propició el encuentro del arte, la
               música y la gastronomía&apos;
             </p>
