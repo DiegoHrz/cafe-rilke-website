@@ -7,6 +7,12 @@ const Marketing = () => {
   return (
     <div className="mx-auto w-[80%] py-10 sm:my-16 ">
       <div className="w-fit   mx-auto   ">
+      <a
+              href="https://cosas.pe/vida-social/68622/cafe-rilke/"
+              target="_blank"
+              className="block w-fit mx-auto pb-1 sm:pb-2"
+              rel="noopener noreferrer"
+            >
         <div className="flex  flex-col   mx-auto justify-center py-3 md:py-5 px-6   lg:gap-0  bg-none rounded-full max-h-[18rem] aspect-square   max-w-[18rem] relative">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[96%] w-[96%] sm:h-[110%] sm:w-[110%] -z-10 overflow-visible">
             <img
@@ -17,24 +23,20 @@ const Marketing = () => {
           </div>
 
           <div className=" text-center   text-base md:text-base px-2 max-w-[13rem]  md:max-w-[50rem] mx-auto  ">
-            <a
-              href="https://cosas.pe/vida-social/68622/cafe-rilke/"
-              target="_blank"
-              className="block w-fit mx-auto pb-1 sm:pb-2"
-              rel="noopener noreferrer"
-            >
+            
               <img
                 src="/assets/cosas/cosas.png"
                 alt=""
                 className=" h-8 md:h-10 animation-opacity-infinite mx-auto    "
               />
-            </a>
+            
             <p className=" px-4 text-sm  sm:text-base">
               &apos;La inauguración del café propició el encuentro del arte, la
               música y la gastronomía&apos;
             </p>
           </div>
         </div>
+        </a>
       </div>
     </div>
   );
