@@ -9,7 +9,7 @@ const SimpleFlipbook: React.FC = () => {
 
   // Array of image paths (replace with your actual image paths)
   const pages = [
-    "/assets/menu/carta-nueva-0.png",
+    "/assets/menu/x.png",
     "/assets/menu/carta-nueva-1.png",
     "/assets/menu/carta-nueva-ultima.png",
   ];
