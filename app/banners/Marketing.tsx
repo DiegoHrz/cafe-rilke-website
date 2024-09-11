@@ -30,7 +30,7 @@ const Marketing = () => {
                 className=" h-8 md:h-10 animation-opacity-infinite mx-auto    "
               />
             
-            <p className=" px-4 text-sm mt-2 md:text-base md:pt-2">
+            <p className=" px-4 text-sm mt-2 md:text-base md:pt-2 text-gray-600">
               &apos;La inauguración del café propició el encuentro del arte, la
               música y la gastronomía&apos;
             </p>
