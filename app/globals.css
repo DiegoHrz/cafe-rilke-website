@@ -648,3 +648,7 @@ html {
 .animation-rotation{
   animation: rotation 60s linear infinite;
 }
+
+.transition-opacity {
+  transition: opacity 0.3s ease-in-out;
+}

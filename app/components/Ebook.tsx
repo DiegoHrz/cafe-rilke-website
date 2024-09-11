@@ -107,7 +107,7 @@ const Ebook = () => {
               <div className="flip border-2 border-[#9A753B]" id="p2">
                 <div className="back    relative ">
                   <img
-                    src="/assets/menu/carta-nueva-1.png"
+                    src="/assets/menu/carta-nueva-3.png"
                     className=" h-full w-full rounded-3xl"
                   />
 
@@ -118,7 +118,7 @@ const Ebook = () => {
                 {/* Pagina 3 */}
                 <div className="front bg-[#DCDEDD] rounded-3xl relative ">
                   <img
-                    src="/assets/menu/carta-nueva-1.png"
+                    src="/assets/menu/carta-nueva-2.png"
                     className=" rounded h-full w-full"
                   />
 

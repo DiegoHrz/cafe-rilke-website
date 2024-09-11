@@ -37,7 +37,7 @@ export function Menu() {
         <p className="mt-4">
           También Puedes ingresar a la Carta en PDF{" "}
           <a
-            href="assets/menu/carta.pdf"
+            href="assets/menu/carta-nueva.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="lg:hover:underline underline text-blue-400"

@@ -11,7 +11,8 @@ const SimpleFlipbook: React.FC = () => {
   const pages = [
     "/assets/menu/carta-nueva-0.png",
     "/assets/menu/carta-nueva-1.png",
-    "/assets/menu/carta-nueva-ultima.png",
+    "/assets/menu/carta-nueva-2.png",
+    "/assets/menu/carta-nueva-3.png",
   ];
 
   const goToPreviousPage = () => {
@@ -93,7 +94,7 @@ const SimpleFlipbook: React.FC = () => {
               `}
             >
               {currentPage !== pages.length - 1 && (
-                <ScrollIndicator isFirstPage={currentPage === 0} />
+                <ScrollIndicator isFirstPage={currentPage === 0}  />
               )}
               {/* <RxDoubleArrowRight
                 className={`${

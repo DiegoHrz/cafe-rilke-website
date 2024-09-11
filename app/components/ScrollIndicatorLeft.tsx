@@ -20,7 +20,7 @@ const ScrollIndicatorLeft = () => {
           borderLeft: "3px solid #A5884B",
           borderBottom: "3px solid #A5884B",
         //   animation: "animate 1s linear infinite",
-          animationDelay: "0.2s",
+          // animationDelay: "0.2s",
         }}
       ></span>
       {/* <span
