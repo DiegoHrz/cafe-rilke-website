@@ -32,13 +32,13 @@ const Ebook = () => {
       //   backgroundPosition: "50% 45%",
       // }}
     >
-      <div className="relative  overflow-hidden py-16 w-full shadow-[0px_0px_50px_rgb(0,0,0,0.4)]">
+      <div className="relative  overflow-hidden py-16 w-full shadow-[0px_0px_50px_rgb(0,0,0,0.4)] bg-black">
         {/* Background Image Overlay */}
-        <img
+        {/* <img
           src="/assets/frames/table+.jpg"
           alt=""
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80   w-[72rem] h-full shadow-[0px_0px_50px_rgb(0,0,0,0.6)] rounded-xl"
-        />
+        /> */}
         <div className="">
           <div className={`book py-4 ${centered && "centered "}`}>
             <input type="checkbox" id="c1" style={{ display: "none" }} />
