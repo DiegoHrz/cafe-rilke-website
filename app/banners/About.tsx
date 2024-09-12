@@ -1,4 +1,14 @@
+'use client'
 export function About() {
+
+  const handleGaleriaClick = (e:  React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const galeriaElement = document.getElementById('carta');
+    if (galeriaElement) {
+      galeriaElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div
       className="flex flex-col py-16 lg:pt-24 lg:pb-52 px-4 md:px-8 lg:px-4 "
@@ -47,12 +57,12 @@ export function About() {
             </p>
             <div className="flex justify-center items-center gap-4 lg:gap-10 pt-10">
               <a
-                href="assets/menu/carta.pdf"
-                target="_blank"
+                href="#carta"
                 rel="noopener noreferrer"
+                onClick={handleGaleriaClick}
               >
-                <button className="border-2 border-rilke-red  rounded-3xl px-3 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
-                  Descargar Menu
+                <button className="border-2 border-rilke-red  rounded-3xl px-7 py-2 lg:px-8 italic hover:bg-rilke-red hover:text-white hover:shadow-xl transition duration-[1.5s] ease-in-out !font-light">
+                  Ver Menu
                 </button>
               </a>
               <a href="#galeria">

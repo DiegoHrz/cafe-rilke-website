@@ -202,8 +202,8 @@ const ContactTwo = () => {
               }}
             />
           </div>
-
-          <div className="hidden lg:block  lg:absolute   top-20 h-[34rem] right-0 translate-x-1/2 w-1/2 max-w-[28rem] px-14 py-20 rounded-xl bg-[#524747]">
+          {/* bg-[#524747] */}
+          <div className="hidden lg:block  lg:absolute   top-20 h-[34rem] right-0 translate-x-1/2 w-1/2 max-w-[28rem] px-14 py-20 rounded-xl bg-black">
             <div className="text-left relative text-[#D5CACA]">
               <img
                 src="/assets/rose/rosa-banner.png"
@@ -310,7 +310,7 @@ const ContactTwo = () => {
           </div>
         </form>
 
-        <div className="block lg:hidden mt-10  bg-[#524747] min-h-[37rem]   px-10 sm:px-14 py-20 rounded-xl mx-auto relative">
+        <div className="block lg:hidden mt-10  bg-black min-h-[37rem]   px-10 sm:px-14 py-20 rounded-xl mx-auto relative">
           <div className="text-left relative text-[#D5CACA]">
             <img
               src="/assets/rose/rosa-banner.png"

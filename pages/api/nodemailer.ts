@@ -21,7 +21,7 @@ export default async function handler(
       // Define the email options
       const mailOptions = {
         from: `"Cafe Rilke Website" <your_email@gmail.com>`, // Replace with your Gmail email
-        to: "diegomania1999@gmail.com", // Replace with the recipient's email
+        to: "hernandezwdiego@gmail.com", // Replace with the recipient's email
         subject: `Formulario de Contacto con Asunto: ${asunto}`,
         html: `
         <div>
