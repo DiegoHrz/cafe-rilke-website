@@ -45,7 +45,7 @@ const ContactTwo = () => {
         Contacto
       </h1> */}
       <p className="font-medium text-xl pt-6 lg:pt-[40px] lg:text-[20px] italic">
-        Cualquier sugerencia, escribanos
+        Cualquier sugerencia, escríbanos
       </p>
       <div className="text-[#03b418] py-3 ">
         {successMessage && <p>{successMessage}</p>}
