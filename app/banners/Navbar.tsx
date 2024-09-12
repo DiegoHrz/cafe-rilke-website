@@ -111,7 +111,7 @@ export function Navbar() {
       <nav className="hidden md:flex w-full items-center justify-between px-[20px] py-[16px] md:container md:mx-0 md:px-0 md:py-0">
         <div className="fixed z-10 top-0 w-full">
           <div className="bg-[#32304c] text-center text-white font-sans text-xs p-1 font-light">
-            MENU DE LUNES A SABADOS DE 12pm a 4pm desde S/20.
+            MENÚ DE LUNES A SÁBADOS DE 12pm a 3pm desde S/23.
           </div>
           <div
             className={`md:flex items-center justify-between  w-full md:py-2 md:px-10 lg:px-20 md lg:gap-4 md:gap-2 md:text-sm lg:text-base transition-colors duration-1000 ease-in-out ${

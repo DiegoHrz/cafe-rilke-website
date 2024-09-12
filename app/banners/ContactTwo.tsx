@@ -217,7 +217,7 @@ const ContactTwo = () => {
                 Te esperamos{" "}
               </p>
               <p className="pb-8 ">
-                En nuestro cafe ubicado en el distrito más bohemio y rico de
+                En nuestro café ubicado en el distrito más bohemio y rico de
                 cultura internacional de todo el Perú
               </p>
               <div className="">
@@ -252,7 +252,7 @@ const ContactTwo = () => {
                     </div>
                     <div>
                       <p className="text-sm pb-1 leading-5">
-                        info@caferilke.com
+                        info@cafe-rilke.com
                       </p>
                     </div>
                   </div>
@@ -328,7 +328,7 @@ const ContactTwo = () => {
               Te esperamos{" "}
             </p>
             <p className="pb-8 ">
-              En nuestro cafe ubicado en el distrito más bohemio y rico de
+              En nuestro café ubicado en el distrito más bohemio y rico de
               cultura internacional de todo el Perú
             </p>
             <div className="flex justify-center flex-col">
@@ -360,7 +360,7 @@ const ContactTwo = () => {
                     <IoMdMail color="#FF7776" size={18} />
                   </div>
                   <div>
-                    <p className="text-sm pb-1 leading-5">info@caferilke.com</p>
+                    <p className="text-sm pb-1 leading-5">info@cafe-rilke.com</p>
                   </div>
                 </div>
               </a>

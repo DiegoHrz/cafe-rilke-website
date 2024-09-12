@@ -36,11 +36,13 @@ export function Footer() {
             CONTACTANOS
           </p>
           <div className="flex flex-col gap-1">
-            <a href="#" className=" transition-all duration-700  hover:text-rilke-red hover:scale-110 rounded-xl  p-1">
-              caferilkebiz@biz.com
-            </a>
-            <a href="#" className=" transition-all duration-700  hover:text-rilke-red hover:scale-110 rounded-xl  p-1">
-              hello@caferilke.com
+            <a
+              href="mailto:info@cafe-rilke.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
+              className=" transition-all duration-700  hover:text-rilke-red hover:scale-110 rounded-xl p-1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              info@cafe-rilke.com
             </a>
           </div>
         </div>
@@ -59,7 +61,7 @@ export function Footer() {
               />
             </a>
             <a
-              href="mailto:correo@mail.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
+              href="mailto:info@cafe-rilke.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
               target="_blank"
               rel="noopener noreferrer"
             >
