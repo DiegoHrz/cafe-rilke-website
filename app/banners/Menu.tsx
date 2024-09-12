@@ -34,7 +34,7 @@ export function Menu() {
         En Café Rilke, los sabores de Alemania y Perú se fusionan en cada plato.
         En nuestra panadería, los aromas de panes recién horneados y bebidas
         artesanales te envuelven en una experiencia única.
-        <p className="mt-4">
+        {/* <p className="mt-4">
           También Puedes ingresar a la Carta en PDF{" "}
           <a
             href="assets/menu/carta-nueva.pdf"
@@ -44,7 +44,7 @@ export function Menu() {
           >
             aquí
           </a>
-        </p>
+        </p> */}
       </div>
 
       {/* <ScrollIndicator /> */}
