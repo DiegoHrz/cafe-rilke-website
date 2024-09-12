@@ -242,7 +242,7 @@ const ContactTwo = () => {
                   </div>
                 </a>
                 <a
-                  href="mailto:correo@mail.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
+                  href="mailto:info@cafe-rilke.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -351,7 +351,7 @@ const ContactTwo = () => {
                 </div>
               </a>
               <a
-                href="mailto:correo@mail.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
+                href="mailto:info@cafe-rilke.com?subject=Consulta&body=Hola, me encantaría saber más del servicio..."
                 target="_blank"
                 rel="noopener noreferrer"
               >
