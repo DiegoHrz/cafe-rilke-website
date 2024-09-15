@@ -310,15 +310,15 @@ const ContactTwo = () => {
           </div>
         </form>
 
-        <div className="block lg:hidden mt-10  bg-black min-h-[37rem]   px-10 sm:px-14 py-20 rounded-xl mx-auto relative">
+        <div className="block lg:hidden mt-10  bg-black min-h-[37rem]   px-10 sm:px-14 py-24 rounded-xl mx-auto relative overflow-hidden">
           <div className="text-left relative text-[#D5CACA]">
             <img
-              src="/assets/rose/rosa-banner.png"
-              className="lg:hidden w-9 sm:w-12  z-10 absolute -translate-x-1/2 -bottom-14 -right-10"
+              src="/assets/rose/rosa-blanca.jpg"
+              className="lg:hidden w-12 sm:w-14  z-10 absolute -translate-x-1/2 -bottom-[5.1rem] -right-12"
             />
             <img
-              src="/assets/rose/rosa-banner.png"
-              className="lg:hidden w-9 sm:w-12  z-1 absolute -translate-x-1/2 -top-16 left-0"
+              src="/assets/rose/rosa-blanca.jpg"
+              className="lg:hidden w-12 sm:w-14  z-1 absolute -translate-x-1/2 -top-[5.5rem] left-0 "
             />
             {/* <img
                 src="/assets/rose/rosa-banner.png"
