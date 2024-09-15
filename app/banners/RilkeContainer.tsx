@@ -12,8 +12,8 @@ import homeCafe from "../../public/assets/home-cafe-2.jpg";
 export function RilkeContainer() {
   return (
     <div
-      className="pt-4 lg:pt-10 bg-black text-white font-rilke-theme lg:py-10 "
-      style={{ padding: "100px 0" }}
+      className=" bg-black text-white font-rilke-theme py-16 lg:py-10 "
+
     >
       <div
         className=" md:w-[768px] lg:w-[1024px] "
@@ -24,19 +24,20 @@ export function RilkeContainer() {
           marginLeft: "auto",
         }}
       >
-        <h1 className="text-center text-[32px] leading-[2.50rem]  text-2xl  sm:text-4xl lg:leading-[72px]  relative w-fit mx-auto italic font-semibold" style={{fontFamily:'Aldus'}} >
-          La Rosa de Rilke
+        <h1 className="text-center text-[32px] leading-[2.50rem]  text-2xl  sm:text-4xl lg:leading-[72px]   w-fit mx-auto italic font-semibold bo" style={{fontFamily:'Aldus'}} >
+          
           {/* Rosa Vertical */}
           <img
-            src="/assets/rose/media-rosa-superior.png"
+            src="/assets/rose/rosa-blanca.jpg"
             alt=""
-            className="absolute bottom-[39%] lg:bottom-[37%] left-1/2 h-12   transform -translate-x-1/2 -translate-y-1/2"
+            className="h-24 lg:h-28 mx-auto  "
           />
-          <img
+          La Rosa de Rilke
+          {/* <img
             src="/assets/rose/media-rosa-inferior2.png"
             alt=""
             className="absolute top-[163%] lg:top-[120%] left-1/2 h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2"
-          />
+          /> */}
           {/* Rosa Horizontal */}
           {/* <img
             src="/assets/rose/media-rosa-superior.png"
@@ -49,7 +50,7 @@ export function RilkeContainer() {
             className="absolute top-1/2 right-[104%]   h-8 sm:h-16 brightness-[10]  transform -translate-x-1/2 -translate-y-1/2 rotate-90  "
           /> */}
         </h1>
-        <p className="text-center mt-20 lg:mt-[50px] mb-3 text-[0.9rem] leading-7  lg:leading-7 italic font-light ">
+        <p className="text-center mt-12 lg:mt-[50px] mb-3 text-[0.9rem] leading-7  lg:leading-7 italic font-light ">
           Cuando el poeta Rainer Maria Rilke estudiaba en París, todos los días,
           él y una amiga tomaban el mismo camino a la universidad. Y todos los
           días pasaron por una señora sentada en el suelo, pidiendo limosna. La
