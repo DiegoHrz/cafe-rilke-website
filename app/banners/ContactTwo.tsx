@@ -62,8 +62,8 @@ const ContactTwo = () => {
             Contacto
           </header>
           <img
-            src="/assets/rose/rosa-banner.png"
-            className="hidden lg:block  w-12 lg:w-10 z-10 absolute -bottom-3 lg:bottom-7  lg:left-12 -translate-x-1/2 "
+            src="/assets/rose/rosa-negra.png"
+            className="hidden lg:block  w-12 lg:w-40 z-10 absolute -bottom-3 lg:bottom-3  lg:left-12 -translate-x-1/2 "
           />
           <div className="flex flex-col-reverse">
             <input
@@ -203,11 +203,11 @@ const ContactTwo = () => {
             />
           </div>
           {/* bg-[#524747] */}
-          <div className="hidden lg:block  lg:absolute   top-20 h-[34rem] right-0 translate-x-1/2 w-1/2 max-w-[28rem] px-14 py-20 rounded-xl bg-black">
+          <div className="hidden lg:block  lg:absolute   top-20 h-[34rem] right-0 translate-x-1/2 w-1/2 max-w-[28rem] px-14 py-20 rounded-xl bg-black overflow-hidden">
             <div className="text-left relative text-[#D5CACA]">
               <img
-                src="/assets/rose/rosa-banner.png"
-                className="hidden lg:block w-12 lg:w-10 z-10 absolute -bottom-1 lg:-top-12  lg:-right-8 "
+                src="/assets/rose/rosa-blanca.jpg"
+                className="hidden lg:block w-12 lg:w-[4.5rem]  z-10 absolute -bottom-1 lg:-top-[4rem]  lg:-right-[3rem] brightness-150  overflow-hidden"
               />
               {/* <img
                 src="/assets/rose/rosa-banner.png"
