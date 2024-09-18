@@ -11,7 +11,7 @@ const BestSellers = () => {
         </h1>
         <div className="flex justify-center">
           {/* <GiLaurelCrown size={40} className="text-rilke-red" /> */}
-          <img src="/assets/rose/crossed-roses.png" alt="" className="h-12 sm:h-16" />
+          <img src="/assets/rose/crossed-roses6.png" alt="" className="h-12 sm:h-16" />
         </div>
         <h1 className=" text-2xl  text-[#172026] lg:text-[42px] lg:leading-[58px] text-center pb-10 font-rilke-monecias">
           Los BestSellers
