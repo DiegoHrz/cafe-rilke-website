@@ -10,7 +10,7 @@ const PdfPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <iframe
-        src="/assets/menu/carta.pdf"
+        src="/assets/menu/carta-nueva.pdf"
         style={{ border: "none", width: "100%", height: "100%" }}
         title="Archivo PDF"
       />

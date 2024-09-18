@@ -18,7 +18,7 @@ export function Home() {
   }, []);
   const parallaxShift = scrollPosition * 0.5;
   return (
-    <div className="h-screen relative overflow-hidden" id="home">
+    <div className="h-screen relative overflow-hidden" >
       <div className="h-full w-full relative">
         <div
           className="absolute w-full h-full"

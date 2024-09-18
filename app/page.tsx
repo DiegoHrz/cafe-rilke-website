@@ -21,30 +21,29 @@ export default function App() {
       <ScrollSpy />
       <section id="home">
         <Home />
-        <BestSellers />
-        <Marketing />
       </section>
+      <BestSellers />
+      <Marketing />
       {/* #e9e0e0 */}
-      <div >
-        <section id="carta" >
-          <Menu />
-        </section>
-        <section id="galeria">
-          <Gallery />
-        </section>
-      </div>
-      <section id="evento">
-        <RilkeContainer />
+
+      <section id="carta">
+        <Menu />
+      </section>
+      <section id="galeria">
+        <Gallery />
       </section>
 
       <section id="acerca">
+        <RilkeContainer />
         <About />
       </section>
 
       {/* <section id="contacto">
         <ContactForm />
       </section> */}
-      <ContactTwo />
+      <section id="contacto">
+        <ContactTwo />
+      </section>
       <Footer />
       <Whatsapp />
     </>

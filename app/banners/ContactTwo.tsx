@@ -39,7 +39,6 @@ const ContactTwo = () => {
     <div
       className="w-full bg-gradient-to-br from-[#f4e7d2] via-[#ebe1d2] to-[#FFFBF5]  px-8
       lg:px-16 text-center lg:my-[0px]  pt-14 pb-60  lg:pb-52 "
-      id="contacto"
     >
       {/* <h1 className=" text-4xl font-medium lg:text-[35px] leading-[64px] font-rilke-monecias text-[#534547]">
         Contacto
