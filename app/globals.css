@@ -314,7 +314,7 @@ html {
 .back-btn {
   position: absolute;
   bottom: 53%;
-  left: -1.7rem;
+  left: -1.5rem;
   transform: translateY(50%);
   cursor: pointer;
   color: #000;
