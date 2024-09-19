@@ -31,7 +31,7 @@ export function About() {
         </div>
 
         <div className=" ">
-          <div className="lg:w-[30rem] flex flex-col justify-center items-center text-[15px] md:text-[16px] italic leading-7">
+          <div className="lg:w-[30rem] flex flex-col justify-center items-center text-[15px] md:text-[16px] italic leading-7 overflow-hidden">
             <p className=" font-rilke-aldus text-[#666666] relative text-justify">
               Café Rilke es el sueño común de la periodista, filósofa y teóloga
               alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de
@@ -51,8 +51,8 @@ export function About() {
               y que puedan pasar su tiempo libre jugando y divertiendose en un
               lugar sano y saludable.
               <img
-                src="/assets/rose/rosa-banner.png"
-                className=" w-28 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 opacity-10"
+                src="/assets/rose/rosa-negra.png"
+                className="w-[28rem] max-w-[40rem]  sm:w-[26rem] md:w-[22rem] lg:w-[30rem] absolute left-[43%] sm:left-[47%] md:left-[47%] lg:left-[46%] top-1/2 -translate-y-1/2 -translate-x-1/2 opacity-10 "
               />
             </p>
             <div className="flex justify-center items-center gap-4 lg:gap-10 pt-10">
