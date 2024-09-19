@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 import { GrFormNextLink } from "react-icons/gr";
 import {
   IoIosArrowBack,
@@ -8,20 +9,34 @@ import {
   IoMdArrowRoundBack,
   IoMdArrowRoundForward,
 } from "react-icons/io";
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 const Ebook = () => {
   const [centered, setCentered] = useState(false);
-  const [moveFrame, setMoveFrame] = useState(false);
+  // const [moveFrame, setMoveFrame] = useState(false);
+  const [useStyles, setUseStyles] = useState(false);
 
   const handleFirstNextClick = () => {
     setCentered(true);
-    setMoveFrame(false);
+    // setMoveFrame(false);
   };
 
   const handleFirstBackClick = () => {
     setCentered(false);
-    setMoveFrame(true);
+    // setMoveFrame(true);
   };
+
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (centered) {
+      timer = setTimeout(() => {
+        setUseStyles(true);
+      }, 700);
+    } else {
+      setUseStyles(false);
+    }
+    return () => clearTimeout(timer);
+  }, [centered]);
 
   return (
     <div
@@ -45,9 +60,10 @@ const Ebook = () => {
             <input type="checkbox" id="c2" style={{ display: "none" }} />
             <input type="checkbox" id="c3" style={{ display: "none" }} />
             <div
-              className={`flip-book transform transition-transform duration-[2] relative ${
-                !centered && "animate-custom-pulse"
-              }`}
+              // className={`flip-book transform transition-transform duration-[2] relative ${
+              //   centered && "animate-custom-pulse"
+              // }`}
+              className={`flip-book transform transition-transform duration-[2] relative `}
               style={{
                 width: "370px",
                 height: "520px",
@@ -81,7 +97,17 @@ const Ebook = () => {
                     htmlFor="c1"
                     onClick={handleFirstBackClick}
                   >
-                    <IoIosArrowBack size={50} className="text-[#ddb766]" />
+                    {useStyles && (
+                      <div className="flex flex-1 border h-20 -right-4 absolute -translate-y-1/2">
+                        <h1 className="text-transparent text-gradient text-3xl rotate-180 ">
+                          ›
+                        </h1>
+
+                        {/* <span className="text-gradient -ml-16">
+                          <MdArrowBackIos />
+                        </span> */}
+                      </div>
+                    )}
                   </label>
                 </div>
                 {/* Pagina 1 */}
@@ -92,14 +118,19 @@ const Ebook = () => {
                   />
 
                   <label
-                    className="next-btn"
+                    className="next-btn p-[0.1rem]"
                     htmlFor="c1"
                     onClick={handleFirstNextClick}
                   >
-                    <IoIosArrowForward
-                      size={50}
-                      className="text-[#ddb766]"
-                    />
+                    {/* <IoIosArrowForward size={50} className="text-transparent" /> */}
+                    {!useStyles && (
+                      <FaArrowAltCircleRight
+                        className={`absolute    -right-1  text-blue-300 transition-all duration-1000 ease-out animate-custom-pulse-2 ${
+                          centered ? "opacity-0" : "opacity-100"
+                        }`}
+                        size={45}
+                      />
+                    )}
                   </label>
                 </div>
               </div>
@@ -112,7 +143,17 @@ const Ebook = () => {
                   />
 
                   <label className="back-btn" htmlFor="c2">
-                    <IoIosArrowBack size={50} className="text-[#ddb766]" />
+                    {useStyles && (
+                      <div className="flex flex-1 border h-20 -right-4 absolute -translate-y-1/2">
+                        <h1 className="text-transparent text-gradient text-3xl rotate-180 ">
+                          ›
+                        </h1>
+
+                        {/* <span className="text-gradient -ml-16">
+                          <MdArrowBackIos />
+                        </span> */}
+                      </div>
+                    )}
                   </label>
                 </div>
                 {/* Pagina 3 */}
@@ -123,10 +164,17 @@ const Ebook = () => {
                   />
 
                   <label className="next-btn" htmlFor="c2">
-                    <IoIosArrowForward
-                      size={50}
-                      className="text-[#ddb766] "
-                    />
+                    {useStyles && (
+                      <div className="flex flex-1 border h-20 -right-4 absolute -translate-y-1/2">
+                        <h1 className="text-transparent text-gradient text-3xl rotate-180 -scale-x-100 ">
+                          ›
+                        </h1>
+
+                        {/* <span className="text-gradient -ml-16">
+                          <MdArrowBackIos />
+                        </span> */}
+                      </div>
+                    )}
                   </label>
                 </div>
               </div>

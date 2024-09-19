@@ -32,7 +32,7 @@ export function About() {
 
         <div className=" ">
           <div className="lg:w-[30rem] flex flex-col justify-center items-center text-[15px] md:text-[16px] italic leading-7">
-            <p className=" font-rilke-aldus text-[#666666] relative">
+            <p className=" font-rilke-aldus text-[#666666] relative text-justify">
               Café Rilke es el sueño común de la periodista, filósofa y teóloga
               alemana, Anke Gossen, y el pintor y esculptor peruano Fernando de
               la Jara. Crearon el Café Rilke según el lema del obíspo brasileño,

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg
+      width="800px"
+      height="800px"
+      viewBox="-4.5 0 20 20"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      className="arrow-gradient"
+    >
+      <title>arrow_right [#333]</title>
+      <desc>Created with Sketch.</desc>
+      <defs>
+        <mask id="arrow-mask">
+          <path
+            d="M370.39,6519 L369,6520.406 L377.261,6529.013 L376.38,6529.931 L376.385,6529.926 L369.045,6537.573 L370.414,6539 C372.443,6536.887 378.107,6530.986 380,6529.013 C378.594,6527.547 379.965,6528.976 370.39,6519"
+            fill="white"
+          />
+        </mask>
+      </defs>
+      <rect width="100%" height="100%" mask="url(#arrow-mask)" className="moving-gradient"></rect>
+    </svg>

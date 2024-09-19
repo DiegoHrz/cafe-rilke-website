@@ -304,7 +304,7 @@ html {
 }
 .next-btn {
   position: absolute;
-  bottom: 50%;
+  bottom: 53%;
   transform: translateY(50%);
   right: -2.4rem;
   cursor: pointer;
@@ -313,8 +313,8 @@ html {
 }
 .back-btn {
   position: absolute;
-  bottom: 50%;
-  left: -2.4rem;
+  bottom: 53%;
+  left: -1.7rem;
   transform: translateY(50%);
   cursor: pointer;
   color: #000;
@@ -368,7 +368,7 @@ html {
 }
 
 .animate-custom-pulse-2 {
-  animation: custom-pulse-2 3s infinite;
+  animation: custom-pulse-2 2.5s infinite;
 }
 
 @keyframes custom-pulse-3 {
@@ -651,4 +651,25 @@ html {
 
 .transition-opacity {
   transition: opacity 0.3s ease-in-out;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #FFF9BC, #FFF7BA, #EEB048, #783F1A);
+  background-size: 300% 300%;
+  animation: color 2s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block; /* Asegura que el texto se comporte adecuadamente */
+  font-size: 10rem;
+}
+
+.gradient-icon-wrapper svg {
+  fill: currentColor;
+}
+
+@keyframes color {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
 }
