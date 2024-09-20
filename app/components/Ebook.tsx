@@ -98,8 +98,12 @@ const Ebook = () => {
                     onClick={handleFirstBackClick}
                   >
                     {useStyles && (
-                      <div className="flex flex-1 border h-20 -right-4 absolute -translate-y-1/2">
-                        <h1 className="text-transparent text-gradient text-3xl rotate-180 ">
+                      <div className="flex flex-1  h-20 -right-4 absolute -translate-y-1/2">
+                        <h1
+                          className="text-transparent text-gradient text-3xl rotate-180  "
+                          style={{ fontSize: "10rem" }} 
+
+                        >
                           ›
                         </h1>
 
@@ -124,12 +128,29 @@ const Ebook = () => {
                   >
                     {/* <IoIosArrowForward size={50} className="text-transparent" /> */}
                     {!useStyles && (
-                      <FaArrowAltCircleRight
-                        className={`absolute    -right-1  text-blue-300 transition-all duration-1000 ease-out animate-custom-pulse-2 ${
-                          centered ? "opacity-0" : "opacity-100"
-                        }`}
-                        size={45}
-                      />
+                      <div className="flex flex-1 -top-5  h-20 right-3  absolute -translate-y-1/2 border-[#FFFBF5] w-20 rounded-full animate-sonar border-[rem]">
+                        <MdArrowForwardIos className={`absolute  h-20  -right-1  text-blue-300 text-gradient-animate transition-all duration-1000 ease-out   text-3xl   ${
+                            centered ? "opacity-0" : "opacity-100"
+                          }`}
+                          style={{ fontSize: "10rem" }} />
+
+                        <h1
+                          className={`absolute  h-20  -right-1  text-blue-300 text-gradient-animate transition-all duration-1000 ease-out   text-3xl   ${
+                            centered ? "opacity-0" : "opacity-100"
+                          }`}
+                          style={{ fontSize: "10rem" }}
+                        >
+                          ›
+                        </h1>
+                        <h1
+                          className={`absolute  h-20 right-4  text-blue-300 text-gradient-animate2 transition-all duration-1000 ease-out   text-3xl  ${
+                            centered ? "opacity-0" : "opacity-100"
+                          }`}
+                          style={{ fontSize: "10rem" }}
+                        >
+                          ›
+                        </h1>
+                      </div>
                     )}
                   </label>
                 </div>
@@ -144,8 +165,11 @@ const Ebook = () => {
 
                   <label className="back-btn" htmlFor="c2">
                     {useStyles && (
-                      <div className="flex flex-1 border h-20 -right-4 absolute -translate-y-1/2">
-                        <h1 className="text-transparent text-gradient text-3xl rotate-180 ">
+                      <div className="flex flex-1  h-20 -right-4 absolute -translate-y-1/2">
+                        <h1
+                          className="text-transparent text-gradient text-3xl  "
+                          style={{ fontSize: "10rem" }}
+                        >
                           ›
                         </h1>
 
@@ -165,8 +189,11 @@ const Ebook = () => {
 
                   <label className="next-btn" htmlFor="c2">
                     {useStyles && (
-                      <div className="flex flex-1 border h-20 -right-4 absolute -translate-y-1/2">
-                        <h1 className="text-transparent text-gradient text-3xl rotate-180 -scale-x-100 ">
+                      <div className="flex flex-1  h-20 -right-4 absolute -translate-y-1/2">
+                        <h1
+                          className="text-transparent text-gradient-right text-3xl rotate-180 -scale-x-100"
+                          style={{ fontSize: "10rem" }}
+                        >
                           ›
                         </h1>
 
