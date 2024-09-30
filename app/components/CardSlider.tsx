@@ -12,39 +12,75 @@ const CardSlider = () => {
 
   const users = [
     {
-      name: "Ensalada de Quinua",
-      details: "Mix de quinua con champiñones salteados",
-      image: "/assets/best-sellers/dish1-min.png",
+      name: "Cheesecake con naranja china",
+      details: "Cremoso cheesecake con naranjas chinas confitadas.",
+      image: "/assets/best-sellers/cheesecake-con-naranja-china.png",
     },
     {
-      name: "Lomo Saltado Rilke",
-      details: "Lomo fino salteado estilo rilke",
-      image: "/assets/best-sellers/dish2-min.png",
+      name: "Crocante de Fruta",
+      details: "Crujiente cake con frutas de estación",
+      image: "/assets/best-sellers/crocante-de-fruta.png",
     },
     {
-      name: "Arroz con Pato",
-      details: "Arroz al culantro y loche con pato a la chicha de jora",
-      image: "/assets/best-sellers/dish3-min.png",
+      name: "Croissant",
+      details: "Crujiente por fuera y mantequilloso por dentro",
+      image: "/assets/best-sellers/croissant.png",
     },
     {
-      name: "Fetuccini a la Huancaina con Lomo",
-      details: "Fetuccini con Lomo saltado",
-      image: "/assets/best-sellers/dish4-min.png",
+      name: "Frankenlaib ",
+      details: "Pan crocante de harina de centeno y hojuelas de avena",
+      image: "/assets/best-sellers/frankenlaib.png",
+    },
+
+    {
+      name: "Grissini",
+      details: "Palitos de pan crujientes, perfectos para picar.",
+      image: "/assets/best-sellers/grissini.png",
     },
     {
-      name: "Quinoto ",
-      details: "Guiso de Quinua blanca con vegetales rostizados",
-      image: "/assets/best-sellers/dish5-min.png",
+      name: "Miraflorinos",
+      details: "Deliciosas galletas con frutas confitadas, almendras y chocolate",
+      image: "/assets/best-sellers/miraflorinos.png",
     },
     {
-      name: "Ñoquis al Pesto",
-      details: "Ñoquis al pesto artesanales hecho en casa",
-      image: "/assets/best-sellers/dish6-min.png",
+      name: "Muffin de Manzana",
+      details: "Esponjoso muffin con trozos de manzana y un toque de canela.",
+      image: "/assets/best-sellers/muffin-de-manzana.png",
+    },
+    {
+      name: "Pie de Limón",
+      details: "Base crocante con crema de limón y merengue dorado.",
+      image: "/assets/best-sellers/pie-de-limon.png",
+    },
+    {
+      name: "Schwarzbrot",
+      details: "Pan negro de centeno, linaza, ajonjolí, semillas de girasol y chancaca",
+      image: "/assets/best-sellers/schwarzbro.png",
+    },
+    {
+      name: "Strudel de Manzana",
+      details: "Hojaldre relleno de manzanas especiadas y canela.",
+      image: "/assets/best-sellers/strudel-de-manzana.png",
+    },
+
+    // {
+    //   name: "Quinoto ",
+    //   details: "Guiso de Quinua blanca con vegetales rostizados",
+    //   image: "/assets/best-sellers/dish5-min.png",
+    // },
+
+
+    {
+      name: "Trenza de Leche",
+      details: "Masa dulce y suave con sabor a leche, ideal para acompañar.",
+      image: "/assets/best-sellers/trenza-de-leche.png",
+    },
+    {
+      name: "Cake de Naranja",
+      details: "Jugoso Cake con jugo de naranja natural",
+      image: "/assets/best-sellers/cake-de-naranja.png",
     },
   ];
-
-
-
 
   const handleClickHover = (index: number) => {
     setActiveIndex(index === activeIndex ? null : index);
@@ -77,7 +113,7 @@ const CardSlider = () => {
           img.src = user.image;
         });
       });
-  
+
       try {
         await Promise.all(imagePromises);
         setIsLoading(false);
@@ -86,18 +122,15 @@ const CardSlider = () => {
         setIsLoading(false); // Set loading to false even if there's an error, to avoid infinite loading state
       }
     };
-  
+
     loadImages();
-  
+
     // ... (rest of the useEffect logic)
   }, [activeIndex]);
 
-
   if (isLoading) {
-    return ; // Or any loading indicator you prefer
+    return; // Or any loading indicator you prefer
   }
-
-
 
   return (
     <div className="max-w-full mx-auto flex flex-col justify-center gap-4">
@@ -125,15 +158,26 @@ const CardSlider = () => {
             className="card-item flex flex-col justify-center items-center rounded backdrop-blur-md relative w-[calc(33.333%-1rem)] md:w-[calc(16.666%-1rem)] mb-10 mt-4 levatate-effect"
           >
             <div
-              className="relative image-container"
+              className="relative  "
               onClick={() => handleClickHover(index)}
             >
               <img
                 src={user.image}
                 alt={user.name}
-                className={`hidden sm:block rounded-full h-[85%] w-[85%] max-h-full max-w-full mx-auto bg-gradient-radial z-50  md:hover:scale-[1.15] transform duration-500  hover:scale-125`}
+                className={`hidden sm:block rounded-full h-[85%] w-[85%]  mx-auto bg-gradient-radial z-50  md:hover:scale-[1.15] transform duration-500  hover:scale-125 relative`}
+                // style={{
+                //   boxShadow: "inset 0px 0px 60px -40px red"
+                // }}
                 // shadow-[10px_10px_50px_rgba(0,0,0,1)]
               />
+              <div
+                className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[70%] w-[50%] sm:h-[80%] sm:w-[60%] bg-transparent rounded-full"
+                style={{ boxShadow: "-3px 5px 15px 5px rgba(0, 0, 0, 1)" }}
+              ></div>
+              {/* <div
+                className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[85%] w-[85%] bg-transparent rounded-full"
+                style={{ boxShadow: "inset 0 0 25px 15px rgba(0, 0, 0, 0.6)" }}
+              ></div> */}
               <img
                 src={user.image}
                 alt={user.name}
@@ -147,14 +191,14 @@ const CardSlider = () => {
                 {user.name}
               </h2>
             </div>
-            <div className="h-16 pt-2 px-1">
-              <p className="text-[#858484] text-sm font-medium text-center">
+            <div className="h-16 pt-2 mb-8 sm:mb-4 px-1">
+              <p className="text-[#9a9999] text-sm font-light sm:font-black text-center">
                 {user.details}
               </p>
             </div>
             <div className="border-x mb-6 flex justify-center items-center">
               <a
-                className="text-xs sm:text-sm md:text-lg px-3 sm:px-4 py-1 sm:py-2 font-medium cursor-pointer border border-rilke-red transition-all duration-1000 bg-rilke-red hover:scale-110 hover:shadow-red-700 hover:shadow-[0_0_15px_rgba(0,0,0,0.25)] text-white font-sans w-4/6 animate-custom-pulse hover:font-black text-center"
+                className="rounded-[0.25rem] text-xs sm:text-sm md:text-lg px-3 sm:px-4 py-1 sm:py-2 font-medium cursor-pointer border border-rilke-red transition-all duration-1000 bg-rilke-red hover:scale-110 hover:shadow-red-700 hover:shadow-[0_0_15px_rgba(0,0,0,0.25)] text-white font-sans w-4/6 animate-custom-pulse hover:font-black text-center"
                 href={`https://wa.me/913441311?text=Hola%20que%20tal%20vengo%20de%20cafe-rilke.com%20quisiera%20hacer%20un%20pedido%20de%20${user.name}`}
                 target="_blank"
                 rel="noopener noreferrer"
