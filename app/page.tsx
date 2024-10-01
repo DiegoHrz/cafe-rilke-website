@@ -22,8 +22,8 @@ export default function App() {
       <section id="home">
         <Home />
       </section>
-      <BestSellers />
       <Marketing />
+      <BestSellers />
       {/* #e9e0e0 */}
 
       <section id="carta">

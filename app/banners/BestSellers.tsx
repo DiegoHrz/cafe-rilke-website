@@ -9,6 +9,7 @@ const BestSellers = () => {
         <h1 className="py-3 md:py-1 text-xs font-semibold text-[#172026] lg:text-xs lg:leading-7 tracking-[0.25em] md:tracking-[0.15em] font-rilke-monecias">
           DESDE EL BOSQUE DE DIANA
         </h1>
+
         <div className="flex justify-center">
           {/* <GiLaurelCrown size={40} className="text-rilke-red" /> */}
           <img src="/assets/rose/crossed-roses6.png" alt="" className="h-12 sm:h-16" />

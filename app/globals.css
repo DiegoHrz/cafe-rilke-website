@@ -742,3 +742,58 @@ html {
   animation: sonar 5s infinite ease-out;
 }
 
+
+.ribbon-outer{
+
+
+  height: 60px;
+  background:#ac0a13;
+  text-align:center;
+  margin:30px auto;
+  position:relative;
+  box-sizing:border-box;
+  font-family: arial;
+}
+.ribbon-outer:before{
+  position:absolute;
+  content:'';
+  left:-25px;
+  top:25px;
+  border-top:25px solid transparent;
+  border-right:35px solid #333;
+  border-bottom:25px solid transparent;
+  border-left:25px solid transparent;
+  z-index:-1;
+}
+.ribbon-outer:after{
+  position:absolute;
+  content:'';
+  right:-25px;
+  top:25px;
+  border-top:25px solid transparent;
+  border-right:35px solid transparent;
+  border-bottom:25px solid transparent;
+  border-left:25px solid #333;
+  z-index:-1;
+}
+.ribbon-left{
+  position:absolute;
+  border-top:25px solid #ac0a13;
+  border-right:50px solid #ac0a13;
+  border-bottom:25px solid #ac0a13;
+  border-left:25px solid transparent;
+  top:25px;
+  left:-40px;
+  z-index:-2;
+}
+.ribbon-right{
+  position:absolute;
+  border-top:25px solid #ac0a13;
+  border-right:25px solid transparent;
+  border-bottom:25px solid #ac0a13;
+  border-left:50px solid #ac0a13;
+  top:25px;
+  right:-40px;
+  z-index:-2;
+}
+
