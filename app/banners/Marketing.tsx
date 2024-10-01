@@ -7,11 +7,19 @@ import Ribbon from "../components/Ribbon";
 const Marketing = () => {
   return (
     <div className="mx-auto w-[80%] py-10 sm:my-10 ">
+              {/* <a
+          href="https://cosas.pe/vida-social/68622/cafe-rilke/"
+          target="_blank"
+          className="block w-fit mx-auto pb-1 sm:pb-2"
+          rel="noopener noreferrer"
+        >
       <img
         src="/assets/cosas/cosas.png"
         alt=""
         className=" h-8 md:h-10 animation-opacity-infinite mx-auto "
       />
+
+        </a> */}
       <Ribbon
         text='"La inauguración del café propició el encuentro del arte, la música
         y la gastronomía"'
